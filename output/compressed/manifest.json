@@ -1,0 +1,75 @@
+{
+  "project_root": "C:/Users/15591/PycharmProjects/Webcompressor/sample_data/demo_site",
+  "files": [
+    {
+      "relative_path": "about.html",
+      "type": "text",
+      "strategy": "zlib_text",
+      "compressed_path": "output\\compressed\\about.html.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "index.html",
+      "type": "text",
+      "strategy": "zlib_text",
+      "compressed_path": "output\\compressed\\index.html.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "css\\layout.css",
+      "type": "text",
+      "strategy": "zlib_text",
+      "compressed_path": "output\\compressed\\css\\layout.css.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "css\\style.css",
+      "type": "text",
+      "strategy": "zlib_text",
+      "compressed_path": "output\\compressed\\css\\style.css.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "images\\avatar.jpg",
+      "type": "image",
+      "strategy": "pillow_image",
+      "compressed_path": "output\\compressed\\images\\avatar.jpg.jpg",
+      "restored_success": true
+    },
+    {
+      "relative_path": "images\\banner.jpg",
+      "type": "image",
+      "strategy": "pillow_image",
+      "compressed_path": "output\\compressed\\images\\banner.jpg.jpg",
+      "restored_success": true
+    },
+    {
+      "relative_path": "images\\bg.png",
+      "type": "image",
+      "strategy": "pillow_image",
+      "compressed_path": "output\\compressed\\images\\bg.png.jpg",
+      "restored_success": true
+    },
+    {
+      "relative_path": "images\\logo.png",
+      "type": "image",
+      "strategy": "pillow_image",
+      "compressed_path": "output\\compressed\\images\\logo.png.jpg",
+      "restored_success": true
+    },
+    {
+      "relative_path": "js\\app.js",
+      "type": "text",
+      "strategy": "zlib_text",
+      "compressed_path": "output\\compressed\\js\\app.js.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "js\\utils.js",
+      "type": "text",
+      "strategy": "zlib_text",
+      "compressed_path": "output\\compressed\\js\\utils.js.bin",
+      "restored_success": true
+    }
+  ]
+}
