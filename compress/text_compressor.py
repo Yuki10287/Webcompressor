@@ -1,11 +1,14 @@
-import zlib
+from compress.huffman import HuffmanCodec
 
 
 class TextCompressor:
-    strategy_name = "zlib_text"
+    strategy_name = "huffman_text"
+
+    def __init__(self):
+        self.codec = HuffmanCodec()
 
     def compress(self, data: bytes) -> bytes:
-        return zlib.compress(data)
+        return self.codec.compress(data)
 
     def decompress(self, data: bytes) -> bytes:
-        return zlib.decompress(data)
+        return self.codec.decompress(data)

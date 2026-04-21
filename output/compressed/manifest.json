@@ -4,72 +4,82 @@
     {
       "relative_path": "about.html",
       "type": "text",
-      "strategy": "zlib_text",
+      "strategy": "store_original_text",
       "compressed_path": "output\\compressed\\about.html.bin",
-      "restored_success": true
+      "restored_success": true,
+      "compress_time_ms": 1.777
     },
     {
       "relative_path": "index.html",
       "type": "text",
-      "strategy": "zlib_text",
+      "strategy": "store_original_text",
       "compressed_path": "output\\compressed\\index.html.bin",
-      "restored_success": true
+      "restored_success": true,
+      "compress_time_ms": 2.836
     },
     {
       "relative_path": "css\\layout.css",
       "type": "text",
-      "strategy": "zlib_text",
+      "strategy": "store_original_text",
       "compressed_path": "output\\compressed\\css\\layout.css.bin",
-      "restored_success": true
+      "restored_success": true,
+      "compress_time_ms": 0.409
     },
     {
       "relative_path": "css\\style.css",
       "type": "text",
-      "strategy": "zlib_text",
+      "strategy": "store_original_text",
       "compressed_path": "output\\compressed\\css\\style.css.bin",
-      "restored_success": true
+      "restored_success": true,
+      "compress_time_ms": 0.39
     },
     {
       "relative_path": "images\\avatar.jpg",
       "type": "image",
-      "strategy": "pillow_image",
+      "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\avatar.jpg.jpg",
-      "restored_success": true
+      "restored_success": true,
+      "compress_time_ms": 65.931
     },
     {
       "relative_path": "images\\banner.jpg",
       "type": "image",
-      "strategy": "pillow_image",
+      "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\banner.jpg.jpg",
-      "restored_success": true
+      "restored_success": true,
+      "compress_time_ms": 12.741
     },
     {
       "relative_path": "images\\bg.png",
       "type": "image",
-      "strategy": "pillow_image",
-      "compressed_path": "output\\compressed\\images\\bg.png.jpg",
-      "restored_success": true
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\images\\bg.png.png",
+      "restored_success": true,
+      "compress_time_ms": 583.24
     },
     {
       "relative_path": "images\\logo.png",
       "type": "image",
-      "strategy": "pillow_image",
-      "compressed_path": "output\\compressed\\images\\logo.png.jpg",
-      "restored_success": true
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\images\\logo.png.png",
+      "restored_success": true,
+      "compress_time_ms": 536.57
     },
     {
       "relative_path": "js\\app.js",
       "type": "text",
-      "strategy": "zlib_text",
+      "strategy": "store_original_text",
       "compressed_path": "output\\compressed\\js\\app.js.bin",
-      "restored_success": true
+      "restored_success": true,
+      "compress_time_ms": 0.761
     },
     {
       "relative_path": "js\\utils.js",
       "type": "text",
-      "strategy": "zlib_text",
+      "strategy": "store_original_text",
       "compressed_path": "output\\compressed\\js\\utils.js.bin",
-      "restored_success": true
+      "restored_success": true,
+      "compress_time_ms": 0.276
     }
   ]
 }
