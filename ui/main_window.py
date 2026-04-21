@@ -103,20 +103,32 @@ class MainWindow(QMainWindow):
 
                     start = time.perf_counter()
                     compressed_data = self.text_compressor.compress(original_data)
-                    _ = (time.perf_counter() - start) * 1000
+                    compress_time_ms = (time.perf_counter() - start) * 1000
+
+                    # 如果压缩后更大，则直接保留原文件
+                    if len(compressed_data) >= len(original_data):
+                        compressed_data = original_data
+                        strategy = "store_original_text"
+                    else:
+                        strategy = self.text_compressor.strategy_name
 
                     compressed_path = self.package_manager.save_compressed_file(
                         output_root, resource.relative_path, compressed_data, ".bin"
                     )
 
-                    restored_data = self.text_compressor.decompress(compressed_data)
+                    # 只有真正压缩过才解压，否则直接认为恢复成功
+                    if strategy == self.text_compressor.strategy_name:
+                        restored_data = self.text_compressor.decompress(compressed_data)
+                    else:
+                        restored_data = original_data
+
                     restored_ok = self.validator.validate_bytes_equal(original_data, restored_data)
 
                     restored_path = os.path.join(restored_root, resource.relative_path)
                     write_binary(restored_path, restored_data)
 
                     resource.compressed_size = len(compressed_data)
-                    resource.compression_strategy = self.text_compressor.strategy_name
+                    resource.compression_strategy = strategy
                     resource.compression_success = True
                     resource.restored_success = restored_ok
 
@@ -125,20 +137,37 @@ class MainWindow(QMainWindow):
                         "type": resource.resource_type,
                         "strategy": resource.compression_strategy,
                         "compressed_path": compressed_path,
-                        "restored_success": restored_ok
+                        "restored_success": restored_ok,
+                        "compress_time_ms": round(compress_time_ms, 3)
                     })
 
                 elif resource.resource_type == "image":
+                    original_data = read_binary(resource.file_path)
+
                     start = time.perf_counter()
-                    compressed_data = self.image_compressor.compress(resource.file_path, quality=70)
-                    _ = (time.perf_counter() - start) * 1000
+                    compressed_data, image_strategy = self.image_compressor.compress(resource.file_path, quality=70)
+                    compress_time_ms = (time.perf_counter() - start) * 1000
+
+                    # 如果压缩后更大，则直接保留原图
+                    if len(compressed_data) >= len(original_data):
+                        compressed_data = original_data
+                        strategy = "store_original_image"
+                        suffix = os.path.splitext(resource.file_path)[1]
+                    else:
+                        strategy = image_strategy
+                        if image_strategy == "jpeg_quality":
+                            suffix = ".jpg"
+                        elif image_strategy == "png_optimize":
+                            suffix = ".png"
+                        else:
+                            suffix = os.path.splitext(resource.file_path)[1]
 
                     compressed_path = self.package_manager.save_compressed_file(
-                        output_root, resource.relative_path, compressed_data, ".jpg"
+                        output_root, resource.relative_path, compressed_data, suffix
                     )
 
                     resource.compressed_size = len(compressed_data)
-                    resource.compression_strategy = self.image_compressor.strategy_name
+                    resource.compression_strategy = strategy
                     resource.compression_success = True
                     resource.restored_success = True
 
@@ -147,7 +176,8 @@ class MainWindow(QMainWindow):
                         "type": resource.resource_type,
                         "strategy": resource.compression_strategy,
                         "compressed_path": compressed_path,
-                        "restored_success": True
+                        "restored_success": True,
+                        "compress_time_ms": round(compress_time_ms, 3)
                     })
 
                 else:
