@@ -104,7 +104,7 @@ class MainWindow(QMainWindow):
                     original_data = read_binary(resource.file_path)
 
                     start = time.perf_counter()
-                    huffman_data = self.text_compressor.compress(original_data)
+                    huffman_data = self.text_compressor.compress(original_data, resource.file_path)
                     compress_time_ms = (time.perf_counter() - start) * 1000
 
                     # 新增：记录“尝试压缩后大小”
