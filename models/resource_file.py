@@ -10,6 +10,7 @@ class ResourceFile:
     resource_type: str
     original_size: int
     compressed_size: int = 0
+    attempted_size: int = 0
     compression_strategy: Optional[str] = None
     compression_success: bool = False
     restored_success: bool = False

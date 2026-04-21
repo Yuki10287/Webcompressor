@@ -7,7 +7,7 @@
       "strategy": "store_original_text",
       "compressed_path": "output\\compressed\\about.html.bin",
       "restored_success": true,
-      "compress_time_ms": 1.777
+      "compress_time_ms": 1.501
     },
     {
       "relative_path": "index.html",
@@ -15,7 +15,7 @@
       "strategy": "store_original_text",
       "compressed_path": "output\\compressed\\index.html.bin",
       "restored_success": true,
-      "compress_time_ms": 2.836
+      "compress_time_ms": 1.274
     },
     {
       "relative_path": "css\\layout.css",
@@ -23,7 +23,7 @@
       "strategy": "store_original_text",
       "compressed_path": "output\\compressed\\css\\layout.css.bin",
       "restored_success": true,
-      "compress_time_ms": 0.409
+      "compress_time_ms": 0.371
     },
     {
       "relative_path": "css\\style.css",
@@ -31,7 +31,7 @@
       "strategy": "store_original_text",
       "compressed_path": "output\\compressed\\css\\style.css.bin",
       "restored_success": true,
-      "compress_time_ms": 0.39
+      "compress_time_ms": 0.608
     },
     {
       "relative_path": "images\\avatar.jpg",
@@ -39,7 +39,7 @@
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\avatar.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 65.931
+      "compress_time_ms": 85.916
     },
     {
       "relative_path": "images\\banner.jpg",
@@ -47,7 +47,7 @@
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\banner.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 12.741
+      "compress_time_ms": 12.074
     },
     {
       "relative_path": "images\\bg.png",
@@ -55,7 +55,7 @@
       "strategy": "png_optimize",
       "compressed_path": "output\\compressed\\images\\bg.png.png",
       "restored_success": true,
-      "compress_time_ms": 583.24
+      "compress_time_ms": 581.441
     },
     {
       "relative_path": "images\\logo.png",
@@ -63,7 +63,7 @@
       "strategy": "png_optimize",
       "compressed_path": "output\\compressed\\images\\logo.png.png",
       "restored_success": true,
-      "compress_time_ms": 536.57
+      "compress_time_ms": 469.862
     },
     {
       "relative_path": "js\\app.js",
@@ -71,7 +71,7 @@
       "strategy": "store_original_text",
       "compressed_path": "output\\compressed\\js\\app.js.bin",
       "restored_success": true,
-      "compress_time_ms": 0.761
+      "compress_time_ms": 0.292
     },
     {
       "relative_path": "js\\utils.js",
@@ -79,7 +79,7 @@
       "strategy": "store_original_text",
       "compressed_path": "output\\compressed\\js\\utils.js.bin",
       "restored_success": true,
-      "compress_time_ms": 0.276
+      "compress_time_ms": 0.242
     }
   ]
 }

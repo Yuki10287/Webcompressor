@@ -40,9 +40,10 @@ class MainWindow(QMainWindow):
         self.compress_button.clicked.connect(self.compress_project)
         self.compress_button.setEnabled(False)
 
-        self.table = QTableWidget(0, 6)
+        self.table = QTableWidget(0, 7)
         self.table.setHorizontalHeaderLabels([
-            "文件名", "相对路径", "类型", "原始大小(B)", "压缩后大小(B)", "策略"
+            "文件名", "相对路径", "类型", "原始大小(B)",
+            "尝试压缩大小(B)", "最终采用大小(B)", "策略"
         ])
 
         layout = QVBoxLayout()
@@ -81,8 +82,9 @@ class MainWindow(QMainWindow):
             self.table.setItem(row, 1, QTableWidgetItem(resource.relative_path))
             self.table.setItem(row, 2, QTableWidgetItem(resource.resource_type))
             self.table.setItem(row, 3, QTableWidgetItem(str(resource.original_size)))
-            self.table.setItem(row, 4, QTableWidgetItem(str(resource.compressed_size)))
-            self.table.setItem(row, 5, QTableWidgetItem(resource.compression_strategy or ""))
+            self.table.setItem(row, 4, QTableWidgetItem(str(resource.attempted_size)))
+            self.table.setItem(row, 5, QTableWidgetItem(str(resource.compressed_size)))
+            self.table.setItem(row, 6, QTableWidgetItem(resource.compression_strategy or ""))
 
     def compress_project(self):
         if not self.project:
@@ -102,14 +104,18 @@ class MainWindow(QMainWindow):
                     original_data = read_binary(resource.file_path)
 
                     start = time.perf_counter()
-                    compressed_data = self.text_compressor.compress(original_data)
+                    huffman_data = self.text_compressor.compress(original_data)
                     compress_time_ms = (time.perf_counter() - start) * 1000
 
+                    # 新增：记录“尝试压缩后大小”
+                    resource.attempted_size = len(huffman_data)
+
                     # 如果压缩后更大，则直接保留原文件
-                    if len(compressed_data) >= len(original_data):
+                    if len(huffman_data) >= len(original_data):
                         compressed_data = original_data
                         strategy = "store_original_text"
                     else:
+                        compressed_data = huffman_data
                         strategy = self.text_compressor.strategy_name
 
                     compressed_path = self.package_manager.save_compressed_file(
@@ -147,7 +153,7 @@ class MainWindow(QMainWindow):
                     start = time.perf_counter()
                     compressed_data, image_strategy = self.image_compressor.compress(resource.file_path, quality=70)
                     compress_time_ms = (time.perf_counter() - start) * 1000
-
+                    resource.attempted_size = len(compressed_data)
                     # 如果压缩后更大，则直接保留原图
                     if len(compressed_data) >= len(original_data):
                         compressed_data = original_data
