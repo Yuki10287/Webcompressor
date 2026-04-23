@@ -4,74 +4,74 @@
     {
       "relative_path": "about.html",
       "type": "text",
-      "strategy": "pre_huffman_text",
+      "strategy": "pre_lz77_huffman_text",
       "compressed_path": "output\\compressed\\about.html.bin",
       "restored_success": true,
-      "compress_time_ms": 7.613
+      "compress_time_ms": 625.606
     },
     {
       "relative_path": "contact.html",
       "type": "text",
-      "strategy": "pre_huffman_text",
+      "strategy": "pre_lz77_huffman_text",
       "compressed_path": "output\\compressed\\contact.html.bin",
       "restored_success": true,
-      "compress_time_ms": 9.389
+      "compress_time_ms": 1123.492
     },
     {
       "relative_path": "gallery.html",
       "type": "text",
-      "strategy": "pre_huffman_text",
+      "strategy": "pre_lz77_huffman_text",
       "compressed_path": "output\\compressed\\gallery.html.bin",
       "restored_success": true,
-      "compress_time_ms": 5.41
+      "compress_time_ms": 464.687
     },
     {
       "relative_path": "index.html",
       "type": "text",
-      "strategy": "pre_huffman_text",
+      "strategy": "pre_lz77_huffman_text",
       "compressed_path": "output\\compressed\\index.html.bin",
       "restored_success": true,
-      "compress_time_ms": 8.675
+      "compress_time_ms": 991.086
     },
     {
       "relative_path": "products.html",
       "type": "text",
-      "strategy": "pre_huffman_text",
+      "strategy": "pre_lz77_huffman_text",
       "compressed_path": "output\\compressed\\products.html.bin",
       "restored_success": true,
-      "compress_time_ms": 5.35
+      "compress_time_ms": 517.152
     },
     {
       "relative_path": "services.html",
       "type": "text",
-      "strategy": "pre_huffman_text",
+      "strategy": "pre_lz77_huffman_text",
       "compressed_path": "output\\compressed\\services.html.bin",
       "restored_success": true,
-      "compress_time_ms": 5.799
+      "compress_time_ms": 376.481
     },
     {
       "relative_path": "css\\base.css",
       "type": "text",
-      "strategy": "pre_huffman_text",
+      "strategy": "store_original_text",
       "compressed_path": "output\\compressed\\css\\base.css.bin",
       "restored_success": true,
-      "compress_time_ms": 2.868
+      "compress_time_ms": 166.351
     },
     {
       "relative_path": "css\\components.css",
       "type": "text",
-      "strategy": "pre_huffman_text",
+      "strategy": "pre_lz77_huffman_text",
       "compressed_path": "output\\compressed\\css\\components.css.bin",
       "restored_success": true,
-      "compress_time_ms": 3.128
+      "compress_time_ms": 316.197
     },
     {
       "relative_path": "css\\layout.css",
       "type": "text",
-      "strategy": "pre_huffman_text",
+      "strategy": "pre_lz77_huffman_text",
       "compressed_path": "output\\compressed\\css\\layout.css.bin",
       "restored_success": true,
-      "compress_time_ms": 3.155
+      "compress_time_ms": 192.846
     },
     {
       "relative_path": "css\\reset.css",
@@ -79,15 +79,15 @@
       "strategy": "store_original_text",
       "compressed_path": "output\\compressed\\css\\reset.css.bin",
       "restored_success": true,
-      "compress_time_ms": 0.83
+      "compress_time_ms": 20.834
     },
     {
       "relative_path": "css\\theme.css",
       "type": "text",
-      "strategy": "pre_huffman_text",
+      "strategy": "store_original_text",
       "compressed_path": "output\\compressed\\css\\theme.css.bin",
       "restored_success": true,
-      "compress_time_ms": 1.839
+      "compress_time_ms": 75.464
     },
     {
       "relative_path": "images\\avatar1.jpg",
@@ -95,7 +95,7 @@
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\avatar1.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 4.624
+      "compress_time_ms": 36.276
     },
     {
       "relative_path": "images\\avatar2.jpg",
@@ -103,7 +103,7 @@
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\avatar2.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 3.203
+      "compress_time_ms": 2.436
     },
     {
       "relative_path": "images\\avatar3.jpg",
@@ -111,7 +111,7 @@
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\avatar3.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 3.038
+      "compress_time_ms": 2.351
     },
     {
       "relative_path": "images\\banner.jpg",
@@ -119,7 +119,7 @@
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\banner.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 13.64
+      "compress_time_ms": 10.418
     },
     {
       "relative_path": "images\\bg.png",
@@ -127,7 +127,7 @@
       "strategy": "png_optimize",
       "compressed_path": "output\\compressed\\images\\bg.png.png",
       "restored_success": true,
-      "compress_time_ms": 146.316
+      "compress_time_ms": 116.165
     },
     {
       "relative_path": "images\\gallery1.jpg",
@@ -135,7 +135,7 @@
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\gallery1.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 14.003
+      "compress_time_ms": 12.657
     },
     {
       "relative_path": "images\\gallery2.jpg",
@@ -143,7 +143,7 @@
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\gallery2.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 14.455
+      "compress_time_ms": 9.338
     },
     {
       "relative_path": "images\\logo.png",
@@ -151,47 +151,47 @@
       "strategy": "png_optimize",
       "compressed_path": "output\\compressed\\images\\logo.png.png",
       "restored_success": true,
-      "compress_time_ms": 23.192
+      "compress_time_ms": 18.871
     },
     {
       "relative_path": "js\\app.js",
       "type": "text",
-      "strategy": "pre_huffman_text",
+      "strategy": "pre_lz77_huffman_text",
       "compressed_path": "output\\compressed\\js\\app.js.bin",
       "restored_success": true,
-      "compress_time_ms": 11.976
+      "compress_time_ms": 1448.501
     },
     {
       "relative_path": "js\\data.js",
       "type": "text",
-      "strategy": "pre_huffman_text",
+      "strategy": "pre_lz77_huffman_text",
       "compressed_path": "output\\compressed\\js\\data.js.bin",
       "restored_success": true,
-      "compress_time_ms": 5.469
+      "compress_time_ms": 607.981
     },
     {
       "relative_path": "js\\dom.js",
       "type": "text",
-      "strategy": "pre_huffman_text",
+      "strategy": "pre_lz77_huffman_text",
       "compressed_path": "output\\compressed\\js\\dom.js.bin",
       "restored_success": true,
-      "compress_time_ms": 5.368
+      "compress_time_ms": 271.401
     },
     {
       "relative_path": "js\\gallery.js",
       "type": "text",
-      "strategy": "pre_huffman_text",
+      "strategy": "pre_lz77_huffman_text",
       "compressed_path": "output\\compressed\\js\\gallery.js.bin",
       "restored_success": true,
-      "compress_time_ms": 2.614
+      "compress_time_ms": 173.655
     },
     {
       "relative_path": "js\\utils.js",
       "type": "text",
-      "strategy": "pre_huffman_text",
+      "strategy": "pre_lz77_huffman_text",
       "compressed_path": "output\\compressed\\js\\utils.js.bin",
       "restored_success": true,
-      "compress_time_ms": 4.266
+      "compress_time_ms": 530.154
     }
   ]
 }
