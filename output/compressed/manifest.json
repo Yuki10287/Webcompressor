@@ -1,45 +1,117 @@
 {
-  "project_root": "C:/Users/15591/PycharmProjects/Webcompressor/sample_data/demo_site",
+  "project_root": "C:/Users/15591/PycharmProjects/Webcompressor/sample_data/benchmark_site_rich",
   "files": [
     {
       "relative_path": "about.html",
       "type": "text",
-      "strategy": "store_original_text",
+      "strategy": "pre_huffman_text",
       "compressed_path": "output\\compressed\\about.html.bin",
       "restored_success": true,
-      "compress_time_ms": 1.533
+      "compress_time_ms": 7.613
+    },
+    {
+      "relative_path": "contact.html",
+      "type": "text",
+      "strategy": "pre_huffman_text",
+      "compressed_path": "output\\compressed\\contact.html.bin",
+      "restored_success": true,
+      "compress_time_ms": 9.389
+    },
+    {
+      "relative_path": "gallery.html",
+      "type": "text",
+      "strategy": "pre_huffman_text",
+      "compressed_path": "output\\compressed\\gallery.html.bin",
+      "restored_success": true,
+      "compress_time_ms": 5.41
     },
     {
       "relative_path": "index.html",
       "type": "text",
-      "strategy": "store_original_text",
+      "strategy": "pre_huffman_text",
       "compressed_path": "output\\compressed\\index.html.bin",
       "restored_success": true,
-      "compress_time_ms": 1.322
+      "compress_time_ms": 8.675
+    },
+    {
+      "relative_path": "products.html",
+      "type": "text",
+      "strategy": "pre_huffman_text",
+      "compressed_path": "output\\compressed\\products.html.bin",
+      "restored_success": true,
+      "compress_time_ms": 5.35
+    },
+    {
+      "relative_path": "services.html",
+      "type": "text",
+      "strategy": "pre_huffman_text",
+      "compressed_path": "output\\compressed\\services.html.bin",
+      "restored_success": true,
+      "compress_time_ms": 5.799
+    },
+    {
+      "relative_path": "css\\base.css",
+      "type": "text",
+      "strategy": "pre_huffman_text",
+      "compressed_path": "output\\compressed\\css\\base.css.bin",
+      "restored_success": true,
+      "compress_time_ms": 2.868
+    },
+    {
+      "relative_path": "css\\components.css",
+      "type": "text",
+      "strategy": "pre_huffman_text",
+      "compressed_path": "output\\compressed\\css\\components.css.bin",
+      "restored_success": true,
+      "compress_time_ms": 3.128
     },
     {
       "relative_path": "css\\layout.css",
       "type": "text",
-      "strategy": "store_original_text",
+      "strategy": "pre_huffman_text",
       "compressed_path": "output\\compressed\\css\\layout.css.bin",
       "restored_success": true,
-      "compress_time_ms": 0.471
+      "compress_time_ms": 3.155
     },
     {
-      "relative_path": "css\\style.css",
+      "relative_path": "css\\reset.css",
       "type": "text",
       "strategy": "store_original_text",
-      "compressed_path": "output\\compressed\\css\\style.css.bin",
+      "compressed_path": "output\\compressed\\css\\reset.css.bin",
       "restored_success": true,
-      "compress_time_ms": 0.422
+      "compress_time_ms": 0.83
     },
     {
-      "relative_path": "images\\avatar.jpg",
+      "relative_path": "css\\theme.css",
+      "type": "text",
+      "strategy": "pre_huffman_text",
+      "compressed_path": "output\\compressed\\css\\theme.css.bin",
+      "restored_success": true,
+      "compress_time_ms": 1.839
+    },
+    {
+      "relative_path": "images\\avatar1.jpg",
       "type": "image",
       "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\avatar.jpg.jpg",
+      "compressed_path": "output\\compressed\\images\\avatar1.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 55.887
+      "compress_time_ms": 4.624
+    },
+    {
+      "relative_path": "images\\avatar2.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\avatar2.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 3.203
+    },
+    {
+      "relative_path": "images\\avatar3.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\avatar3.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 3.038
     },
     {
       "relative_path": "images\\banner.jpg",
@@ -47,7 +119,7 @@
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\banner.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 9.826
+      "compress_time_ms": 13.64
     },
     {
       "relative_path": "images\\bg.png",
@@ -55,7 +127,23 @@
       "strategy": "png_optimize",
       "compressed_path": "output\\compressed\\images\\bg.png.png",
       "restored_success": true,
-      "compress_time_ms": 533.351
+      "compress_time_ms": 146.316
+    },
+    {
+      "relative_path": "images\\gallery1.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\gallery1.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 14.003
+    },
+    {
+      "relative_path": "images\\gallery2.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\gallery2.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 14.455
     },
     {
       "relative_path": "images\\logo.png",
@@ -63,23 +151,47 @@
       "strategy": "png_optimize",
       "compressed_path": "output\\compressed\\images\\logo.png.png",
       "restored_success": true,
-      "compress_time_ms": 536.865
+      "compress_time_ms": 23.192
     },
     {
       "relative_path": "js\\app.js",
       "type": "text",
-      "strategy": "store_original_text",
+      "strategy": "pre_huffman_text",
       "compressed_path": "output\\compressed\\js\\app.js.bin",
       "restored_success": true,
-      "compress_time_ms": 0.542
+      "compress_time_ms": 11.976
+    },
+    {
+      "relative_path": "js\\data.js",
+      "type": "text",
+      "strategy": "pre_huffman_text",
+      "compressed_path": "output\\compressed\\js\\data.js.bin",
+      "restored_success": true,
+      "compress_time_ms": 5.469
+    },
+    {
+      "relative_path": "js\\dom.js",
+      "type": "text",
+      "strategy": "pre_huffman_text",
+      "compressed_path": "output\\compressed\\js\\dom.js.bin",
+      "restored_success": true,
+      "compress_time_ms": 5.368
+    },
+    {
+      "relative_path": "js\\gallery.js",
+      "type": "text",
+      "strategy": "pre_huffman_text",
+      "compressed_path": "output\\compressed\\js\\gallery.js.bin",
+      "restored_success": true,
+      "compress_time_ms": 2.614
     },
     {
       "relative_path": "js\\utils.js",
       "type": "text",
-      "strategy": "store_original_text",
+      "strategy": "pre_huffman_text",
       "compressed_path": "output\\compressed\\js\\utils.js.bin",
       "restored_success": true,
-      "compress_time_ms": 0.325
+      "compress_time_ms": 4.266
     }
   ]
 }

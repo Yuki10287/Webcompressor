@@ -1,0 +1,121 @@
+.button,
+.button-primary,
+.button-secondary,
+.tag,
+.badge,
+.card,
+.modal,
+.tabs,
+.accordion,
+.form-panel,
+.data-table,
+.alert,
+.pagination {
+    border-radius: 16px;
+}
+
+.button,
+.button-primary,
+.button-secondary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border: 1px solid transparent;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.button:hover,
+.card:hover,
+.accordion-item:hover {
+    transform: translateY(-2px);
+}
+
+.button-primary { background: #1f5fbf; color: #ffffff; }
+.button-secondary { background: #eef4ff; color: #1f5fbf; border-color: #cddcf7; }
+
+.tag,
+.badge {
+    display: inline-block;
+    padding: 6px 10px;
+    background: #eef4ff;
+    color: #1f5fbf;
+    border: 1px solid #d7e3fb;
+    border-radius: 999px;
+}
+
+.card,
+.feature-card,
+.service-card,
+.case-card,
+.testimonial-card,
+.team-card,
+.value-card,
+.pricing-card,
+.process-step,
+.comparison-row,
+.product-card,
+.bundle-card,
+.gallery-card,
+.review-card,
+.office-card,
+.accordion-item,
+.form-panel,
+.data-table,
+.table-wrap,
+.alert,
+.tabs,
+.pagination {
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #dde6f2;
+    box-shadow: 0 14px 32px rgba(21, 35, 51, 0.06);
+}
+
+.service-title,
+.product-title,
+.card-title {
+    margin: 8px 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #152333;
+}
+
+.service-text,
+.card-text,
+.faq-answer {
+    color: #5b6979;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cfd8e6;
+    border-radius: 12px;
+    background: #fcfdff;
+}
+
+.form-field textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e1e8f2;
+    text-align: left;
+}
+
+.footer-column a {
+    display: block;
+    margin-bottom: 10px;
+}
