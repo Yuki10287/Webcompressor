@@ -1,0 +1,168 @@
+.btn,
+.btn-primary,
+.btn-secondary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(36, 87, 197, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.btn-secondary:hover,
+.feature-card:hover,
+.news-card:hover,
+.stat-card:hover,
+.team-card:hover,
+.product-card:hover,
+.contact-card:hover,
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 30px rgba(36, 87, 197, 0.12);
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #2457c5;
+}
+
+.btn-secondary {
+    color: #2457c5;
+    background-color: #edf3ff;
+    border-color: #bdd0ff;
+}
+
+.feature-card,
+.news-card,
+.stat-card,
+.team-card,
+.product-card,
+.contact-card,
+.faq-item,
+.timeline-item,
+.newsletter-panel,
+.comparison-table,
+.filter-bar,
+.contact-form {
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #dce5f5;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(36, 87, 197, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.feature-card,
+.news-card,
+.stat-card,
+.team-card,
+.product-card,
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feature-card .card-title,
+.news-card .card-title,
+.stat-card .card-title,
+.team-card .team-name,
+.product-card .product-title,
+.contact-card .card-title,
+.faq-item .faq-question {
+    margin-bottom: 8px;
+}
+
+.feature-card .card-text,
+.news-card .card-text,
+.stat-card .card-text,
+.team-card .team-role,
+.product-card .card-text,
+.contact-card .contact-note,
+.faq-item .faq-answer {
+    margin-bottom: 0;
+}
+
+.team-name,
+.product-title,
+.faq-question {
+    color: #1c2a3a;
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.team-role,
+.faq-answer,
+.contact-note {
+    color: #5a6978;
+    font-size: 0.98rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.product-tag,
+.badge {
+    display: inline-block;
+    padding: 6px 10px;
+    color: #2457c5;
+    background-color: #edf3ff;
+    border: 1px solid #cfe0ff;
+    border-radius: 999px;
+}
+
+.product-price {
+    color: #d94841;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.footer-link {
+    display: block;
+    margin: 0 0 10px;
+    color: #d8e4ff;
+}
+
+.site-footer .card-title,
+.site-footer .card-text {
+    color: #ffffff;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.form-label {
+    color: #30455d;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table-row:nth-child(odd) {
+    background: #f8fbff;
+}
+
+.table-cell {
+    padding: 14px;
+    border-bottom: 1px solid #dce5f5;
+}

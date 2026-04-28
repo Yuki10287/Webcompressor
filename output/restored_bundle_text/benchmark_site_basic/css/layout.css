@@ -1,0 +1,163 @@
+.page-shell {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/bg.png");
+    background-repeat: repeat;
+    background-size: 640px 360px;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.92);
+    border-bottom: 1px solid rgba(36, 87, 197, 0.08);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 0;
+}
+
+.brand-mark {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-mark img {
+    width: 52px;
+    height: 52px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 18px;
+}
+
+.hero-section,
+.content-section {
+    padding: 56px 0;
+}
+
+.section-alt {
+    background: rgba(255, 255, 255, 0.76);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.feature-grid,
+.stat-grid,
+.product-grid,
+.contact-grid,
+.footer-grid,
+.news-grid,
+.team-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.feature-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.news-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stat-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.contact-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.team-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.footer-grid {
+    grid-template-columns: 1.2fr 0.8fr 0.8fr;
+}
+
+.split-section {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.timeline-list,
+.faq-list,
+.text-block-list {
+    display: grid;
+    gap: 16px;
+}
+
+.site-footer {
+    margin-top: auto;
+    padding: 40px 0;
+    background: #1e2f45;
+}
+
+@media (max-width: 960px) {
+    .hero-grid,
+    .split-section,
+    .feature-grid,
+    .news-grid,
+    .stat-grid,
+    .product-grid,
+    .contact-grid,
+    .footer-grid,
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 680px) {
+    .header-inner,
+    .nav-list,
+    .button-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .hero-grid,
+    .split-section,
+    .feature-grid,
+    .news-grid,
+    .stat-grid,
+    .product-grid,
+    .contact-grid,
+    .footer-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}

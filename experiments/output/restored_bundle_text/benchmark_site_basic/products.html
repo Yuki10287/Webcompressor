@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Site Basic - 产品</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body data-page="products">
+<div class="page-shell">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand-mark" href="index.html">
+                <img src="images/logo.png" alt="站点标志">
+                <span class="card-title">Benchmark Basic</span>
+            </a>
+            <nav class="site-nav">
+                <ul class="nav-list">
+                    <li><a data-nav href="index.html">首页</a></li>
+                    <li><a data-nav href="about.html">关于</a></li>
+                    <li><a data-nav href="products.html">产品</a></li>
+                    <li><a data-nav href="contact.html">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <div class="container">
+                <h1 class="section-title">产品目录</h1>
+                <p class="section-subtitle">筛选条、product-card、table-row、table-cell 会重复出现。</p>
+                <div class="filter-bar rounded shadow-sm">
+                    <button class="btn btn-secondary" type="button" data-filter="all">全部分类</button>
+                    <button class="btn btn-secondary" type="button" data-filter="基础">基础</button>
+                    <button class="btn btn-secondary" type="button" data-filter="标准">标准</button>
+                    <button class="btn btn-secondary" type="button" data-filter="进阶">进阶</button>
+                </div>
+                <div class="product-grid" id="product-grid"></div>
+            </div>
+        </section>
+
+        <section class="content-section section-alt">
+            <div class="container">
+                <h2 class="section-title">功能对比</h2>
+                <table class="comparison-table">
+                    <tbody>
+                    <tr class="table-row"><td class="table-cell">对比项 01</td><td class="table-cell">基础方案</td><td class="table-cell">标准方案</td><td class="table-cell">进阶方案</td></tr>
+                    <tr class="table-row"><td class="table-cell">对比项 02</td><td class="table-cell">支持</td><td class="table-cell">支持</td><td class="table-cell">增强支持</td></tr>
+                    <tr class="table-row"><td class="table-cell">对比项 03</td><td class="table-cell">本地资源</td><td class="table-cell">本地资源</td><td class="table-cell">本地资源</td></tr>
+                    <tr class="table-row"><td class="table-cell">对比项 04</td><td class="table-cell">重复字段</td><td class="table-cell">重复字段</td><td class="table-cell">重复字段</td></tr>
+                    <tr class="table-row"><td class="table-cell">对比项 05</td><td class="table-cell">压缩测试</td><td class="table-cell">压缩测试</td><td class="table-cell">压缩测试</td></tr>
+                    <tr class="table-row"><td class="table-cell">对比项 06</td><td class="table-cell">表格对比</td><td class="table-cell">表格对比</td><td class="table-cell">表格对比</td></tr>
+                    <tr class="table-row"><td class="table-cell">对比项 07</td><td class="table-cell">按钮结构</td><td class="table-cell">按钮结构</td><td class="table-cell">按钮结构</td></tr>
+                    <tr class="table-row"><td class="table-cell">对比项 08</td><td class="table-cell">价格字段</td><td class="table-cell">价格字段</td><td class="table-cell">价格字段</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3 class="card-title">产品导航</h3>
+                <p class="card-text">每个 product-card 都有标题、描述、标签、价格和按钮。</p>
+            </div>
+            <div>
+                <a class="footer-link" href="index.html">首页</a>
+                <a class="footer-link" href="about.html">关于</a>
+                <a class="footer-link" href="contact.html">联系</a>
+            </div>
+            <div>
+                <a class="footer-link" href="products.html">对比表格</a>
+                <a class="footer-link" href="products.html">筛选条</a>
+                <a class="footer-link" href="products.html">产品卡片</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/data.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
