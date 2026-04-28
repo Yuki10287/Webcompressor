@@ -1,145 +1,87 @@
 {
-  "project_root": "C:/Users/15591/PycharmProjects/Webcompressor/sample_data/benchmark_site_rich",
+  "project_root": "C:/Users/15591/PycharmProjects/Webcompressor/sample_data/benchmark_site_basic",
   "text_bundle_enabled": true,
-  "text_bundle_original_size": 51241,
-  "text_bundle_compressed_size": 14742,
-  "text_bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+  "text_bundle_original_size": 60282,
+  "text_bundle_compressed_size": 14311,
+  "text_bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
   "files": [
     {
       "relative_path": "about.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "contact.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "gallery.html",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "index.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "products.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "services.html",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "css/base.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "css/components.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "css/layout.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "css/reset.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "css/theme.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "js/app.js",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "js/data.js",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "js/dom.js",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "js/gallery.js",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "js/utils.js",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "images/avatar1.jpg",
+      "relative_path": "images/avatar.jpg",
       "type": "image",
       "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\avatar1.jpg.jpg",
+      "compressed_path": "output\\compressed\\images\\avatar.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 4.577
-    },
-    {
-      "relative_path": "images/avatar2.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\avatar2.jpg.jpg",
-      "restored_success": true,
-      "compress_time_ms": 3.931
-    },
-    {
-      "relative_path": "images/avatar3.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\avatar3.jpg.jpg",
-      "restored_success": true,
-      "compress_time_ms": 3.766
+      "compress_time_ms": 50.74
     },
     {
       "relative_path": "images/banner.jpg",
@@ -147,7 +89,7 @@
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\banner.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 15.263
+      "compress_time_ms": 11.129
     },
     {
       "relative_path": "images/bg.png",
@@ -155,23 +97,7 @@
       "strategy": "png_optimize",
       "compressed_path": "output\\compressed\\images\\bg.png.png",
       "restored_success": true,
-      "compress_time_ms": 140.12
-    },
-    {
-      "relative_path": "images/gallery1.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\gallery1.jpg.jpg",
-      "restored_success": true,
-      "compress_time_ms": 14.37
-    },
-    {
-      "relative_path": "images/gallery2.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\gallery2.jpg.jpg",
-      "restored_success": true,
-      "compress_time_ms": 12.289
+      "compress_time_ms": 96.169
     },
     {
       "relative_path": "images/logo.png",
@@ -179,7 +105,7 @@
       "strategy": "png_optimize",
       "compressed_path": "output\\compressed\\images\\logo.png.png",
       "restored_success": true,
-      "compress_time_ms": 25.194
+      "compress_time_ms": 20.929
     }
   ]
 }
