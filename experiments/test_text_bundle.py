@@ -21,7 +21,7 @@ def main():
     site_root = (
         sys.argv[1]
         if len(sys.argv) > 1
-        else os.path.join(PROJECT_ROOT, "sample_data", "benchmark_site_basic")
+        else os.path.join(PROJECT_ROOT, "sample_data", "benchmark_site_rich")
     )
 
     if not os.path.isabs(site_root):

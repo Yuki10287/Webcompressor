@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Site Rich - 产品</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body data-page="products">
+<div class="page-shell">
+    <div class="announcement-bar"><div class="container">产品页包含 24 个 product-card、长对比表、标签筛选区和 8 个 bundle-card。</div></div>
+    <header class="site-header">
+        <div class="container header-row">
+            <a class="brand-link" href="index.html"><img src="images/logo.png" alt="logo"><span>Benchmark Rich</span></a>
+            <nav class="site-nav">
+                <ul class="nav-list">
+                    <li><a data-nav href="index.html">首页</a></li>
+                    <li><a data-nav href="about.html">关于</a></li>
+                    <li><a data-nav href="services.html">服务</a></li>
+                    <li><a data-nav href="products.html">产品</a></li>
+                    <li><a data-nav href="gallery.html">画廊</a></li>
+                    <li><a data-nav href="contact.html">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section-block">
+            <div class="container stack-lg">
+                <div class="breadcrumbs"><a href="index.html">首页</a> / <span>产品</span></div>
+                <h1 class="section-title">产品矩阵</h1>
+                <div class="tag-filter" id="product-filter-bar">
+                    <button class="button button-secondary" data-product-filter="all" type="button">全部</button>
+                    <button class="button button-secondary" data-product-filter="基础" type="button">基础</button>
+                    <button class="button button-secondary" data-product-filter="增强" type="button">增强</button>
+                    <button class="button button-secondary" data-product-filter="旗舰" type="button">旗舰</button>
+                </div>
+                <div class="card-grid card-grid-4" id="products-page-grid"></div>
+            </div>
+        </section>
+        <section class="section-block bg-light">
+            <div class="container">
+                <h2 class="section-title">功能对比表</h2>
+                <div class="table-wrap">
+                    <table class="data-table" id="products-table"></table>
+                </div>
+            </div>
+        </section>
+        <section class="section-block">
+            <div class="container">
+                <h2 class="section-title">推荐组合</h2>
+                <div class="card-grid card-grid-4" id="bundle-grid"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-layout">
+            <div class="footer-column"><h3>产品页</h3><p>适合整站打包压缩与表格、标签、卡片混合场景测试。</p></div>
+            <div class="footer-column"><a href="services.html">服务</a><a href="gallery.html">画廊</a><a href="contact.html">联系</a></div>
+            <div class="footer-column"><a href="index.html">首页</a><a href="about.html">关于</a><a href="products.html">产品</a></div>
+        </div>
+    </footer>
+</div>
+<script src="js/data.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/dom.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
