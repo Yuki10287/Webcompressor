@@ -1,197 +1,185 @@
 {
   "project_root": "C:/Users/15591/PycharmProjects/Webcompressor/sample_data/benchmark_site_rich",
+  "text_bundle_enabled": true,
+  "text_bundle_original_size": 51241,
+  "text_bundle_compressed_size": 14742,
+  "text_bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
   "files": [
     {
       "relative_path": "about.html",
       "type": "text",
-      "strategy": "pre_lz77_huffman_text",
-      "compressed_path": "output\\compressed\\about.html.bin",
-      "restored_success": true,
-      "compress_time_ms": 892.936
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
     },
     {
       "relative_path": "contact.html",
       "type": "text",
-      "strategy": "pre_lz77_huffman_text",
-      "compressed_path": "output\\compressed\\contact.html.bin",
-      "restored_success": true,
-      "compress_time_ms": 2417.64
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
     },
     {
       "relative_path": "gallery.html",
       "type": "text",
-      "strategy": "pre_lz77_huffman_text",
-      "compressed_path": "output\\compressed\\gallery.html.bin",
-      "restored_success": true,
-      "compress_time_ms": 870.414
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
     },
     {
       "relative_path": "index.html",
       "type": "text",
-      "strategy": "pre_lz77_huffman_text",
-      "compressed_path": "output\\compressed\\index.html.bin",
-      "restored_success": true,
-      "compress_time_ms": 2074.561
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
     },
     {
       "relative_path": "products.html",
       "type": "text",
-      "strategy": "pre_lz77_huffman_text",
-      "compressed_path": "output\\compressed\\products.html.bin",
-      "restored_success": true,
-      "compress_time_ms": 1006.505
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
     },
     {
       "relative_path": "services.html",
       "type": "text",
-      "strategy": "pre_lz77_huffman_text",
-      "compressed_path": "output\\compressed\\services.html.bin",
-      "restored_success": true,
-      "compress_time_ms": 694.018
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
     },
     {
-      "relative_path": "css\\base.css",
+      "relative_path": "css/base.css",
       "type": "text",
-      "strategy": "pre_lz77_huffman_text",
-      "compressed_path": "output\\compressed\\css\\base.css.bin",
-      "restored_success": true,
-      "compress_time_ms": 290.439
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
     },
     {
-      "relative_path": "css\\components.css",
+      "relative_path": "css/components.css",
       "type": "text",
-      "strategy": "pre_lz77_huffman_text",
-      "compressed_path": "output\\compressed\\css\\components.css.bin",
-      "restored_success": true,
-      "compress_time_ms": 513.995
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
     },
     {
-      "relative_path": "css\\layout.css",
+      "relative_path": "css/layout.css",
       "type": "text",
-      "strategy": "pre_lz77_huffman_text",
-      "compressed_path": "output\\compressed\\css\\layout.css.bin",
-      "restored_success": true,
-      "compress_time_ms": 286.616
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
     },
     {
-      "relative_path": "css\\reset.css",
+      "relative_path": "css/reset.css",
       "type": "text",
-      "strategy": "store_original_text",
-      "compressed_path": "output\\compressed\\css\\reset.css.bin",
-      "restored_success": true,
-      "compress_time_ms": 43.067
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
     },
     {
-      "relative_path": "css\\theme.css",
+      "relative_path": "css/theme.css",
       "type": "text",
-      "strategy": "store_original_text",
-      "compressed_path": "output\\compressed\\css\\theme.css.bin",
-      "restored_success": true,
-      "compress_time_ms": 141.603
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
     },
     {
-      "relative_path": "images\\avatar1.jpg",
+      "relative_path": "js/app.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "js/data.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "js/dom.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "js/gallery.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "js/utils.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "images/avatar1.jpg",
       "type": "image",
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\avatar1.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 3.856
+      "compress_time_ms": 4.577
     },
     {
-      "relative_path": "images\\avatar2.jpg",
+      "relative_path": "images/avatar2.jpg",
       "type": "image",
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\avatar2.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 3.223
+      "compress_time_ms": 3.931
     },
     {
-      "relative_path": "images\\avatar3.jpg",
+      "relative_path": "images/avatar3.jpg",
       "type": "image",
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\avatar3.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 3.557
+      "compress_time_ms": 3.766
     },
     {
-      "relative_path": "images\\banner.jpg",
+      "relative_path": "images/banner.jpg",
       "type": "image",
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\banner.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 14.69
+      "compress_time_ms": 15.263
     },
     {
-      "relative_path": "images\\bg.png",
+      "relative_path": "images/bg.png",
       "type": "image",
       "strategy": "png_optimize",
       "compressed_path": "output\\compressed\\images\\bg.png.png",
       "restored_success": true,
-      "compress_time_ms": 123.355
+      "compress_time_ms": 140.12
     },
     {
-      "relative_path": "images\\gallery1.jpg",
+      "relative_path": "images/gallery1.jpg",
       "type": "image",
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\gallery1.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 14.472
+      "compress_time_ms": 14.37
     },
     {
-      "relative_path": "images\\gallery2.jpg",
+      "relative_path": "images/gallery2.jpg",
       "type": "image",
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\gallery2.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 14.843
+      "compress_time_ms": 12.289
     },
     {
-      "relative_path": "images\\logo.png",
+      "relative_path": "images/logo.png",
       "type": "image",
       "strategy": "png_optimize",
       "compressed_path": "output\\compressed\\images\\logo.png.png",
       "restored_success": true,
-      "compress_time_ms": 26.612
-    },
-    {
-      "relative_path": "js\\app.js",
-      "type": "text",
-      "strategy": "pre_lz77_huffman_text",
-      "compressed_path": "output\\compressed\\js\\app.js.bin",
-      "restored_success": true,
-      "compress_time_ms": 3874.9
-    },
-    {
-      "relative_path": "js\\data.js",
-      "type": "text",
-      "strategy": "pre_lz77_huffman_text",
-      "compressed_path": "output\\compressed\\js\\data.js.bin",
-      "restored_success": true,
-      "compress_time_ms": 1345.91
-    },
-    {
-      "relative_path": "js\\dom.js",
-      "type": "text",
-      "strategy": "pre_lz77_huffman_text",
-      "compressed_path": "output\\compressed\\js\\dom.js.bin",
-      "restored_success": true,
-      "compress_time_ms": 584.025
-    },
-    {
-      "relative_path": "js\\gallery.js",
-      "type": "text",
-      "strategy": "pre_lz77_huffman_text",
-      "compressed_path": "output\\compressed\\js\\gallery.js.bin",
-      "restored_success": true,
-      "compress_time_ms": 332.113
-    },
-    {
-      "relative_path": "js\\utils.js",
-      "type": "text",
-      "strategy": "pre_lz77_huffman_text",
-      "compressed_path": "output\\compressed\\js\\utils.js.bin",
-      "restored_success": true,
-      "compress_time_ms": 1104.392
+      "compress_time_ms": 25.194
     }
   ]
 }
