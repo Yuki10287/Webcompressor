@@ -11,9 +11,9 @@ class TextCompressor:
     def __init__(self):
         self.huffman_codec = HuffmanCodec()
         self.lz77_codec = LZ77Codec(
-            window_size=2048,
-            lookahead_size=64,
-            min_match=3
+            window_size=8192,
+            lookahead_size=127,
+            min_match=4
         )
         self.preprocessor_manager = TextPreprocessorManager()
 
