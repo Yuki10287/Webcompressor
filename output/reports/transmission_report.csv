@@ -1,0 +1,10 @@
+﻿sample_name,network,bandwidth_mbps,original_transfer_s,system_transfer_s,zip_transfer_s,tar_gzip_transfer_s,system_saved_s,system_improvement_rate
+demo_site,4G_10Mbps,10,0.504478,0.370714,0.440815,0.440509,0.133763,26.52
+demo_site,WiFi_50Mbps,50,0.100896,0.074143,0.088163,0.088102,0.026753,26.52
+demo_site,5G_200Mbps,200,0.025224,0.018536,0.022041,0.022025,0.006688,26.52
+benchmark_site_basic,4G_10Mbps,10,0.098014,0.035548,0.028503,0.025890,0.062466,63.73
+benchmark_site_basic,WiFi_50Mbps,50,0.019603,0.007110,0.005701,0.005178,0.012493,63.73
+benchmark_site_basic,5G_200Mbps,200,0.004901,0.001777,0.001425,0.001294,0.003123,63.73
+benchmark_site_rich,4G_10Mbps,10,0.408583,0.165104,0.183570,0.171542,0.243479,59.59
+benchmark_site_rich,WiFi_50Mbps,50,0.081717,0.033021,0.036714,0.034308,0.048696,59.59
+benchmark_site_rich,5G_200Mbps,200,0.020429,0.008255,0.009178,0.008577,0.012174,59.59

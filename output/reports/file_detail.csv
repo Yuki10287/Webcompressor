@@ -1,0 +1,61 @@
+﻿sample_name,relative_path,resource_type,original_size,compressed_size,compression_rate,strategy,note
+demo_site,about.html,text,377,403,-6.90,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+demo_site,index.html,text,647,692,-6.96,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+demo_site,css/layout.css,text,176,188,-6.82,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+demo_site,css/style.css,text,175,187,-6.86,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+demo_site,js/app.js,text,88,94,-6.82,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+demo_site,js/utils.js,text,110,117,-6.36,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+demo_site,images/avatar.jpg,image,44258,36285,18.01,jpeg_quality,图片为可控质量压缩，恢复后保证可渲染
+demo_site,images/banner.jpg,image,45506,18027,60.39,jpeg_quality,图片为可控质量压缩，恢复后保证可渲染
+demo_site,images/bg.png,image,270449,204150,24.51,png_optimize,图片为可控质量压缩，恢复后保证可渲染
+demo_site,images/logo.png,image,268811,203247,24.39,png_optimize,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_basic,about.html,text,5593,1327,76.27,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,contact.html,text,7873,1869,76.26,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,index.html,text,9407,2233,76.26,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,products.html,text,5008,1188,76.28,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,css/base.css,text,2201,522,76.28,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,css/components.css,text,3115,739,76.28,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,css/layout.css,text,2858,678,76.28,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,js/app.js,text,7567,1796,76.27,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,js/data.js,text,14890,3534,76.27,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,js/utils.js,text,1770,420,76.27,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,images/avatar.jpg,image,6447,3157,51.03,jpeg_quality,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_basic,images/banner.jpg,image,40930,14023,65.74,jpeg_quality,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_basic,images/bg.png,image,12142,10822,10.87,png_optimize,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_basic,images/logo.png,image,2716,2122,21.87,png_optimize,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_rich,about.html,text,4458,1491,66.55,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,blog.html,text,15374,5143,66.55,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,contact.html,text,5754,1924,66.56,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,docs.html,text,14930,4994,66.55,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,faq.html,text,17070,5710,66.55,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,gallery.html,text,4099,1371,66.55,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,index.html,text,5740,1920,66.55,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,pricing.html,text,14971,5008,66.55,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,products.html,text,4375,1463,66.56,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,services.html,text,4001,1338,66.56,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,css/animation.css,text,4793,1603,66.56,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,css/base.css,text,1507,504,66.56,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,css/components.css,text,2104,703,66.59,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,css/forms.css,text,6072,2031,66.55,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,css/layout.css,text,2073,693,66.57,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,css/reset.css,text,402,134,66.67,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,css/theme.css,text,1020,341,66.57,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,js/app.js,text,8072,2700,66.55,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,js/charts.js,text,6661,2228,66.55,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,js/data.js,text,2794,934,66.57,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,js/dom.js,text,3376,1129,66.56,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,js/gallery.js,text,1856,620,66.59,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,js/search.js,text,7992,2673,66.55,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,js/utils.js,text,2893,967,66.57,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_rich,images/avatar1.jpg,image,6275,3054,51.33,jpeg_quality,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_rich,images/avatar2.jpg,image,6267,3085,50.77,jpeg_quality,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_rich,images/avatar3.jpg,image,5933,2957,50.16,jpeg_quality,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_rich,images/banner.jpg,image,45531,16021,64.81,jpeg_quality,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_rich,images/bg.png,image,16224,14430,11.06,png_optimize,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_rich,images/card_bg.png,image,14758,12094,18.05,png_optimize,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_rich,images/gallery1.jpg,image,48518,15900,67.23,jpeg_quality,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_rich,images/gallery2.jpg,image,46707,14176,69.65,jpeg_quality,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_rich,images/gallery3.jpg,image,89448,36662,59.01,jpeg_quality,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_rich,images/gallery4.jpg,image,76255,29421,61.42,jpeg_quality,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_rich,images/hero_pattern.png,image,9714,8825,9.15,png_optimize,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_rich,images/logo.png,image,2712,2120,21.83,png_optimize,图片为可控质量压缩，恢复后保证可渲染
