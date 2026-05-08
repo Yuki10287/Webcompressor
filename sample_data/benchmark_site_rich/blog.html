@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Site Rich - 博客资讯</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body data-page="blog">
+<div class="page-shell">
+    <div class="announcement-bar">
+        <div class="container">博客页包含大量文章卡片、分类列表、归档列表与订阅表单，用于测试重复文本、重复标签和重复结构的压缩效果。</div>
+    </div>
+    <header class="site-header">
+        <div class="container header-row">
+            <a class="brand-link" href="index.html"><img src="images/logo.png" alt="logo"><span>Benchmark Rich</span></a>
+            <nav class="site-nav">
+                <ul class="nav-list">
+                    <li><a data-nav href="index.html">首页</a></li>
+                    <li><a data-nav href="about.html">关于</a></li>
+                    <li><a data-nav href="services.html">服务</a></li>
+                    <li><a data-nav href="products.html">产品</a></li>
+                    <li><a data-nav href="gallery.html">画廊</a></li>
+                    <li><a data-nav href="blog.html">博客</a></li>
+                    <li><a data-nav href="docs.html">文档</a></li>
+                    <li><a data-nav href="pricing.html">套餐</a></li>
+                    <li><a data-nav href="faq.html">问答</a></li>
+                    <li><a data-nav href="contact.html">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section hero-pattern-panel">
+            <div class="container split-layout">
+                <div class="fade-in">
+                    <p class="eyebrow">blog / repeatable content / static benchmark</p>
+                    <h1 class="section-title">博客与资讯中心</h1>
+                    <p class="section-subtitle">页面保留重复的文章卡片、重复的元信息行、重复的摘要段落和重复的操作按钮，用于观察网页压缩前后在真实信息页面中的文本收敛情况。</p>
+                    <p class="section-text">为了更接近真实站点，这个页面混合了栏目导航、文章流、侧边栏、归档目录和订阅表单。段落内容刻意相似但不完全相同，便于测试词组复用、标签复用和结构复用。</p>
+                    <div class="button-group">
+                        <a class="button button-primary scale-hover" href="docs.html">查看文档</a>
+                        <a class="button button-secondary scale-hover" href="faq.html">浏览问答</a>
+                    </div>
+                </div>
+                <div class="hero-card glass-card float-slow">
+                    <img class="hero-image" src="images/gallery3.jpg" alt="博客页横幅">
+                </div>
+            </div>
+        </section>
+        <section class="section-block">
+            <div class="container docs-layout">
+                <div class="content-column">
+                    <div class="section-heading">
+                        <h2 class="section-title">最新文章</h2>
+                        <p class="section-subtitle">十二篇文章采用统一卡片结构，方便观察长文本与重复标签在压缩前后的差异。</p>
+                    </div>
+                    <div class="article-list">
+                        <article class="article-card fade-in" data-search-card data-tags="资源扫描 页面压缩 调度"><span class="article-tag">资源扫描</span><h3 class="article-title">静态资源扫描阶段如何减少重复路径解析</h3><p class="article-meta">2026-05-01 · 编辑部 · 资源分析</p><p class="article-summary">在资源扫描阶段，页面会遍历 HTML、CSS、JS 与图片引用。本文以重复链接、重复目录和重复路径规则为例，说明如何在不改变站点行为的前提下整理输入数据，并让扫描结果更适合进入后续压缩流程。</p><a class="read-more" href="docs.html#docs-section-1">继续阅读</a></article>
+                        <article class="article-card fade-in" data-search-card data-tags="文本压缩 重复结构 HTML"><span class="article-tag">文本压缩</span><h3 class="article-title">重复 HTML 结构为何适合做网页压缩基准</h3><p class="article-meta">2026-05-02 · 编辑部 · 结构设计</p><p class="article-summary">真实网页往往存在重复的导航、页脚、卡片、按钮和表单。本文讨论为什么保留这些结构比刻意构造随机文本更有意义，并说明相似但不完全相同的描述如何帮助观察压缩算法对重复模板的利用程度。</p><a class="read-more" href="docs.html#docs-section-2">继续阅读</a></article>
+                        <article class="article-card fade-in" data-search-card data-tags="传输优化 资源包 体积"><span class="article-tag">传输优化</span><h3 class="article-title">在总大小受限时组织资源包的几个策略</h3><p class="article-meta">2026-05-03 · 编辑部 · 传输优化</p><p class="article-summary">当站点总大小需要控制在五十兆以内时，图片尺寸、重复纹理和脚本体量都要兼顾。本文总结如何让页面数量、图片数量和文本总量同时上升，而资源总体积仍保持稳定，适合本地压缩实验反复运行。</p><a class="read-more" href="pricing.html#comparison-table">继续阅读</a></article>
+                        <article class="article-card fade-in" data-search-card data-tags="恢复验证 校验流程 结果一致性"><span class="article-tag">恢复验证</span><h3 class="article-title">恢复流程中的路径校验与一致性检查</h3><p class="article-meta">2026-05-04 · 编辑部 · 恢复流程</p><p class="article-summary">恢复页面时最常见的问题不是算法错误，而是路径错误、引用遗漏和目录层级不一致。本文用接近真实网页的案例说明，为什么恢复后的本地打开测试必须覆盖导航、图片、表单和重复页脚链接。</p><a class="read-more" href="faq.html#faq-item-4">继续阅读</a></article>
+                        <article class="article-card fade-in" data-search-card data-tags="图像压缩 调色板 本地资源"><span class="article-tag">图像压缩</span><h3 class="article-title">本地生成的抽象图像为什么适合压缩测试</h3><p class="article-meta">2026-05-05 · 编辑部 · 图像策略</p><p class="article-summary">抽象渐变图、几何图和纹理背景既能提供足够多的像素信息，又能避免网络下载带来的不确定性。本文比较不同色调、不同尺寸和不同图案的图片在本地生成后的稳定性，说明它们为何适合反复测试。</p><a class="read-more" href="gallery.html">继续阅读</a></article>
+                        <article class="article-card fade-in" data-search-card data-tags="表单 搜索 交互"><span class="article-tag">交互设计</span><h3 class="article-title">轻量搜索与高亮逻辑如何丰富静态样本站</h3><p class="article-meta">2026-05-06 · 编辑部 · 页面行为</p><p class="article-summary">即使不引入第三方框架，静态页面也可以用原生脚本补充搜索、统计摘要和关键字高亮。本文用统一的搜索函数演示如何在多个页面上复用选择器、类名和数据属性，同时保持代码结构简单清晰。</p><a class="read-more" href="faq.html">继续阅读</a></article>
+                        <article class="article-card fade-in" data-search-card data-tags="日志 数据复用 图表"><span class="article-tag">图表模拟</span><h3 class="article-title">不依赖第三方库时如何表达压缩结果趋势</h3><p class="article-meta">2026-05-07 · 编辑部 · 结果展示</p><p class="article-summary">很多测试页面并不需要复杂图表引擎，只需要条形图、图例和百分比计算即可。本文展示一种完全基于 DOM 的实现方式，让页面能表达压缩率、传输率和阶段对比，同时保留重复节点结构供算法测试。</p><a class="read-more" href="docs.html#docs-section-7">继续阅读</a></article>
+                        <article class="article-card fade-in" data-search-card data-tags="FAQ 数据结构 页面恢复"><span class="article-tag">数据结构</span><h3 class="article-title">FAQ 与目录列表如何增加重复文本密度</h3><p class="article-meta">2026-05-08 · 编辑部 · 样本扩展</p><p class="article-summary">FAQ、目录列表和套餐对比表都拥有高密度的重复字段，例如标题、说明、标签和链接。这类内容既像真实站点，也能稳定增加压缩测试所需的重复模式，因此常被作为进阶网页样本的基础组成部分。</p><a class="read-more" href="pricing.html#pricing-grid">继续阅读</a></article>
+                        <article class="article-card fade-in" data-search-card data-tags="导航 页脚 链接一致性"><span class="article-tag">导航结构</span><h3 class="article-title">统一导航与页脚链接的维护注意事项</h3><p class="article-meta">2026-05-09 · 编辑部 · 链接管理</p><p class="article-summary">一旦页面数量增长，导航和页脚就会成为最容易出现漏改的位置。本文说明为什么新增页面时要同时更新顶部导航和底部链接，并在多个 HTML 文件中保留统一结构，以便本地恢复和跳转检查更稳定。</p><a class="read-more" href="contact.html">继续阅读</a></article>
+                        <article class="article-card fade-in" data-search-card data-tags="CSS 组件 阴影"><span class="article-tag">样式复用</span><h3 class="article-title">样式文件拆分后如何保留组件重复性</h3><p class="article-meta">2026-05-10 · 编辑部 · 样式策略</p><p class="article-summary">把动画、表单和基础主题拆成多个 CSS 文件，可以增加文本文件数量，也能保留大量重复属性。本文解释为什么 display、gap、padding、margin、border 和 box-shadow 这类属性在样式测试中值得重复出现。</p><a class="read-more" href="docs.html#docs-section-5">继续阅读</a></article>
+                        <article class="article-card fade-in" data-search-card data-tags="JavaScript DOM classList dataset"><span class="article-tag">脚本组织</span><h3 class="article-title">原生脚本中重复使用 dataset 与 classList 的意义</h3><p class="article-meta">2026-05-11 · 编辑部 · 脚本结构</p><p class="article-summary">为了形成真实而重复的脚本文本，搜索与图表模块会频繁使用 dataset、classList、querySelector 和 addEventListener。这些 API 既反映常见页面逻辑，也能让文本压缩算法接触到更有代表性的源码片段。</p><a class="read-more" href="docs.html#docs-section-8">继续阅读</a></article>
+                        <article class="article-card fade-in" data-search-card data-tags="本地打开 资源路径 离线"><span class="article-tag">离线运行</span><h3 class="article-title">保证所有页面可本地打开的最低要求</h3><p class="article-meta">2026-05-12 · 编辑部 · 离线约束</p><p class="article-summary">只要页面全部使用相对路径、本地图片、本地脚本和本地样式，就可以脱离网络直接打开。本文梳理离线站点的关键约束，并总结如何避免 CDN、远程字体、远程脚本和远程图片带来的不可控因素。</p><a class="read-more" href="index.html">继续阅读</a></article>
+                    </div>
+                </div>
+                <aside class="sidebar">
+                    <div class="sidebar-panel slide-up"><h3 class="sidebar-title">栏目分类</h3><a class="category-item" href="blog.html">资源扫描</a><a class="category-item" href="blog.html">文本压缩</a><a class="category-item" href="blog.html">传输优化</a><a class="category-item" href="blog.html">恢复验证</a><a class="category-item" href="blog.html">图像压缩</a><a class="category-item" href="blog.html">交互设计</a><a class="category-item" href="blog.html">图表模拟</a><a class="category-item" href="blog.html">离线运行</a></div>
+                    <div class="sidebar-panel slide-up"><h3 class="sidebar-title">归档月份</h3><a class="archive-item" href="blog.html">2026 年 05 月</a><a class="archive-item" href="blog.html">2026 年 04 月</a><a class="archive-item" href="blog.html">2026 年 03 月</a><a class="archive-item" href="blog.html">2026 年 02 月</a><a class="archive-item" href="blog.html">2026 年 01 月</a><a class="archive-item" href="blog.html">2025 年 12 月</a><a class="archive-item" href="blog.html">2025 年 11 月</a><a class="archive-item" href="blog.html">2025 年 10 月</a></div>
+                    <div class="sidebar-panel slide-up">
+                        <h3 class="sidebar-title">订阅更新</h3>
+                        <form class="newsletter-form form-panel" data-validate-form>
+                            <div class="form-group"><label class="form-label" for="blog-news-name">姓名</label><input class="form-input" id="blog-news-name" name="name" type="text" placeholder="请输入姓名"></div>
+                            <div class="form-group"><label class="form-label" for="blog-news-email">邮箱</label><input class="form-input" id="blog-news-email" name="email" type="email" placeholder="name@example.com"></div>
+                            <div class="checkbox-row"><label><input type="checkbox" checked> 接收站点扩展通知</label></div>
+                            <div class="submit-row"><button class="button button-primary pulse-soft" type="submit">订阅博客</button></div>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-layout">
+            <div class="footer-column"><h3>Benchmark Rich</h3><p>博客页保留大量重复的文章卡片、重复的栏目结构和重复的订阅组件，适合作为网页压缩系统中的文本型样本页面。</p></div>
+            <div class="footer-column"><a class="footer-link" href="index.html">首页</a><a class="footer-link" href="about.html">关于</a><a class="footer-link" href="services.html">服务</a><a class="footer-link" href="products.html">产品</a><a class="footer-link" href="gallery.html">画廊</a></div>
+            <div class="footer-column"><a class="footer-link" href="blog.html">博客</a><a class="footer-link" href="docs.html">文档</a><a class="footer-link" href="pricing.html">套餐</a><a class="footer-link" href="faq.html">问答</a><a class="footer-link" href="contact.html">联系</a></div>
+        </div>
+    </footer>
+</div>
+<script src="js/data.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/dom.js"></script>
+<script src="js/app.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

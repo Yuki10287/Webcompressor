@@ -1,87 +1,201 @@
 {
-  "project_root": "C:/Users/15591/PycharmProjects/Webcompressor/sample_data/benchmark_site_basic",
+  "project_root": "C:/Users/15591/PycharmProjects/Webcompressor/sample_data/benchmark_site_rich",
   "text_bundle_enabled": true,
-  "text_bundle_original_size": 60282,
-  "text_bundle_compressed_size": 14311,
-  "text_bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
+  "text_bundle_original_size": 142387,
+  "text_bundle_compressed_size": 47636,
+  "text_bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
   "files": [
     {
       "relative_path": "about.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "blog.html",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "contact.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "docs.html",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "faq.html",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "gallery.html",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "index.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "pricing.html",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "products.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "services.html",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "css/animation.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "css/base.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "css/components.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "css/forms.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "css/layout.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "css/reset.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "css/theme.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "js/app.js",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "js/charts.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "js/data.js",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "js/dom.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "js/gallery.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "js/search.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true
     },
     {
       "relative_path": "js/utils.js",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "images/avatar.jpg",
+      "relative_path": "images/avatar1.jpg",
       "type": "image",
       "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\avatar.jpg.jpg",
+      "compressed_path": "output\\compressed\\images\\avatar1.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 50.74
+      "compress_time_ms": 59.68
+    },
+    {
+      "relative_path": "images/avatar2.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\avatar2.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 2.867
+    },
+    {
+      "relative_path": "images/avatar3.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\avatar3.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 3.956
     },
     {
       "relative_path": "images/banner.jpg",
@@ -89,7 +203,7 @@
       "strategy": "jpeg_quality",
       "compressed_path": "output\\compressed\\images\\banner.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 11.129
+      "compress_time_ms": 15.452
     },
     {
       "relative_path": "images/bg.png",
@@ -97,7 +211,55 @@
       "strategy": "png_optimize",
       "compressed_path": "output\\compressed\\images\\bg.png.png",
       "restored_success": true,
-      "compress_time_ms": 96.169
+      "compress_time_ms": 121.805
+    },
+    {
+      "relative_path": "images/card_bg.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\images\\card_bg.png.png",
+      "restored_success": true,
+      "compress_time_ms": 103.55
+    },
+    {
+      "relative_path": "images/gallery1.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\gallery1.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 9.586
+    },
+    {
+      "relative_path": "images/gallery2.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\gallery2.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 9.811
+    },
+    {
+      "relative_path": "images/gallery3.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\gallery3.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 11.417
+    },
+    {
+      "relative_path": "images/gallery4.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\gallery4.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 10.827
+    },
+    {
+      "relative_path": "images/hero_pattern.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\images\\hero_pattern.png.png",
+      "restored_success": true,
+      "compress_time_ms": 87.031
     },
     {
       "relative_path": "images/logo.png",
@@ -105,7 +267,7 @@
       "strategy": "png_optimize",
       "compressed_path": "output\\compressed\\images\\logo.png.png",
       "restored_success": true,
-      "compress_time_ms": 20.929
+      "compress_time_ms": 18.929
     }
   ]
 }

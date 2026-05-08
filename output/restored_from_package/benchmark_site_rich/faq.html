@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Site Rich - 常见问题</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body data-page="faq">
+<div class="page-shell">
+    <div class="announcement-bar"><div class="container">问答页包含搜索面板、二十四条 FAQ、帮助卡片和联系说明，是高密度重复文本与重复交互结构的典型样本。</div></div>
+    <header class="site-header">
+        <div class="container header-row">
+            <a class="brand-link" href="index.html"><img src="images/logo.png" alt="logo"><span>Benchmark Rich</span></a>
+            <nav class="site-nav">
+                <ul class="nav-list">
+                    <li><a data-nav href="index.html">首页</a></li>
+                    <li><a data-nav href="about.html">关于</a></li>
+                    <li><a data-nav href="services.html">服务</a></li>
+                    <li><a data-nav href="products.html">产品</a></li>
+                    <li><a data-nav href="gallery.html">画廊</a></li>
+                    <li><a data-nav href="blog.html">博客</a></li>
+                    <li><a data-nav href="docs.html">文档</a></li>
+                    <li><a data-nav href="pricing.html">套餐</a></li>
+                    <li><a data-nav href="faq.html">问答</a></li>
+                    <li><a data-nav href="contact.html">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section hero-pattern-panel">
+            <div class="container split-layout">
+                <div><p class="eyebrow">faq / local search / repeated answers</p><h1 class="section-title">常见问题与检索中心</h1><p class="section-subtitle">围绕网页压缩、资源恢复、图片压缩、传输优化和数据结构整理出二十四条问答，保持统一问答结构并附加搜索能力。</p><p class="section-text">每条回答都采用两到三句话，内容自然、结构重复、字段统一，适合作为文本压缩与恢复测试中的问答型样本。</p></div>
+                <div class="hero-card glass-card"><img class="hero-image" src="images/gallery4.jpg" alt="FAQ 横幅"></div>
+            </div>
+        </section>
+        <section class="section-block">
+            <div class="container stack-lg">
+                <div class="search-panel form-panel"><div class="form-row"><div class="form-group grow"><label class="form-label" for="faq-search-input">搜索问题</label><input class="search-input form-input" id="faq-search-input" data-search-input type="search" placeholder="输入关键字，例如 压缩、恢复、路径、图片、图表"></div><div class="submit-row"><button class="button button-primary" data-search-clear type="button">清除搜索</button></div></div><div class="search-summary" data-search-summary>请输入关键字筛选 FAQ 内容。</div></div>
+                <div class="faq-list" id="faq-list">
+                    <article class="faq-item" id="faq-item-1" data-search-card data-tags="网页压缩 文本结构 导航"><h3 class="faq-question">网页压缩样本为什么要保留大量重复结构？</h3><p class="faq-answer">因为真实网页天然包含重复导航、重复页脚、重复卡片和重复按钮。保留这些结构可以让压缩算法面对更真实的输入，而不是被随机文本误导。</p><span class="faq-tag">网页压缩</span></article>
+                    <article class="faq-item" id="faq-item-2" data-search-card data-tags="资源恢复 路径 图片"><h3 class="faq-question">恢复后的页面最容易在哪些地方出错？</h3><p class="faq-answer">最常见的是相对路径错误，例如图片路径、样式路径和脚本路径写错层级。其次是导航链接漏改，导致新页面无法从其他页面跳转过去。</p><span class="faq-tag">资源恢复</span></article>
+                    <article class="faq-item" id="faq-item-3" data-search-card data-tags="图片压缩 本地生成 Pillow"><h3 class="faq-question">为什么图片要本地生成而不是下载素材？</h3><p class="faq-answer">本地生成可以保证资源稳定、可重复、无网络依赖。对课程实验和离线打开来说，这比下载外部素材更可控，也更容易统一体积。</p><span class="faq-tag">图片压缩</span></article>
+                    <article class="faq-item" id="faq-item-4" data-search-card data-tags="传输优化 大小 控制"><h3 class="faq-question">如何在增加页面和图片的同时控制总大小？</h3><p class="faq-answer">关键是使用适中的图片尺寸和可压缩的抽象图案，并避免无意义的大体积资源。文本页面数量增加并不会显著推动体积上升，通常瓶颈仍在图片资源。</p><span class="faq-tag">传输优化</span></article>
+                    <article class="faq-item" id="faq-item-5" data-search-card data-tags="数据结构 FAQ 列表"><h3 class="faq-question">FAQ 为什么适合作为压缩测试内容？</h3><p class="faq-answer">FAQ 具有高度重复的标题、答案和标签结构，同时每条内容又存在轻微差异。这样既保留真实网页形态，也能为文本压缩提供稳定的重复模式。</p><span class="faq-tag">数据结构</span></article>
+                    <article class="faq-item" id="faq-item-6" data-search-card data-tags="搜索 关键字 高亮"><h3 class="faq-question">页面搜索需要多复杂才有价值？</h3><p class="faq-answer">不需要复杂。只要能够完成关键字归一化、卡片过滤和匹配高亮，就足以形成真实的前端脚本结构，并帮助检查本地页面交互是否正常。</p><span class="faq-tag">搜索模块</span></article>
+                    <article class="faq-item" id="faq-item-7" data-search-card data-tags="图表 DOM 条形图"><h3 class="faq-question">不引入第三方图表库会不会太简陋？</h3><p class="faq-answer">不会。对于样本站点来说，只要能表达压缩率和传输率的相对关系，原生 DOM 条形图已经足够。这样还能避免外部依赖，提高离线可用性。</p><span class="faq-tag">图表展示</span></article>
+                    <article class="faq-item" id="faq-item-8" data-search-card data-tags="本地打开 CDN 外部资源"><h3 class="faq-question">为什么必须避免 CDN 与外部链接？</h3><p class="faq-answer">因为题目要求所有页面都能本地打开。只要存在 CDN 或远程脚本，离线环境下页面就可能失效，压缩和恢复测试也会掺入不相关变量。</p><span class="faq-tag">离线约束</span></article>
+                    <article class="faq-item" id="faq-item-9" data-search-card data-tags="HTML 结构 组件"><h3 class="faq-question">新增页面应该优先补什么内容？</h3><p class="faq-answer">优先补真实网页常见的结构，例如博客、文档、价格页和问答页。这样不仅能增加文件数量，也能增加可重复的标题、段落、表单和列表结构。</p><span class="faq-tag">页面扩展</span></article>
+                    <article class="faq-item" id="faq-item-10" data-search-card data-tags="CSS 样式 拆分"><h3 class="faq-question">为什么新增两个 CSS 文件而不是把内容塞进原文件？</h3><p class="faq-answer">因为文件拆分本身就是样本站点规模的一部分，同时还能保留更多重复的样式属性。对于压缩算法来说，多文件场景往往比单文件更接近真实输入。</p><span class="faq-tag">样式拆分</span></article>
+                    <article class="faq-item" id="faq-item-11" data-search-card data-tags="JS 模块 原生脚本"><h3 class="faq-question">为什么新脚本要求挂到 window 上？</h3><p class="faq-answer">这是为了让脚本能直接在本地 HTML 中引用，不依赖模块打包工具。挂到 window 上也更符合纯静态站点的简单使用方式。</p><span class="faq-tag">脚本组织</span></article>
+                    <article class="faq-item" id="faq-item-12" data-search-card data-tags="表单 验证 邮件"><h3 class="faq-question">FAQ 页还需要表单样式吗？</h3><p class="faq-answer">需要，因为搜索面板和订阅面板都会复用表单结构。统一的输入框、标签和按钮样式能增加样式重复度，并提升页面的一致性。</p><span class="faq-tag">表单样式</span></article>
+                    <article class="faq-item" id="faq-item-13" data-search-card data-tags="footer 链接 重复"><h3 class="faq-question">页脚为什么也要加入所有新链接？</h3><p class="faq-answer">因为真实网站往往在页脚保留完整导航。这样不仅方便本地检查跳转完整性，也会带来重复链接文本和重复 DOM 结构。</p><span class="faq-tag">页脚导航</span></article>
+                    <article class="faq-item" id="faq-item-14" data-search-card data-tags="导航 统一 页面"><h3 class="faq-question">顶部导航必须所有页面都一致吗？</h3><p class="faq-answer">最好一致。统一导航能降低断链风险，也让样本站点更像一个完整产品，而不是临时拼接的页面集合。</p><span class="faq-tag">顶部导航</span></article>
+                    <article class="faq-item" id="faq-item-15" data-search-card data-tags="归档 分类 重复文本"><h3 class="faq-question">为什么博客页还要加分类和归档？</h3><p class="faq-answer">分类和归档是博客类站点很常见的重复区块。它们能稳定增加短文本重复、链接重复和列表结构重复。</p><span class="faq-tag">博客结构</span></article>
+                    <article class="faq-item" id="faq-item-16" data-search-card data-tags="文档 伪代码 长文本"><h3 class="faq-question">文档页里的伪代码有什么作用？</h3><p class="faq-answer">伪代码可以增加另一类文本模式，让样本站点不仅有自然语言，也有接近源码的内容。这样更适合观察压缩算法面对混合文本时的表现。</p><span class="faq-tag">文档内容</span></article>
+                    <article class="faq-item" id="faq-item-17" data-search-card data-tags="套餐 对比表 商业页面"><h3 class="faq-question">价格页为什么值得加入基准站点？</h3><p class="faq-answer">价格页天然包含价格字段、特性列表、对比表和问答说明。它既是常见网页形态，也会产生大量重复字段和重复容器。</p><span class="faq-tag">价格结构</span></article>
+                    <article class="faq-item" id="faq-item-18" data-search-card data-tags="画廊 图片 横幅"><h3 class="faq-question">新增图片为什么选择画廊图和背景图？</h3><p class="faq-answer">因为这两类图片最常出现在静态站点里，而且容易通过抽象图案生成。它们既能提升页面观感，也能补齐图片数量要求。</p><span class="faq-tag">图片资源</span></article>
+                    <article class="faq-item" id="faq-item-19" data-search-card data-tags="UTF-8 编码 文本"><h3 class="faq-question">为什么特别强调 UTF-8 编码？</h3><p class="faq-answer">因为新增中文页面如果编码不一致，容易在本地打开时出现乱码。统一 UTF-8 可以保证 HTML、CSS 和 JS 文本稳定可读。</p><span class="faq-tag">编码规范</span></article>
+                    <article class="faq-item" id="faq-item-20" data-search-card data-tags="重复 class 组件 测试"><h3 class="faq-question">重复 class 名真的有测试价值吗？</h3><p class="faq-answer">有。重复 class 名能反映真实网页组件的复用程度，同时也会直接影响文本压缩算法对源码模式的识别效率。</p><span class="faq-tag">重复结构</span></article>
+                    <article class="faq-item" id="faq-item-21" data-search-card data-tags="恢复 校验 文件数"><h3 class="faq-question">最终检查为什么要输出文件数量？</h3><p class="faq-answer">因为文件数量是题目要求的一部分，不能只凭感觉判断。明确输出文本文件数量和图片数量，才能证明样本规模已经满足目标。</p><span class="faq-tag">最终检查</span></article>
+                    <article class="faq-item" id="faq-item-22" data-search-card data-tags="总大小 50MB 约束"><h3 class="faq-question">如何确认总大小仍在限制内？</h3><p class="faq-answer">最直接的方法是统计目录总大小。通常这类静态样本站点的主要体积来自图片，只要控制图片尺寸和压缩质量，五十兆上限并不难满足。</p><span class="faq-tag">体积控制</span></article>
+                    <article class="faq-item" id="faq-item-23" data-search-card data-tags="运行脚本 Pillow 资源生成"><h3 class="faq-question">资源生成脚本需要保留旧逻辑吗？</h3><p class="faq-answer">需要。新增逻辑应该在原脚本基础上追加，不能破坏已有的 basic 和 rich 图片生成流程，否则会影响旧样本目录的完整性。</p><span class="faq-tag">脚本兼容</span></article>
+                    <article class="faq-item" id="faq-item-24" data-search-card data-tags="本地页面 相对路径 校验"><h3 class="faq-question">确认页面可本地打开时重点看什么？</h3><p class="faq-answer">重点看页面能否渲染样式、脚本是否报错、图片是否显示以及导航链接是否跳转成功。这些检查组合起来，才能说明恢复后的站点真正可用。</p><span class="faq-tag">本地校验</span></article>
+                </div>
+                <div class="card-grid card-grid-4"><article class="help-card"><h3 class="help-title">资源帮助</h3><p class="help-text">查看资源扫描、文件统计和路径整理建议，适合补齐新增页面后的初步检查。</p></article><article class="help-card"><h3 class="help-title">压缩帮助</h3><p class="help-text">查看重复文本、重复样式和重复脚本的组织方式，适合观察压缩收益来源。</p></article><article class="help-card"><h3 class="help-title">恢复帮助</h3><p class="help-text">查看本地打开、路径正确性和资源落盘检查，适合恢复后验证站点完整性。</p></article><article class="help-card"><h3 class="help-title">图片帮助</h3><p class="help-text">查看 Pillow 本地生成资源的方案，适合补齐抽象横幅、背景图和纹理图。</p></article><article class="help-card"><h3 class="help-title">文档帮助</h3><p class="help-text">查看文档页、伪代码和目录结构建议，适合补齐说明型文本样本。</p></article><article class="help-card"><h3 class="help-title">套餐帮助</h3><p class="help-text">查看价格卡片、特性列表和对比表模式，适合补齐商业型页面结构。</p></article><article class="help-card"><h3 class="help-title">搜索帮助</h3><p class="help-text">查看关键字过滤、高亮和统计摘要逻辑，适合增加轻量本地交互。</p></article><article class="help-card"><h3 class="help-title">检查帮助</h3><p class="help-text">查看文本文件数量、图片数量和脚本运行状态，适合完成最终交付前复核。</p></article></div>
+                <div class="contact-note"><p>如果需要扩展为更大的基准站点，优先增加真实页面和真实组件，而不是堆砌无意义文本。保持相对路径、UTF-8 编码和离线可打开，是所有扩展工作的基本前提。</p></div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-layout">
+            <div class="footer-column"><h3>Benchmark Rich</h3><p>问答页通过高密度 FAQ、搜索面板和帮助卡片，补充真实网页中常见的知识库结构，适合文本压缩测试。</p></div>
+            <div class="footer-column"><a class="footer-link" href="index.html">首页</a><a class="footer-link" href="about.html">关于</a><a class="footer-link" href="services.html">服务</a><a class="footer-link" href="products.html">产品</a><a class="footer-link" href="gallery.html">画廊</a></div>
+            <div class="footer-column"><a class="footer-link" href="blog.html">博客</a><a class="footer-link" href="docs.html">文档</a><a class="footer-link" href="pricing.html">套餐</a><a class="footer-link" href="faq.html">问答</a><a class="footer-link" href="contact.html">联系</a></div>
+        </div>
+    </footer>
+</div>
+<script src="js/data.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/dom.js"></script>
+<script src="js/app.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

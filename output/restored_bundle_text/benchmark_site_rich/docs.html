@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Site Rich - 使用文档</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body data-page="docs">
+<div class="page-shell">
+    <div class="announcement-bar"><div class="container">文档页包含目录、长段说明、伪代码、步骤卡片和警告卡片，用于模拟真实网页系统说明文档的重复结构。</div></div>
+    <header class="site-header">
+        <div class="container header-row">
+            <a class="brand-link" href="index.html"><img src="images/logo.png" alt="logo"><span>Benchmark Rich</span></a>
+            <nav class="site-nav">
+                <ul class="nav-list">
+                    <li><a data-nav href="index.html">首页</a></li>
+                    <li><a data-nav href="about.html">关于</a></li>
+                    <li><a data-nav href="services.html">服务</a></li>
+                    <li><a data-nav href="products.html">产品</a></li>
+                    <li><a data-nav href="gallery.html">画廊</a></li>
+                    <li><a data-nav href="blog.html">博客</a></li>
+                    <li><a data-nav href="docs.html">文档</a></li>
+                    <li><a data-nav href="pricing.html">套餐</a></li>
+                    <li><a data-nav href="faq.html">问答</a></li>
+                    <li><a data-nav href="contact.html">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section hero-pattern-panel">
+            <div class="container split-layout">
+                <div class="fade-in">
+                    <p class="eyebrow">documentation / scan / compress / restore</p>
+                    <h1 class="section-title">网页压缩系统使用文档</h1>
+                    <p class="section-subtitle">本页模拟一个完整的系统说明中心，覆盖资源扫描、打包压缩、恢复校验、图表展示与离线约束。</p>
+                    <p class="section-text">内容采用统一的标题、说明、代码块和提示框结构，并通过步骤卡片与警告卡片提供重复文本样本，以便测试文本压缩与页面恢复逻辑。</p>
+                </div>
+                <div class="hero-card glass-card"><img class="hero-image" src="images/hero_pattern.png" alt="文档背景图案"></div>
+            </div>
+        </section>
+        <section class="section-block">
+            <div class="container docs-layout">
+                <aside class="toc-panel slide-up">
+                    <h2 class="sidebar-title">目录</h2>
+                    <a class="toc-link" href="#docs-section-1">1. 资源扫描</a><a class="toc-link" href="#docs-section-2">2. 文本压缩</a><a class="toc-link" href="#docs-section-3">3. 图片压缩</a><a class="toc-link" href="#docs-section-4">4. 路径恢复</a><a class="toc-link" href="#docs-section-5">5. 样式拆分</a><a class="toc-link" href="#docs-section-6">6. 搜索模块</a><a class="toc-link" href="#docs-section-7">7. 图表模块</a><a class="toc-link" href="#docs-section-8">8. 数据校验</a><a class="toc-link" href="#docs-section-9">9. 离线打开</a><a class="toc-link" href="#docs-section-10">10. 样本扩展</a>
+                </aside>
+                <div class="docs-content">
+                    <section class="docs-section" id="docs-section-1"><h2 class="docs-title">资源扫描</h2><p class="docs-text">资源扫描阶段负责收集 HTML、CSS、JS 与图片文件，并建立相对路径索引。为了让后续压缩处理稳定，扫描阶段通常会保留页面入口顺序、资源引用顺序和文件清单顺序，避免恢复结果和原始结果出现不必要差异。</p><pre class="code-block">function scanSite(root) {
+  const htmlFiles = listFiles(root, ".html");
+  const cssFiles = listFiles(root, ".css");
+  const jsFiles = listFiles(root, ".js");
+  return { htmlFiles, cssFiles, jsFiles };
+}</pre><div class="note-box">说明：资源扫描不应依赖网络，不应尝试下载外部资源，也不应隐式改写相对路径。</div></section>
+                    <section class="docs-section" id="docs-section-2"><h2 class="docs-title">文本压缩</h2><p class="docs-text">文本压缩更容易从重复结构中受益，例如重复导航、重复页脚、重复卡片和重复表单。一个设计良好的测试样本不需要完全重复，也不应该完全随机，而是应该接近真实网页并保留足够多的共同字段。</p><pre class="code-block">const repeatedBlock = "&lt;article class='article-card'&gt;...&lt;/article&gt;";
+const repeatedMeta = "article-title article-meta article-summary article-tag";
+return repeatedBlock + repeatedMeta;</pre><div class="note-box">说明：相似但不完全相同的段落能够同时测试模板复用和局部差异处理。</div></section>
+                    <section class="docs-section" id="docs-section-3"><h2 class="docs-title">图片压缩</h2><p class="docs-text">图片样本应覆盖横幅、头像、画廊图和背景纹理，但总大小仍要控制在限制范围内。采用 Pillow 本地生成抽象渐变图和几何图，可以得到稳定的测试资源，同时避免外部版权和联网下载问题。</p><pre class="code-block">image = gradient_image((1280, 720), (40, 92, 160), (228, 126, 98))
+draw.ellipse((120, 80, 520, 480), fill=(255, 255, 255, 120))
+draw.rectangle((680, 140, 1140, 520), fill=(18, 38, 88, 110))</pre><div class="note-box">说明：同尺寸、不同色调的图片有助于观察压缩率变化，而不会引入额外网络依赖。</div></section>
+                    <section class="docs-section" id="docs-section-4"><h2 class="docs-title">路径恢复</h2><p class="docs-text">恢复阶段不只是把文件写回磁盘，更重要的是验证相对路径是否保持一致。任何一个页面中如果存在脚本路径、样式路径或图片路径错误，都会导致本地打开失败，因此路径检查必须覆盖新增页面和原有页面。</p><pre class="code-block">&lt;link rel="stylesheet" href="css/forms.css"&gt;
+&lt;script src="js/search.js"&gt;&lt;/script&gt;
+&lt;img src="images/gallery4.jpg" alt="gallery"&gt;</pre><div class="note-box">说明：路径统一使用相对路径，恢复后不依赖服务器路由即可打开。</div></section>
+                    <section class="docs-section" id="docs-section-5"><h2 class="docs-title">样式拆分</h2><p class="docs-text">通过增加 animation.css 和 forms.css，可以提升文本文件数量，同时把动画、表单和长页面组件独立出来。这样既能维持真实站点结构，也能让压缩算法接触到更多重复的 CSS 属性和值。</p><pre class="code-block">.form-input {
+  display: block;
+  padding: 12px 14px;
+  border: 1px solid #cad4e3;
+  border-radius: 14px;
+}</pre><div class="note-box">说明：样式拆分不等于引入第三方框架，仍然可以保持纯本地静态站点。</div></section>
+                    <section class="docs-section" id="docs-section-6"><h2 class="docs-title">搜索模块</h2><p class="docs-text">搜索模块用于增强 FAQ 与博客页面的交互性。实现时反复使用 querySelector、querySelectorAll、classList、dataset 和 textContent，既能构成真实的源码文本，也能在本地页面中提供简单的关键字筛选和匹配高亮。</p><pre class="code-block">const input = document.querySelector("[data-search-input]");
+const cards = document.querySelectorAll("[data-search-card]");
+cards.forEach(function (card) {
+  card.classList.remove("is-hidden");
+});</pre><div class="note-box">说明：搜索逻辑不依赖模块系统，不使用 import/export，便于直接在本地 HTML 中引用。</div></section>
+                    <section class="docs-section" id="docs-section-7"><h2 class="docs-title">图表模块</h2><p class="docs-text">图表模块通过 DOM 节点创建条形图和图例，用于模拟压缩率、传输率等结果展示。页面不引入任何第三方图表库，但仍可通过统一的条结构、标签结构和说明结构体现真实网页中的数据展示场景。</p><pre class="code-block">const bar = document.createElement("div");
+bar.classList.add("chart-bar-fill");
+bar.style.width = percent + "%";
+bar.textContent = label;</pre><div class="note-box">说明：图表只需表达关系，不需要复杂渲染，因此原生 DOM 已足够满足样本需求。</div></section>
+                    <section class="docs-section" id="docs-section-8"><h2 class="docs-title">数据校验</h2><p class="docs-text">数据校验应覆盖文件数量、图片数量、路径正确性和页面可打开性。特别是当样本站点不断扩展时，文件数量是否达到目标、图片是否足够、路径是否仍为本地相对引用，都需要在最终检查中明确输出。</p><pre class="code-block">return {
+  textFileCount: countFiles(root, [".html", ".css", ".js"]),
+  imageCount: countFiles(imagesRoot, [".jpg", ".jpeg", ".png"])
+};</pre><div class="note-box">说明：最终结果应能直接说明是否已满足进阶样本站点要求。</div></section>
+                    <section class="docs-section" id="docs-section-9"><h2 class="docs-title">离线打开</h2><p class="docs-text">所有页面都应能通过文件系统直接打开，而不是依赖开发服务器。为此需要避免绝对 URL、避免远程脚本、避免 CDN 和远程字体，并确保所有样式、脚本和图片路径都指向同级目录下的本地资源。</p><pre class="code-block">&lt;a href="pricing.html"&gt;套餐&lt;/a&gt;
+&lt;link rel="stylesheet" href="css/animation.css"&gt;
+&lt;script src="js/charts.js"&gt;&lt;/script&gt;</pre><div class="note-box">说明：离线打开检查至少要验证十个页面的导航互跳和新增图片的可见性。</div></section>
+                    <section class="docs-section" id="docs-section-10"><h2 class="docs-title">样本扩展</h2><p class="docs-text">当需要继续扩展样本时，应优先增加真实结构，例如博客、FAQ、价格表、文档页和画廊页，而不是随意堆砌无意义字符串。真实结构能产生更多可重复的标签模式、样式模式和脚本模式，对网页压缩系统更有测试价值。</p><pre class="code-block">const pages = [
+  "index.html", "about.html", "services.html", "products.html", "gallery.html",
+  "blog.html", "docs.html", "pricing.html", "faq.html", "contact.html"
+];
+return pages.length;</pre><div class="note-box">说明：样本扩展的目标不是炫技，而是让压缩、恢复与校验更贴近真实输入。</div></section>
+                    <div class="card-grid card-grid-3"><article class="step-card"><h3 class="card-title">步骤一</h3><p class="docs-text">整理资源目录，确认所有页面、样式、脚本和图片都位于站点内部，并保持相对路径结构清晰。</p></article><article class="step-card"><h3 class="card-title">步骤二</h3><p class="docs-text">扩展文本文件数量，优先增加真实页面、样式拆分和可复用脚本，而不是无意义占位文件。</p></article><article class="step-card"><h3 class="card-title">步骤三</h3><p class="docs-text">扩展图片数量，采用本地生成策略控制尺寸、色调和体积，避免引入网络资源。</p></article><article class="step-card"><h3 class="card-title">步骤四</h3><p class="docs-text">统一导航和页脚，避免新页面出现孤岛链接，确保每个页面都能从顶部和底部访问。</p></article><article class="step-card"><h3 class="card-title">步骤五</h3><p class="docs-text">补充搜索和图表等轻量交互，使站点更接近真实网页系统，同时保持脚本纯原生可本地运行。</p></article><article class="step-card"><h3 class="card-title">步骤六</h3><p class="docs-text">在最终检查中统计文件数量、图片数量和引用路径，并运行图片脚本，确认新增资源完整落盘。</p></article></div>
+                    <div class="card-grid card-grid-3 mt-24"><article class="warning-card"><h3 class="card-title">警告一</h3><p class="docs-text">不要把外部 CDN 链接混入样本站点，否则无法满足离线打开要求。</p></article><article class="warning-card"><h3 class="card-title">警告二</h3><p class="docs-text">不要修改压缩算法工程代码，样本扩展应局限在示例站点和资源生成脚本中。</p></article><article class="warning-card"><h3 class="card-title">警告三</h3><p class="docs-text">不要把新增文件压成一行，保留正常缩进和换行对文本压缩测试更有代表性。</p></article><article class="warning-card"><h3 class="card-title">警告四</h3><p class="docs-text">不要引入第三方框架，样本站点需要保持纯本地 HTML、CSS 和 JS 结构。</p></article><article class="warning-card"><h3 class="card-title">警告五</h3><p class="docs-text">不要遗漏页脚和导航中的新链接，否则本地跳转检查会出现断链。</p></article><article class="warning-card"><h3 class="card-title">警告六</h3><p class="docs-text">不要只统计页面数量，图片数量和总大小同样属于进阶要求的一部分。</p></article></div>
+                    <div class="chart-demo-grid mt-24" data-chart-demo></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-layout">
+            <div class="footer-column"><h3>Benchmark Rich</h3><p>文档页通过重复的说明块、伪代码块和提示块，模拟真实网页系统文档，适合文本压缩与路径恢复测试。</p></div>
+            <div class="footer-column"><a class="footer-link" href="index.html">首页</a><a class="footer-link" href="about.html">关于</a><a class="footer-link" href="services.html">服务</a><a class="footer-link" href="products.html">产品</a><a class="footer-link" href="gallery.html">画廊</a></div>
+            <div class="footer-column"><a class="footer-link" href="blog.html">博客</a><a class="footer-link" href="docs.html">文档</a><a class="footer-link" href="pricing.html">套餐</a><a class="footer-link" href="faq.html">问答</a><a class="footer-link" href="contact.html">联系</a></div>
+        </div>
+    </footer>
+</div>
+<script src="js/data.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/dom.js"></script>
+<script src="js/app.js"></script>
+<script src="js/charts.js"></script>
+</body>
+</html>

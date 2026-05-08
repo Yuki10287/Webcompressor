@@ -73,6 +73,47 @@ def create_gallery(path: Path, palette):
     image.save(path, quality=92)
 
 
+def create_gradient_gallery(path: Path, palette):
+    image = gradient_image((1280, 720), palette[0], palette[1])
+    draw = ImageDraw.Draw(image, "RGBA")
+    width, height = image.size
+    for index in range(6):
+        offset = 80 + index * 150
+        draw.ellipse((offset, 60 + index * 24, offset + 220, 260 + index * 24), fill=palette[2])
+        draw.rectangle((offset + 120, 280, offset + 280, 540), outline=palette[3], width=4)
+    for line_y in range(40, height, 72):
+        draw.line((0, line_y, width, line_y + 18), fill=palette[4], width=3)
+    image.save(path, quality=92)
+
+
+def create_card_background(path: Path):
+    image = Image.new("RGBA", (1000, 600), (244, 248, 255, 210))
+    draw = ImageDraw.Draw(image, "RGBA")
+    width, height = image.size
+    for x in range(0, width, 120):
+        for y in range(0, height, 120):
+            draw.rounded_rectangle((x + 16, y + 18, x + 92, y + 94), radius=20, fill=(255, 255, 255, 82), outline=(172, 192, 228, 118), width=2)
+            draw.line((x + 16, y + 102, x + 100, y + 46), fill=(151, 176, 222, 106), width=3)
+    draw.ellipse((110, 80, 360, 320), fill=(255, 255, 255, 72))
+    draw.ellipse((620, 220, 920, 520), fill=(199, 224, 255, 88))
+    image.save(path)
+
+
+def create_hero_pattern(path: Path):
+    image = Image.new("RGBA", (1600, 600), (30, 67, 102, 255))
+    draw = ImageDraw.Draw(image, "RGBA")
+    width, height = image.size
+    for x in range(0, width, 48):
+        for y in range(0, height, 48):
+            draw.ellipse((x + 8, y + 8, x + 14, y + 14), fill=(255, 255, 255, 70))
+            draw.line((x + 18, y + 26, x + 42, y + 26), fill=(134, 202, 245, 72), width=2)
+    for band in range(6):
+        top = band * 100
+        draw.rectangle((0, top, width, top + 42), fill=(108 + band * 8, 82 + band * 4, 180 + band * 7, 36))
+    draw.polygon([(0, 540), (220, 420), (420, 520), (640, 360), (960, 460), (1240, 300), (1600, 430), (1600, 600), (0, 600)], fill=(255, 255, 255, 26))
+    image.save(path)
+
+
 def main():
     basic_images = ROOT / "benchmark_site_basic" / "images"
     rich_images = ROOT / "benchmark_site_rich" / "images"
@@ -92,6 +133,10 @@ def main():
     create_logo(rich_images / "logo.png", (42, 77, 122, 255), (118, 84, 210, 220))
     create_gallery(rich_images / "gallery1.jpg", [(50, 110, 170), (144, 214, 255), (255, 255, 255, 110), (31, 70, 120, 130), (245, 196, 118, 140)])
     create_gallery(rich_images / "gallery2.jpg", [(146, 82, 210), (244, 171, 130), (255, 255, 255, 110), (89, 42, 146, 130), (82, 188, 179, 130)])
+    create_gradient_gallery(rich_images / "gallery3.jpg", [(38, 106, 169), (78, 188, 210), (255, 255, 255, 84), (16, 44, 86, 150), (255, 210, 110, 92)])
+    create_gradient_gallery(rich_images / "gallery4.jpg", [(164, 76, 140), (244, 153, 94), (255, 255, 255, 78), (108, 34, 76, 150), (94, 215, 196, 88)])
+    create_card_background(rich_images / "card_bg.png")
+    create_hero_pattern(rich_images / "hero_pattern.png")
 
 
 if __name__ == "__main__":
