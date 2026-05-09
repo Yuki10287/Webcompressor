@@ -1,210 +1,196 @@
 {
-  "project_root": "C:/Users/15591/Desktop/real_site/real_site_htmlimage_mdn",
+  "project_root": "C:/Users/15591/Desktop/real_site/real_site_bootstrap",
   "text_bundle_enabled": true,
-  "text_bundle_original_size": 321828,
-  "text_bundle_compressed_size": 84742,
-  "text_bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
+  "text_bundle_original_size": 179214,
+  "text_bundle_compressed_size": 38461,
+  "text_bundle_path": "output\\bundles\\real_site_bootstrap_text_bundle.bin",
   "files": [
     {
-      "relative_path": "HTML images - Learn web development _ MDN.html",
+      "relative_path": "Examples · Bootstrap.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_bootstrap_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "HTML images - Learn web development _ MDN_files/270.66bae6059a1c23f9.css",
+      "relative_path": "Examples · Bootstrap_files/bootstrap.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_bootstrap_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "HTML images - Learn web development _ MDN_files/styles-a11y-menu.5796ee87cb69f93f.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/styles-article-footer.81ae18c89fc527dc.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/styles-breadcrumbs-bar.9a51a3c76a6231d0.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/styles-breadcrumbs.87eb742f4e711dc3.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/styles-content-section.f309b96d462d3c5d.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/styles-footer.66072dd619a4ef50.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/styles-global.401d0cd6564b08c2.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/styles-heading-anchor.0eec5185ab9425b7.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/styles-left-sidebar.46e37af4d0b5c883.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/styles-logo.aea5ff6edf1b9cfb.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/styles-menu.e2c5c8a53a8854c2.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/styles-navigation.c3ebf384e65df345.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/styles-page-layout.5a4354f33e894319.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/styles-reference-layout.632d2f3884f10ca3.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/styles-reference-toc.9b9bd019efd16b86.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/alt-text.png",
+      "relative_path": "Examples · Bootstrap_files/album.png",
       "type": "image",
       "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\alt-text.png.png",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\album.png.png",
       "restored_success": true,
-      "compress_time_ms": 31.808
+      "compress_time_ms": 38.898
     },
     {
-      "relative_path": "HTML images - Learn web development _ MDN_files/basic-image.png",
+      "relative_path": "Examples · Bootstrap_files/blog.png",
       "type": "image",
       "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\basic-image.png.png",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\blog.png.png",
       "restored_success": true,
-      "compress_time_ms": 62.7
+      "compress_time_ms": 51.763
     },
     {
-      "relative_path": "HTML images - Learn web development _ MDN_files/dinosaur_small.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\dinosaur_small.jpg.jpg",
-      "restored_success": true,
-      "compress_time_ms": 2.677
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/image-with-title.png",
+      "relative_path": "Examples · Bootstrap_files/carousel.png",
       "type": "image",
       "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\image-with-title.png.png",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\carousel.png.png",
       "restored_success": true,
-      "compress_time_ms": 17.258
+      "compress_time_ms": 39.623
     },
     {
-      "relative_path": "HTML images - Learn web development _ MDN_files/no-size.png",
+      "relative_path": "Examples · Bootstrap_files/checkout.png",
       "type": "image",
       "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\no-size.png.png",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\checkout.png.png",
       "restored_success": true,
-      "compress_time_ms": 312.174
+      "compress_time_ms": 39.032
     },
     {
-      "relative_path": "HTML images - Learn web development _ MDN_files/size.png",
+      "relative_path": "Examples · Bootstrap_files/cover.png",
       "type": "image",
       "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\size.png.png",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\cover.png.png",
       "restored_success": true,
-      "compress_time_ms": 279.755
+      "compress_time_ms": 45.323
     },
     {
-      "relative_path": "HTML images - Learn web development _ MDN_files/1111.53dba753dc3eb961.js.下载",
+      "relative_path": "Examples · Bootstrap_files/dashboard.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\dashboard.png.png",
+      "restored_success": true,
+      "compress_time_ms": 43.693
+    },
+    {
+      "relative_path": "Examples · Bootstrap_files/floating-labels.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\floating-labels.png.png",
+      "restored_success": true,
+      "compress_time_ms": 17.487
+    },
+    {
+      "relative_path": "Examples · Bootstrap_files/grid.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\grid.png.png",
+      "restored_success": true,
+      "compress_time_ms": 45.924
+    },
+    {
+      "relative_path": "Examples · Bootstrap_files/jumbotron.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\jumbotron.png.png",
+      "restored_success": true,
+      "compress_time_ms": 43.218
+    },
+    {
+      "relative_path": "Examples · Bootstrap_files/navbar-bottom.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\navbar-bottom.png.png",
+      "restored_success": true,
+      "compress_time_ms": 15.114
+    },
+    {
+      "relative_path": "Examples · Bootstrap_files/navbar-fixed.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\navbar-fixed.png.png",
+      "restored_success": true,
+      "compress_time_ms": 17.877
+    },
+    {
+      "relative_path": "Examples · Bootstrap_files/navbar-static.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\navbar-static.png.png",
+      "restored_success": true,
+      "compress_time_ms": 17.263
+    },
+    {
+      "relative_path": "Examples · Bootstrap_files/navbars.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\navbars.png.png",
+      "restored_success": true,
+      "compress_time_ms": 34.195
+    },
+    {
+      "relative_path": "Examples · Bootstrap_files/offcanvas.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\offcanvas.png.png",
+      "restored_success": true,
+      "compress_time_ms": 32.877
+    },
+    {
+      "relative_path": "Examples · Bootstrap_files/pricing.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\pricing.png.png",
+      "restored_success": true,
+      "compress_time_ms": 50.037
+    },
+    {
+      "relative_path": "Examples · Bootstrap_files/product.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\product.png.png",
+      "restored_success": true,
+      "compress_time_ms": 30.158
+    },
+    {
+      "relative_path": "Examples · Bootstrap_files/sign-in.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\sign-in.png.png",
+      "restored_success": true,
+      "compress_time_ms": 13.663
+    },
+    {
+      "relative_path": "Examples · Bootstrap_files/starter-template.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\starter-template.png.png",
+      "restored_success": true,
+      "compress_time_ms": 21.857
+    },
+    {
+      "relative_path": "Examples · Bootstrap_files/sticky-footer-navbar.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\sticky-footer-navbar.png.png",
+      "restored_success": true,
+      "compress_time_ms": 28.827
+    },
+    {
+      "relative_path": "Examples · Bootstrap_files/sticky-footer.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\sticky-footer.png.png",
+      "restored_success": true,
+      "compress_time_ms": 20.613
+    },
+    {
+      "relative_path": "Examples · Bootstrap_files/bootstrap.bundle.js.下载",
       "type": "unsupported",
       "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\1111.53dba753dc3eb961.js.下载",
+      "stored_path": "output\\compressed\\Examples · Bootstrap_files\\bootstrap.bundle.js.下载",
       "restored_success": true
     },
     {
-      "relative_path": "HTML images - Learn web development _ MDN_files/8903.f870aafb338b203a.js.下载",
+      "relative_path": "Examples · Bootstrap_files/jquery-3.3.1.slim.min.js.下载",
       "type": "unsupported",
       "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\8903.f870aafb338b203a.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/airgap.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\airgap.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/index.88050de47c563cea.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\index.88050de47c563cea.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "HTML images - Learn web development _ MDN_files/runtime.b0746d894b1ea8cc.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\runtime.b0746d894b1ea8cc.js.下载",
+      "stored_path": "output\\compressed\\Examples · Bootstrap_files\\jquery-3.3.1.slim.min.js.下载",
       "restored_success": true
     }
   ]
