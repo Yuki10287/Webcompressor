@@ -14,6 +14,37 @@ SUMMARY_CSV = os.path.join(REPORT_DIR, "experiment_summary.csv")
 DETAIL_CSV = os.path.join(REPORT_DIR, "file_detail.csv")
 TRANSMISSION_CSV = os.path.join(REPORT_DIR, "transmission_report.csv")
 
+BLUE_GRAY_MAIN = "#7E93A8"
+BLUE_GRAY_DARK = "#5F7489"
+BLUE_GRAY_LIGHT = "#B7C6D8"
+DUSTY_PINK_MAIN = "#D8A7B1"
+DUSTY_PINK_DARK = "#B98592"
+DUSTY_PINK_LIGHT = "#EED6DB"
+BG_LIGHT = "#F5F6F8"
+BORDER_GRAY = "#D9DDE3"
+TEXT_DARK = "#4A5563"
+WHITE = "#FFFFFF"
+CHART_DPI = 200
+
+SERIES_COLORS = {
+    "自研系统": BLUE_GRAY_MAIN,
+    "ZIP": DUSTY_PINK_MAIN,
+    "tar.gz": BLUE_GRAY_LIGHT,
+    "原始资源": BLUE_GRAY_DARK,
+    "文本资源": BLUE_GRAY_MAIN,
+    "图片资源": DUSTY_PINK_MAIN,
+    "其他资源": DUSTY_PINK_LIGHT,
+}
+
+SOFT_PALETTE = [
+    BLUE_GRAY_MAIN,
+    DUSTY_PINK_MAIN,
+    BLUE_GRAY_LIGHT,
+    BLUE_GRAY_DARK,
+    DUSTY_PINK_LIGHT,
+    DUSTY_PINK_DARK,
+]
+
 
 def ensure_dir(path: str):
     os.makedirs(path, exist_ok=True)
@@ -42,6 +73,64 @@ def setup_font():
     # Windows 下优先使用微软雅黑，避免中文乱码
     plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "Arial"]
     plt.rcParams["axes.unicode_minus"] = False
+    plt.rcParams["figure.facecolor"] = BG_LIGHT
+    plt.rcParams["axes.facecolor"] = WHITE
+    plt.rcParams["axes.edgecolor"] = BORDER_GRAY
+    plt.rcParams["axes.labelcolor"] = TEXT_DARK
+    plt.rcParams["axes.titlecolor"] = TEXT_DARK
+    plt.rcParams["axes.titlesize"] = 15
+    plt.rcParams["axes.titleweight"] = "semibold"
+    plt.rcParams["axes.labelsize"] = 11
+    plt.rcParams["xtick.color"] = TEXT_DARK
+    plt.rcParams["ytick.color"] = TEXT_DARK
+    plt.rcParams["legend.frameon"] = True
+    plt.rcParams["legend.facecolor"] = WHITE
+    plt.rcParams["legend.edgecolor"] = BORDER_GRAY
+    plt.rcParams["legend.fontsize"] = 10
+    plt.rcParams["text.color"] = TEXT_DARK
+
+
+def make_figure(figsize):
+    fig, ax = plt.subplots(figsize=figsize, facecolor=BG_LIGHT)
+    ax.set_facecolor(WHITE)
+    return fig, ax
+
+
+def apply_axis_style(ax, grid_axis="y"):
+    ax.tick_params(axis="both", colors=TEXT_DARK, labelsize=10)
+    ax.title.set_color(TEXT_DARK)
+    ax.xaxis.label.set_color(TEXT_DARK)
+    ax.yaxis.label.set_color(TEXT_DARK)
+    ax.grid(axis=grid_axis, color=BORDER_GRAY, alpha=0.55, linewidth=0.8)
+    ax.set_axisbelow(True)
+
+    for side in ("top", "right"):
+        ax.spines[side].set_visible(False)
+    for side in ("left", "bottom"):
+        ax.spines[side].set_color(BORDER_GRAY)
+        ax.spines[side].set_linewidth(1.0)
+
+
+def apply_legend_style(ax):
+    legend = ax.legend()
+    if legend is None:
+        return
+
+    legend.get_frame().set_facecolor(WHITE)
+    legend.get_frame().set_edgecolor(BORDER_GRAY)
+    legend.get_frame().set_alpha(0.92)
+    for text in legend.get_texts():
+        text.set_color(TEXT_DARK)
+
+
+def color_sequence(count):
+    return [SOFT_PALETTE[i % len(SOFT_PALETTE)] for i in range(count)]
+
+
+def save_chart(fig, path):
+    fig.tight_layout()
+    fig.savefig(path, dpi=CHART_DPI, facecolor=fig.get_facecolor(), bbox_inches="tight")
+    plt.close(fig)
 
 
 def save_total_compression_rate(summary_rows):
@@ -53,20 +142,31 @@ def save_total_compression_rate(summary_rows):
     x = range(len(samples))
     width = 0.25
 
-    plt.figure(figsize=(10, 6))
-    plt.bar([i - width for i in x], system_rates, width, label="自研系统")
-    plt.bar(x, zip_rates, width, label="ZIP")
-    plt.bar([i + width for i in x], gzip_rates, width, label="tar.gz")
+    fig, ax = make_figure(figsize=(10, 6))
+    ax.bar(
+        [i - width for i in x], system_rates, width,
+        label="自研系统", color=SERIES_COLORS["自研系统"],
+        edgecolor=WHITE, linewidth=0.8
+    )
+    ax.bar(
+        x, zip_rates, width,
+        label="ZIP", color=SERIES_COLORS["ZIP"],
+        edgecolor=WHITE, linewidth=0.8
+    )
+    ax.bar(
+        [i + width for i in x], gzip_rates, width,
+        label="tar.gz", color=SERIES_COLORS["tar.gz"],
+        edgecolor=WHITE, linewidth=0.8
+    )
 
-    plt.xticks(list(x), samples)
-    plt.ylabel("压缩率 / %")
-    plt.title("不同样本下的总体压缩率对比")
-    plt.legend()
-    plt.tight_layout()
+    ax.set_xticks(list(x), samples)
+    ax.set_ylabel("压缩率 / %")
+    ax.set_title("不同样本下的总体压缩率对比", pad=14)
+    apply_axis_style(ax)
+    apply_legend_style(ax)
 
     path = os.path.join(CHART_DIR, "total_compression_rate.png")
-    plt.savefig(path, dpi=180)
-    plt.close()
+    save_chart(fig, path)
     print(f"已生成: {path}")
 
 
@@ -78,19 +178,26 @@ def save_text_image_compression_rate(summary_rows):
     x = range(len(samples))
     width = 0.35
 
-    plt.figure(figsize=(10, 6))
-    plt.bar([i - width / 2 for i in x], text_rates, width, label="文本资源")
-    plt.bar([i + width / 2 for i in x], image_rates, width, label="图片资源")
+    fig, ax = make_figure(figsize=(10, 6))
+    ax.bar(
+        [i - width / 2 for i in x], text_rates, width,
+        label="文本资源", color=SERIES_COLORS["文本资源"],
+        edgecolor=WHITE, linewidth=0.8
+    )
+    ax.bar(
+        [i + width / 2 for i in x], image_rates, width,
+        label="图片资源", color=SERIES_COLORS["图片资源"],
+        edgecolor=WHITE, linewidth=0.8
+    )
 
-    plt.xticks(list(x), samples)
-    plt.ylabel("压缩率 / %")
-    plt.title("文本资源与图片资源压缩率对比")
-    plt.legend()
-    plt.tight_layout()
+    ax.set_xticks(list(x), samples)
+    ax.set_ylabel("压缩率 / %")
+    ax.set_title("文本资源与图片资源压缩率对比", pad=14)
+    apply_axis_style(ax)
+    apply_legend_style(ax)
 
     path = os.path.join(CHART_DIR, "text_image_compression_rate.png")
-    plt.savefig(path, dpi=180)
-    plt.close()
+    save_chart(fig, path)
     print(f"已生成: {path}")
 
 
@@ -119,14 +226,25 @@ def save_resource_type_pie(summary_rows):
             labels.append("其他资源")
             sizes.append(unsupported_size)
 
-        plt.figure(figsize=(7, 7))
-        plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90)
-        plt.title(f"{sample} 原始资源类型占比")
-        plt.tight_layout()
+        fig, ax = make_figure(figsize=(7, 7))
+        colors = [SERIES_COLORS.get(label, SOFT_PALETTE[i % len(SOFT_PALETTE)]) for i, label in enumerate(labels)]
+        _wedges, _texts, autotexts = ax.pie(
+            sizes,
+            labels=labels,
+            autopct="%1.1f%%",
+            startangle=90,
+            colors=colors,
+            wedgeprops={"edgecolor": WHITE, "linewidth": 1.2},
+            textprops={"color": TEXT_DARK, "fontsize": 10},
+        )
+        for text in autotexts:
+            text.set_color(TEXT_DARK)
+            text.set_fontsize(10)
+        ax.set_title(f"{sample} 原始资源类型占比", pad=14)
+        ax.axis("equal")
 
         path = os.path.join(CHART_DIR, f"{sample}_resource_type_pie.png")
-        plt.savefig(path, dpi=180)
-        plt.close()
+        save_chart(fig, path)
         print(f"已生成: {path}")
 
 
@@ -150,16 +268,15 @@ def save_file_compression_heatmap(detail_rows):
         # 文件太多时图会很长，所以动态调整高度
         height = max(6, len(rows) * 0.35)
 
-        plt.figure(figsize=(12, height))
-        plt.barh(names, rates)
-        plt.xlabel("压缩率 / %")
-        plt.title(f"{sample} 单文件压缩率热力图/排序图")
-        plt.gca().invert_yaxis()
-        plt.tight_layout()
+        fig, ax = make_figure(figsize=(12, height))
+        ax.barh(names, rates, color=color_sequence(len(rates)), edgecolor=WHITE, linewidth=0.7)
+        ax.set_xlabel("压缩率 / %")
+        ax.set_title(f"{sample} 单文件压缩率热力图/排序图", pad=14)
+        ax.invert_yaxis()
+        apply_axis_style(ax, grid_axis="x")
 
         path = os.path.join(CHART_DIR, f"{sample}_file_compression_heatmap.png")
-        plt.savefig(path, dpi=180)
-        plt.close()
+        save_chart(fig, path)
         print(f"已生成: {path}")
 
 
@@ -178,21 +295,36 @@ def save_transmission_compare(transmission_rows):
         x = range(len(networks))
         width = 0.2
 
-        plt.figure(figsize=(10, 6))
-        plt.bar([i - 1.5 * width for i in x], original_times, width, label="原始资源")
-        plt.bar([i - 0.5 * width for i in x], system_times, width, label="自研系统")
-        plt.bar([i + 0.5 * width for i in x], zip_times, width, label="ZIP")
-        plt.bar([i + 1.5 * width for i in x], gzip_times, width, label="tar.gz")
+        fig, ax = make_figure(figsize=(10, 6))
+        ax.bar(
+            [i - 1.5 * width for i in x], original_times, width,
+            label="原始资源", color=SERIES_COLORS["原始资源"],
+            edgecolor=WHITE, linewidth=0.8
+        )
+        ax.bar(
+            [i - 0.5 * width for i in x], system_times, width,
+            label="自研系统", color=SERIES_COLORS["自研系统"],
+            edgecolor=WHITE, linewidth=0.8
+        )
+        ax.bar(
+            [i + 0.5 * width for i in x], zip_times, width,
+            label="ZIP", color=SERIES_COLORS["ZIP"],
+            edgecolor=WHITE, linewidth=0.8
+        )
+        ax.bar(
+            [i + 1.5 * width for i in x], gzip_times, width,
+            label="tar.gz", color=SERIES_COLORS["tar.gz"],
+            edgecolor=WHITE, linewidth=0.8
+        )
 
-        plt.xticks(list(x), networks)
-        plt.ylabel("传输时间 / 秒")
-        plt.title(f"{sample} 不同网络环境下传输时间对比")
-        plt.legend()
-        plt.tight_layout()
+        ax.set_xticks(list(x), networks)
+        ax.set_ylabel("传输时间 / 秒")
+        ax.set_title(f"{sample} 不同网络环境下传输时间对比", pad=14)
+        apply_axis_style(ax)
+        apply_legend_style(ax)
 
         path = os.path.join(CHART_DIR, f"{sample}_transmission_compare.png")
-        plt.savefig(path, dpi=180)
-        plt.close()
+        save_chart(fig, path)
         print(f"已生成: {path}")
 
 
