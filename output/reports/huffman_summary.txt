@@ -1,0 +1,13 @@
+Huffman 可视化分析摘要
+========================================
+分析文件: C:\Users\15591\PycharmProjects\Webcompressor\sample_data\benchmark_site_rich\index.html
+文本字符数: 5226
+不同字符种类数: 191
+原始 UTF-8 bit 数: 45920
+估算 Huffman bit 数: 24900
+
+说明：
+1. 字符频率越高，Huffman 编码越短。
+2. Huffman 树通过优先队列反复合并频率最低的两个节点构建。
+3. 左边分支记为 0，右边分支记为 1，从根到叶子的路径即为字符编码。
+4. 本文件主要用于展示核心数据结构构建过程，可作为报告中的 F7 可视化材料。
