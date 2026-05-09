@@ -92,6 +92,9 @@ class MainWindow(QMainWindow):
         self.text_bundle_original_size = 0
         self.text_bundle_compressed_size = 0
         self.text_bundle_path = ""
+        self.current_restore_root = None
+        self.current_restored_home_path = None
+        self.current_site_name = None
 
         self.setup_ui()
         self.apply_styles()
@@ -141,12 +144,15 @@ class MainWindow(QMainWindow):
 
         self.restore_button = QPushButton("恢复解压")
         self.restore_button.clicked.connect(self.restore_project)
+        self.restore_button.setEnabled(False)
 
         self.open_page_button = QPushButton("打开恢复网页")
         self.open_page_button.clicked.connect(self.open_restored_page)
+        self.open_page_button.setEnabled(False)
 
         self.open_restore_folder_button = QPushButton("打开恢复目录")
         self.open_restore_folder_button.clicked.connect(self.open_restore_folder)
+        self.open_restore_folder_button.setEnabled(False)
 
         self.open_report_folder_button = QPushButton("打开报告目录")
         self.open_report_folder_button.clicked.connect(self.open_report_folder)
@@ -340,6 +346,9 @@ class MainWindow(QMainWindow):
 
         self.project = self.resource_manager.scan_project(folder)
         record_recent_site_path(folder)
+        self.current_restore_root = None
+        self.current_restored_home_path = None
+        self.current_site_name = os.path.basename(os.path.abspath(folder))
 
         self.text_bundle_enabled = False
         self.text_bundle_original_size = 0
@@ -348,6 +357,9 @@ class MainWindow(QMainWindow):
 
         self.root_dir_label.setText(f"当前目录：{folder}")
         self.compress_button.setEnabled(True)
+        self.restore_button.setEnabled(False)
+        self.open_page_button.setEnabled(False)
+        self.open_restore_folder_button.setEnabled(False)
         self.refresh_table()
         self.update_summary_label()
 
@@ -415,10 +427,101 @@ class MainWindow(QMainWindow):
             strategy_item.setForeground(QBrush(QColor("#ffffff")))
             strategy_item.setBackground(QBrush(QColor(180, 80, 110, 90)))
 
+    def find_project_entry_html(self, project_root):
+        if not project_root or not os.path.exists(project_root):
+            return ""
+
+        for file_name in ("index.html", "index.htm"):
+            candidate = os.path.join(project_root, file_name)
+            if os.path.isfile(candidate):
+                return os.path.relpath(candidate, project_root).replace("\\", "/")
+
+        try:
+            first_level_html = [
+                entry.path
+                for entry in os.scandir(project_root)
+                if entry.is_file() and entry.name.lower().endswith((".html", ".htm"))
+            ]
+        except OSError:
+            first_level_html = []
+
+        if first_level_html:
+            first_level_html.sort(key=lambda path: os.path.basename(path).lower())
+            return os.path.relpath(first_level_html[0], project_root).replace("\\", "/")
+
+        nested_html = []
+        for root, _, files in os.walk(project_root):
+            for file_name in files:
+                if file_name.lower().endswith((".html", ".htm")):
+                    nested_html.append(os.path.join(root, file_name))
+
+        if nested_html:
+            nested_html.sort(key=lambda path: os.path.relpath(path, project_root).lower())
+            return os.path.relpath(nested_html[0], project_root).replace("\\", "/")
+
+        return ""
+
+    def find_restored_home_file(self, restore_root, manifest=None):
+        if not restore_root or not os.path.exists(restore_root):
+            return None
+
+        if manifest:
+            entry_html_relative_path = manifest.get("entry_html_relative_path", "")
+            if entry_html_relative_path:
+                candidate = os.path.join(
+                    restore_root,
+                    *entry_html_relative_path.replace("\\", "/").split("/")
+                )
+                if os.path.isfile(candidate):
+                    return candidate
+
+        for file_name in ("index.html", "index.htm"):
+            candidate = os.path.join(restore_root, file_name)
+            if os.path.isfile(candidate):
+                return candidate
+
+        try:
+            first_level_html = [
+                entry.path
+                for entry in os.scandir(restore_root)
+                if entry.is_file() and entry.name.lower().endswith((".html", ".htm"))
+            ]
+        except OSError:
+            first_level_html = []
+
+        if first_level_html:
+            first_level_html.sort(key=lambda path: os.path.basename(path).lower())
+            index_matches = [
+                path for path in first_level_html
+                if "index" in os.path.basename(path).lower()
+            ]
+            return index_matches[0] if index_matches else first_level_html[0]
+
+        nested_html = []
+        for root, _, files in os.walk(restore_root):
+            for file_name in files:
+                if file_name.lower().endswith((".html", ".htm")):
+                    nested_html.append(os.path.join(root, file_name))
+
+        if nested_html:
+            nested_html.sort(key=lambda path: os.path.relpath(path, restore_root).lower())
+            index_matches = [
+                path for path in nested_html
+                if "index" in os.path.basename(path).lower()
+            ]
+            return index_matches[0] if index_matches else nested_html[0]
+
+        return None
+
     def compress_project(self):
         if not self.project:
             QMessageBox.warning(self, "提示", "请先选择目录")
             return
+
+        self.current_restore_root = None
+        self.current_restored_home_path = None
+        self.open_page_button.setEnabled(False)
+        self.open_restore_folder_button.setEnabled(False)
 
         output_root = os.path.join("output", "compressed")
         bundle_output_root = os.path.join("output", "bundles")
@@ -570,6 +673,7 @@ class MainWindow(QMainWindow):
 
         self.package_manager.save_manifest(output_root, {
             "project_root": self.project.root_dir,
+            "entry_html_relative_path": self.find_project_entry_html(self.project.root_dir),
             "text_bundle_enabled": self.text_bundle_enabled,
             "text_bundle_original_size": self.text_bundle_original_size,
             "text_bundle_compressed_size": self.text_bundle_compressed_size,
@@ -579,6 +683,9 @@ class MainWindow(QMainWindow):
 
         self.refresh_table()
         self.update_summary_label()
+        self.restore_button.setEnabled(True)
+        self.open_page_button.setEnabled(False)
+        self.open_restore_folder_button.setEnabled(False)
         QMessageBox.information(self, "完成", "压缩完成")
 
     def get_restore_root(self):
@@ -597,33 +704,26 @@ class MainWindow(QMainWindow):
             return None
 
     def get_restored_index_path(self):
-        restore_root = self.get_restore_root()
-        if not restore_root:
-            return None
-
-        index_path = os.path.join(restore_root, "index.html")
-        if os.path.exists(index_path):
-            return index_path
-        return None
+        return self.current_restored_home_path
 
     def open_restored_page(self):
-        index_path = self.get_restored_index_path()
-        if not index_path:
+        home_path = self.current_restored_home_path
+        if not home_path or not os.path.exists(home_path):
             QMessageBox.warning(
                 self,
                 "提示",
-                "未找到恢复后的 index.html。\n请先执行“恢复解压”，并确认恢复目录中存在首页。"
+                "请先执行本轮恢复解压，并确认恢复目录中存在 HTML 首页文件。"
             )
             return
 
-        url = QUrl.fromLocalFile(os.path.abspath(index_path))
+        url = QUrl.fromLocalFile(os.path.abspath(home_path))
         opened = QDesktopServices.openUrl(url)
 
         if not opened:
-            QMessageBox.warning(self, "提示", f"尝试打开失败，请手动打开：\n{index_path}")
+            QMessageBox.warning(self, "提示", f"尝试打开失败，请手动打开：\n{home_path}")
 
     def open_restore_folder(self):
-        restore_root = self.get_restore_root()
+        restore_root = self.current_restore_root
         if not restore_root or not os.path.exists(restore_root):
             QMessageBox.warning(self, "提示", "未找到恢复目录，请先执行“恢复解压”。")
             return
@@ -722,21 +822,28 @@ class MainWindow(QMainWindow):
                     ensure_dir(os.path.dirname(target_path))
                     shutil.copy2(compressed_path, target_path)
 
-            index_path = os.path.join(restore_root, "index.html")
-            if os.path.exists(index_path):
+            self.current_restore_root = restore_root
+            home_path = self.find_restored_home_file(restore_root, manifest)
+            if home_path:
+                self.current_restored_home_path = home_path
+                self.open_page_button.setEnabled(True)
+                self.open_restore_folder_button.setEnabled(True)
                 reply = QMessageBox.question(
                     self,
                     "恢复完成",
-                    f"恢复完成。\n恢复目录：{restore_root}\n\n是否立即打开恢复后的网页？",
+                    f"恢复完成。\n恢复目录：{restore_root}\n检测到首页文件：{home_path}\n\n是否立即打开恢复后的网页？",
                     QMessageBox.Yes | QMessageBox.No
                 )
                 if reply == QMessageBox.Yes:
                     self.open_restored_page()
             else:
+                self.current_restored_home_path = None
+                self.open_page_button.setEnabled(False)
+                self.open_restore_folder_button.setEnabled(True)
                 QMessageBox.information(
                     self,
                     "恢复完成",
-                    f"恢复完成。\n恢复目录：{restore_root}\n未检测到 index.html，请手动检查。"
+                    f"恢复完成。\n恢复目录：{restore_root}\n未检测到 HTML 首页文件，请手动检查恢复目录。"
                 )
 
         except Exception as e:
