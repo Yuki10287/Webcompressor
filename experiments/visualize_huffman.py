@@ -273,7 +273,21 @@ def assign_positions(node: Optional[HuffmanNode]):
     return positions
 
 
-def draw_tree_edges(ax, node: Optional[HuffmanNode], positions):
+def get_tree_stats(node: Optional[HuffmanNode]) -> Tuple[int, int, int]:
+    if node is None:
+        return 0, 0, 0
+
+    left_nodes, left_leaves, left_height = get_tree_stats(node.left)
+    right_nodes, right_leaves, right_height = get_tree_stats(node.right)
+
+    is_leaf = node.left is None and node.right is None
+    leaf_count = 1 if is_leaf else left_leaves + right_leaves
+    height = 0 if is_leaf else 1 + max(left_height, right_height)
+
+    return 1 + left_nodes + right_nodes, leaf_count, height
+
+
+def draw_tree_edges(ax, node: Optional[HuffmanNode], positions, show_bits: bool = True):
     if node is None:
         return
 
@@ -292,64 +306,163 @@ def draw_tree_edges(ax, node: Optional[HuffmanNode], positions):
             linewidth=1.4
         )
 
-        mid_x = (x + cx) / 2
-        mid_y = (y + cy) / 2
+        if show_bits:
+            mid_x = (x + cx) / 2
+            mid_y = (y + cy) / 2
 
-        ax.text(
-            mid_x,
-            mid_y,
-            bit,
-            fontsize=9,
-            color="#4A5563",
-            ha="center",
-            va="center",
-            bbox=dict(
-                boxstyle="round,pad=0.15",
-                facecolor="#F5F6F8",
-                edgecolor="#D9DDE3",
-                alpha=0.9
+            ax.text(
+                mid_x,
+                mid_y,
+                bit,
+                fontsize=9,
+                color="#4A5563",
+                ha="center",
+                va="center",
+                bbox=dict(
+                    boxstyle="round,pad=0.15",
+                    facecolor="#F5F6F8",
+                    edgecolor="#D9DDE3",
+                    alpha=0.9
+                )
             )
-        )
 
-        draw_tree_edges(ax, child, positions)
+        draw_tree_edges(ax, child, positions, show_bits=show_bits)
 
 
-def draw_tree_nodes(ax, node: Optional[HuffmanNode], positions):
+def draw_tree_nodes(
+    ax,
+    node: Optional[HuffmanNode],
+    positions,
+    leaf_node_size: int = 1300,
+    internal_node_size: int = 1300,
+    leaf_font_size: int = 9,
+    internal_font_size: int = 9,
+    show_internal_freq: bool = True
+):
     if node is None:
         return
 
     x, y = positions[id(node)]
 
     if node.char is None:
-        label = str(node.freq)
+        label = str(node.freq) if show_internal_freq else ""
         face_color = "#B7C6D8"
+        node_size = internal_node_size
+        font_size = internal_font_size
     else:
         label = f"{display_char(node.char)}\n{node.freq}"
         face_color = "#D8A7B1"
+        node_size = leaf_node_size
+        font_size = leaf_font_size
 
     ax.scatter(
         [x],
         [y],
-        s=1300,
+        s=node_size,
         color=face_color,
         edgecolors="#FFFFFF",
         linewidths=1.6,
         zorder=3
     )
 
-    ax.text(
-        x,
-        y,
-        label,
-        fontsize=9,
-        color="#4A5563",
-        ha="center",
-        va="center",
-        zorder=4
+    if label:
+        ax.text(
+            x,
+            y,
+            label,
+            fontsize=font_size,
+            color="#4A5563",
+            ha="center",
+            va="center",
+            zorder=4
+        )
+
+    draw_tree_nodes(
+        ax,
+        node.left,
+        positions,
+        leaf_node_size=leaf_node_size,
+        internal_node_size=internal_node_size,
+        leaf_font_size=leaf_font_size,
+        internal_font_size=internal_font_size,
+        show_internal_freq=show_internal_freq
+    )
+    draw_tree_nodes(
+        ax,
+        node.right,
+        positions,
+        leaf_node_size=leaf_node_size,
+        internal_node_size=internal_node_size,
+        leaf_font_size=leaf_font_size,
+        internal_font_size=internal_font_size,
+        show_internal_freq=show_internal_freq
     )
 
-    draw_tree_nodes(ax, node.left, positions)
-    draw_tree_nodes(ax, node.right, positions)
+
+def save_full_tree_chart(root: Optional[HuffmanNode]):
+    if root is None:
+        return
+
+    _, leaf_count, tree_height = get_tree_stats(root)
+    positions = assign_positions(root)
+
+    width = max(14, min(120, leaf_count * 0.58))
+    height = max(9, min(80, (tree_height + 2) * 1.15))
+
+    if leaf_count <= 40:
+        leaf_node_size = 900
+        internal_node_size = 260
+        leaf_font_size = 8
+        internal_font_size = 6
+        show_internal_freq = True
+    elif leaf_count <= 100:
+        leaf_node_size = 620
+        internal_node_size = 150
+        leaf_font_size = 7
+        internal_font_size = 5
+        show_internal_freq = True
+    else:
+        leaf_node_size = 420
+        internal_node_size = 55
+        leaf_font_size = 5
+        internal_font_size = 4
+        show_internal_freq = False
+
+    plt.figure(figsize=(width, height), facecolor="#F5F6F8")
+    ax = plt.gca()
+    ax.set_facecolor("#F5F6F8")
+
+    draw_tree_edges(ax, root, positions, show_bits=False)
+    draw_tree_nodes(
+        ax,
+        root,
+        positions,
+        leaf_node_size=leaf_node_size,
+        internal_node_size=internal_node_size,
+        leaf_font_size=leaf_font_size,
+        internal_font_size=internal_font_size,
+        show_internal_freq=show_internal_freq
+    )
+
+    ax.set_title(
+        f"完整 Huffman 树（{leaf_count} 个叶子节点，树高 {tree_height}）",
+        color="#4A5563",
+        fontsize=16
+    )
+    ax.axis("off")
+    ax.margins(x=0.02, y=0.08)
+
+    plt.tight_layout()
+
+    png_path = os.path.join(CHART_DIR, "huffman_tree_full.png")
+    svg_path = os.path.join(CHART_DIR, "huffman_tree_full.svg")
+
+    plt.savefig(png_path, dpi=180)
+    plt.savefig(svg_path)
+    plt.close()
+
+    print(f"已生成: {png_path}")
+    print(f"已生成: {svg_path}")
 
 
 def save_demo_tree_chart(freq_counter: Counter):
@@ -436,6 +549,7 @@ def main():
     save_frequency_chart(freq_counter)
     save_code_length_chart(freq_counter, code_table)
     save_demo_tree_chart(freq_counter)
+    save_full_tree_chart(root)
     save_summary_text(text, freq_counter, code_table)
 
     print("\nHuffman 可视化完成。")
