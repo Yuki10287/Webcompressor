@@ -1,0 +1,223 @@
+/*! For license information please see index.88050de47c563cea.js.LICENSE.txt */
+export const __rspack_esm_id="8410";export const __rspack_esm_ids=["8410"];export const __webpack_modules__={537(e,t,o){o.d(t,{default:()=>n});let n=`# WARNING: don't use this file as a source for strings requiring l10n, use ../template.ftl instead:
+# this file only contains manually added strings, not ones inlined in code. See ../README.md for more details.
+
+# TODO Use comments, see: https://firefox-source-docs.mozilla.org/l10n/fluent/review.html#comments
+# TODO Consider using terms, see: https://firefox-source-docs.mozilla.org/l10n/fluent/review.html#terms and https://projectfluent.org/fluent/guide/references.html#message-references
+
+article-footer-last-modified = This page was last modified on <time data-l10n-name="date">{ $date }</time> by <a data-l10n-name="contributors">MDN contributors</a>.
+article-footer-source-title = Folder: { $folder } (Opens in a new tab)
+
+baseline-asterisk = Some parts of this feature may have varying levels of support.
+baseline-high-extra = This feature is well established and works across many devices and browser versions. It’s been available across browsers since { $date }.
+baseline-low-extra = Since { $date }, this feature works across the latest devices and browser versions. This feature might not work in older devices or browsers.
+baseline-not-extra = This feature is not Baseline because it does not work in some of the most widely-used browsers.
+baseline-supported-in = Supported in { $browsers }
+baseline-unsupported-in = Not widely supported in { $browsers }
+baseline-supported-and-unsupported-in = Supported in { $supported }, but not widely supported in { $unsupported }
+
+homepage-hero-title = Resources for Developers,<br> by Developers
+
+playground-user-shared-warning = This is a user-shared playground.<br>Always inspect the code before running it.
+homepage-hero-description = Documenting <a data-l10n-name="css">CSS</a>, <a data-l10n-name="html">HTML</a>, and <a data-l10n-name="js">JavaScript</a>, since 2005.
+
+not-found-title = Page not found
+not-found-description = Sorry, the page <code data-l10n-name="url">{ $url }</code> could not be found.
+not-found-fallback-english = <strong data-l10n-name="strong">Good news:</strong> The page you requested exists in <em data-l10n-name="em">English</em>.
+not-found-fallback-search = The page you requested doesn't exist, but you could try a site search for:
+not-found-back = Go back to the home page
+
+reference-toc-header = In this article
+
+footer-mofo = Visit <a data-l10n-name="moco">Mozilla Corporation’s</a> not-for-profit parent, the <a data-l10n-name="mofo">Mozilla Foundation</a>.
+footer-copyright = Portions of this content are \xa91998–{ $year } by individual mozilla.org contributors. Content available under <a data-l10n-name="cc">a Creative Commons license</a>.
+
+search-modal-site-search = Site search for <em>{ $query }</em>
+
+site-search-search-stats = Found { $results } documents.
+site-search-suggestion-matches =  { $relation ->
+    [gt] more than { $matches ->
+        [one]   { $matches } match
+       *[other] { $matches } matches
+    }
+   *[eq] { $matches ->
+        [one]   { $matches } match
+       *[other] { $matches } matches
+    }
+}
+
+blog-time-to-read = { $minutes ->
+    [one]   { $minutes } minute read
+   *[other] { $minutes } minutes read
+}
+blog-post-not-found = Blog post not found.
+
+blog-previous = Previous post
+blog-next = Next post
+
+-brand-name-obs = HTTP Observatory
+obs-report = Report
+obs-title = { -brand-name-obs }
+obs-landing-intro = Launched in 2016, the { -brand-name-obs } enhances web security by analyzing compliance with best security practices. It has provided insights to over 6.9 million websites through 47 million scans.
+obs-assessment = Developed by Mozilla, the { -brand-name-obs } performs an in-depth assessment of a site’s HTTP headers and other key security configurations.
+obs-scanning = Its automated scanning process provides developers and website administrators with detailed, actionable feedback, focusing on identifying and addressing potential security vulnerabilities.
+obs-security = The tool is instrumental in helping developers and website administrators strengthen their sites against common security threats in a constantly advancing digital environment.
+obs-mdn = The { -brand-name-obs } provides effective security insights, guided by Mozilla's expertise and commitment to a safer and more secure internet and based on well-established trends and guidelines.
+
+
+compat-loading = Loading…
+compat-js-required = Enable JavaScript to view this browser compatibility table.
+
+compat-browser-version-date = { $browser } { $version } – Release date: { $date }
+compat-browser-version-released = Release date: { $date }
+
+compat-link-report-issue = Report problems with this compatibility data
+compat-link-report-issue-title = Report an issue with this compatibility data
+compat-link-report-missing-title = Report missing compatibility data
+compat-link-report-missing = Report this issue
+compat-link-source = View data on GitHub
+compat-link-source-title = File: { $filename }
+
+compat-deprecated = Deprecated
+compat-experimental = Experimental
+compat-nonstandard = Non-standard
+compat-no = No
+
+compat-support-full = Full support
+compat-support-partial = Partial support
+compat-support-no = No support
+compat-support-unknown = Support unknown
+compat-support-prefix = Implemented with the vendor prefix: { $prefix }
+compat-support-altname = Alternate name: { $altname }
+compat-support-removed = Removed in { $version } and later
+compat-support-see-impl-url = See <a data-l10n-name="impl_url">{ $label }</a>
+compat-support-flags =
+  { NUMBER($has_added) ->
+    [one] From version { $version_added }
+    *[other] {""}
+  }{ $has_last ->
+    [one] { NUMBER($has_added) ->
+          *[zero] Until { $versionLast } users
+          [one] {" "}until { $versionLast } users
+      }
+    *[zero] { NUMBER($has_added) ->
+          *[zero] Users
+          [one] {" "}users
+      }
+  }
+  {" "}must explicitly set the <code data-l10n-name="name">{ $flag_name }</code>{" "}
+  { $flag_type ->
+    *[preference] preference
+    [runtime_flag] runtime flag
+  }{ NUMBER($has_value) ->
+    [one] {" "}to <code data-l10n-name="value">{ $flag_value }</code>
+    *[other] {""}
+  }{"."}
+  { NUMBER($has_pref_url) ->
+    [one] { $flag_type ->
+      [preference] To change preferences in { $browser_name }, visit { $browser_pref_url }.
+      *[other] {""}
+    }
+    *[other] {""}
+  }
+
+compat-legend = Legend
+compat-legend-tip = Tip: you can click/tap on a cell for more information.
+compat-legend-yes = { compat-support-full }
+compat-legend-partial = { compat-support-partial }
+compat-legend-preview = In development. Supported in a pre-release version.
+compat-legend-no = { compat-support-no }
+compat-legend-unknown = Compatibility unknown
+compat-legend-experimental = { compat-experimental }. Expect behavior to change in the future.
+compat-legend-nonstandard = { compat-nonstandard }. Check cross-browser support before using.
+compat-legend-deprecated = { compat-deprecated }. Not for use in new websites.
+compat-legend-footnote = See implementation notes.
+compat-legend-disabled = User must explicitly enable this feature.
+compat-legend-altname = Uses a non-standard name.
+compat-legend-prefix = Requires a vendor prefix or different name for use.
+compat-legend-more = Has more compatibility info.
+
+placement-note = Ad
+placement-no = Don't want to see ads?
+
+pagination-next = Next page
+pagination-prev = Previous page
+pagination-current = Current page
+pagination-goto = Go to page { $page }
+
+logout = Sign out
+login = Log in
+
+example-play-button-label = Play
+example-play-button-title = Run example in MDN Playground (opens in new tab)
+
+content-feedback-question = Was this page helpful to you?
+content-feedback-reason = Why was this page not helpful to you?
+content-feedback-thanks = Thank you for your feedback!
+
+writer-reload-polling = Polling every { $seconds }s
+`},3971(e,t,o){o.d(t,{A:()=>h});var n=o(97825),a=o(31601),r=o.n(a),s=o(76314),i=o.n(s),l=o(4417),c=o.n(l),d=new o.U(o(70054)),m=i()(r()),u=c()(d);m.push([e.id,`*,:after,:before{box-sizing:border-box}dialog{border:0;overscroll-behavior:contain;padding:0}@media (width > 1044px){dialog{background-color:var(--color-background-primary);border:1px solid var(--color-border-primary);border-radius:.5rem;font-size:var(--font-size-large);margin:calc(var(--sticky-header-height) + 1rem) auto 1rem;max-height:calc(100% - var(--sticky-header-height) - 2rem);width:calc(var(--layout-content-max) + 1rem)}dialog::backdrop{--csstools-light-dark-toggle-0f998706-0:var(--csstools-color-scheme--light) var(--color-black-alpha-75);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);background-color:var(--csstools-light-dark-toggle-0f998706-0,var(--color-white-alpha-75))}@supports (color:light-dark(red,red)){dialog::backdrop{background-color:light-dark(var(--color-white-alpha-75),var(--color-black-alpha-75))}}}@media (width <= 1044px){dialog{font-size:var(--font-size-normal);height:100%;margin:0;max-height:100%;max-width:100%;width:100%}}dialog[open]{display:grid;grid-template-areas:"search   close" "progress progress" "results  results";grid-template-columns:1fr min-content;grid-template-rows:var(--navigation-height) min-content min-content}progress{grid-area:progress;margin:0 1rem .5rem}@media (width <= 1044px){progress{margin-inline:.3rem}}.close{font-size:1.37rem;grid-area:close}@media (width > 1044px){.close{display:none}}form{display:grid;gap:.5rem;grid-area:search;grid-template-columns:min-content 1fr;padding:1rem;place-items:center}@media (width <= 1044px){form{align-self:center;background-color:var(--color-background-primary);border:1px solid var(--color-border-primary);border-radius:.5rem;margin-left:.3rem;padding:.5rem}}form:before{background-color:var(--color-border-secondary);content:"";height:1em;mask-image:url(${u});mask-size:contain;width:1em}input{background-color:initial;border:none;font-size:inherit;margin:0;outline:none;padding:0;width:100%}input::placeholder{color:var(--color-text-secondary)}ul{grid-area:results;margin:0;overflow:auto;padding:0}ul:has(li){border-top:1px solid var(--color-border-primary)}li[data-selected]{background:var(--color-background-blue);border-color:var(--color-blue-50)}li{border-inline-start:2px solid #0000;list-style-type:none}li:not([data-selected]):hover{background-color:var(--color-background-secondary)}li>*{padding:.5rem 1.5rem;width:100%}a{color:var(--color-link-normal);display:grid;-webkit-text-decoration:none;text-decoration:none}a:visited{color:var(--color-link-visited)}.slug{color:var(--color-text-secondary);font-size:var(--font-size-small)}mark{background-color:var(--color-background-yellow);color:var(--color-text-primary)}`,""]);let h=(0,n.AH)([m.toString()])},10336(e,t,o){o.d(t,{A:()=>a});var n=o(97825);let a=(0,n.JW)`<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>`},98693(e,t,o){var n={"./code-example/element.js":["84352","6703","6203","1861","6475","7065","7517"],"./dropdown/element.js":["58623","2868","4740"],"./live-sample-result/element.js":["47849","6703","3611","6203","5950","4098","1861","5330"],"./observatory-tests-and-scores/element.js":["56538","6407"],"./play-runner/element.js":["63657","6703","5950","4098","4074"],"./search-button/element.js":["23745","3690"],"./survey/element.js":["70134","6703","6203","2105","2283"],"./ix-tab-wrapper/element.js":["49979","2568"],"./placement-sidebar/element.js":["57468","6703","3611","8280","1477","4249","2173"],"./placement-hp-main/element.js":["44394","6703","3611","8280","1477","4249","4759"],"./record-visit/element.js":["55237","5562","3094"],"./toggle-sidebar/element.js":["27486","6203","2415"],"./user-menu/element.js":["76706","6203","2105","3775"],"./interactive-example/element.js":["81505","6703","749","3730","3106","993","6216","2080","640","9515","1356","6203","5950","4098","6760","3047","1861","2448","6475","4419","7065","2568","5338","5722"],"./copy-button/element.js":["38262","6203","6475","4660"],"./observatory-comparison-table/element.js":["50117","9410","2006"],"./sidebar-filter/element.js":["83703","9324"],"./issues-table/element.js":["37511","4204"],"./scrim-inline/element.js":["43602","6703","3611","5183"],"./switch/element.js":["41798","9099"],"./collection-save-button/element.js":["1355","6203","3000","4920"],"./contributor-list/element.js":["23082","9127"],"./button/element.js":["17398","6203","9898"],"./homepage-search/element.js":["27373","7678"],"./modal/element.js":["14903","6203","3000"],"./color-theme/element.js":["55269","2868","544"],"./about-team-member/element.js":["612","8981"],"./content-feedback/element.js":["83818","6203","4891"],"./play-console/element.js":["71787","6760"],"./ix-tab/element.js":["18977","4419","5338"],"./observatory-header-link/element.js":["1879","9410","3676"],"./curriculum-tabs/element.js":["52500","9717"],"./placement-bottom/element.js":["7895","6703","3611","8280","1477","4249","4060"],"./image-history/element.js":["47706","1975"],"./not-found/element.js":["2622","8926","3555"],"./placement-note/element.js":["47764","1477"],"./compat-table-lazy/element.js":["96678","6703","2105","6002","251"],"./site-search/element.js":["41425","6203","9578"],"./placement-no/element.js":["13755","8280"],"./play-controller/element.js":["23731","2448"],"./placement-top/element.js":["9951","6703","3611","8280","1477","4249","9204"],"./observatory-form/element.js":["17547","6703","6203","6110","8364"],"./observatory-results/element.js":["13430","6203","9410","2868","6110","2006","7593","3676","4070","3259"],"./about-tabs/element.js":["54842","7047"],"./observatory-human-duration/element.js":["37077","9410","4070"],"./playground/element.js":["71026","6703","749","3730","3106","993","6216","2080","640","9515","6203","5950","4098","6760","3047","2448","3000","893"],"./ix-tab-panel/element.js":["89854","4419"],"./play-editor/element.js":["63386","749","3730","3106","993","6216","2080","640","9515","5950","3047"],"./themed-image/element.js":["48125","5102"],"./writer-open-editor/element.js":["51310","6203","9967"],"./progress-bar/element.js":["20141","6110"],"./compat-table/element.js":["12969","6703","2105","6002"],"./login-button/element.js":["70242","6203","6067"],"./observatory-rescan-button/element.js":["14416","6203","7593","3140"],"./recently-visited/element.js":["95821","5562","5246"],"./language-always-redirect-button/element.js":["77108","8300","5685"],"./language-switcher/element.js":["64786","2868","9099","8300","8926","5667"],"./search-modal/element.js":["97154"],"./writer-reload/element.js":["14925","4366"]};function a(e){if(!o.o(n,e))return Promise.resolve().then(function(){var t=Error("Cannot find module '"+e+"'");throw t.code="MODULE_NOT_FOUND",t});var t=n[e],a=t[0];return Promise.all(t.slice(1).map(o.e)).then(function(){return o(a)})}a.keys=()=>Object.keys(n),a.id=98693,e.exports=a},9177(e,t,o){var n={"./en-US.ftl":["537"],"./es.ftl":["59137","7898"],"./de.ftl":["89516","6333"],"./pt-BR.ftl":["27146","8839"],"./ja.ftl":["68942","7027"],"./zh-TW.ftl":["81023","8964"],"./fr.ftl":["23293","1550"],"./ru.ftl":["40730","3255"],"./zh-CN.ftl":["39555","9456"],"./ko.ftl":["45687","8604"]};function a(e){if(!o.o(n,e))return Promise.resolve().then(function(){var t=Error("Cannot find module '"+e+"'");throw t.code="MODULE_NOT_FOUND",t});var t=n[e],a=t[0];return Promise.all(t.slice(1).map(o.e)).then(function(){return o(a)})}a.keys=()=>Object.keys(n),a.id=9177,e.exports=a},70054(e,t,o){e.exports=o.p+"search.5dd31cbeea7d1af9.svg"},51874(){try{let t=document.querySelector(".baseline-indicator");function e(e){e?localStorage.setItem("baseline-indicator","open"):localStorage.removeItem("baseline-indicator")}t instanceof HTMLDetailsElement&&(t.addEventListener("toggle",()=>{e(t.open)}),e(t.open))}catch(e){console.warn("Unable to attach to baseline indicator",e)}},99502(e,t,o){o.d(t,{i7:()=>f,iW:()=>v,tf:()=>l,I:()=>d,mR:()=>m,_0:()=>p,Q:()=>y,sR:()=>c,vQ:()=>u,kv:()=>h,g_:()=>g,QD:()=>b});let n=[],a=r("RUNTIME_ENV",!0);function r(e,t,o){try{return!!JSON.parse(i(e,o)||JSON.stringify(t))}catch{return t}}function s(e,t,o){let n=i(e,o),a=n?Number.parseInt(n,10):t;return Number.isNaN(a)?t:a}function i(e,t={}){let{runtime:o}={runtime:!1,...t},r=`FRED_${e}`;return o&&a?(n.push(r),globalThis.process?.env[r]||i(e)):({FRED_RUNTIME_ENV:"false",FRED_PLAYGROUND_LOCAL:"false",FRED_BCD_BASE_URL:"https://bcd.developer.mozilla.org",FRED_TRANSCEND_AIRGAP_URL:"https://transcend-cdn.com/cm/d556c3a1-e57c-4bdf-a490-390a1aebf6dd/airgap.js",FRED_GLEAN_CHANNEL:"prod",FRED_OBSERVATORY_API_URL:"https://observatory-api.mdn.mozilla.net",FRED_ROBOTS_GLOBAL_ALLOW:"true",FRED_PLAYGROUND_BASE_HOST:"mdnplay.dev",FRED_TRANSCEND_BUNDLE_ID:"d556c3a1-e57c-4bdf-a490-390a1aebf6dd",FRED_GLEAN_ENABLED:"true"})[r]}let l=i("PLAYGROUND_BASE_HOST",void 0)||"mdnplay.dev",c=r("PLAYGROUND_LOCAL",!1,{runtime:!0}),d=s("PORT",3e3,{runtime:!0});r("OPEN_BROWSER_ON_START",!1,{runtime:!0});let m=s("PLAYGROUND_PORT",3001,{runtime:!0}),u=i("FXA_SIGNIN_URL",void 0)||"/users/fxa/login/authenticate/",h=i("FXA_SIGNOUT_URL",void 0)||"/users/fxa/login/logout/",p=r("GLEAN_ENABLED",!1),g=i("GLEAN_CHANNEL",void 0)||"dev",f=r("GLEAN_DEBUG",!1);r("ROBOTS_GLOBAL_ALLOW",!0);let b=r("WRITER_MODE",!1,{runtime:!0}),v=i("BCD_BASE_URL",void 0)||"https://bcd.developer.mozilla.org",y=i("OBSERVATORY_API_URL",void 0)||"https://observatory-api.mdn.mozilla.net";i("TRANSCEND_AIRGAP_URL",void 0)},36153(){let e=document.querySelector('[aria-controls="navigation__popup"]'),t=document.querySelector(".navigation");e instanceof HTMLElement&&t instanceof HTMLElement&&e.addEventListener("click",()=>{let o=("true"!==t.dataset.open).toString();t.dataset.open=o,e.setAttribute("aria-expanded",o)})},97154(e,t,o){o.r(t),o.d(t,{MDNSearchModal:()=>MDNSearchModal,splitQuery:()=>d});var n=o(31011),a=o(97825),r=o(70693),s=o(23727),i=o(14632),l=o(10336),c=o(3971);let MDNSearchModal=class MDNSearchModal extends(0,r.J)(a.WF){static ssr=!1;static styles=c.A;static properties={_index:{state:!0},_query:{state:!0},_selected:{state:!0},_shiftFocus:{state:!0}};constructor(){super(),this._index=void 0,this._query="",this._selected=0,this._shiftFocus=!1,this._hasEngaged=!1}async _loadIndex(){this._index||(this._index=this._fetchIndex())}async _fetchIndex(){let e=await fetch(`/${this.locale}/search-index.json`),t=await e.json();return{flex:t.map(({title:e,url:t},o)=>({index:o,title:e.toLowerCase(),slugTail:t.split("/").pop()?.toLowerCase()||""})),items:t}}showModal(){this._loadIndex(),this.shadowRoot?.querySelector("dialog")?.showModal(),this.shadowRoot?.querySelector("input")?.select()}_input({inputType:e,target:t}){t instanceof HTMLInputElement&&(this._query=t.value,!this._hasEngaged&&e.startsWith("insert")&&(this._hasEngaged=!0,(0,s.w)(`quick-search-change: ${"insertFromPaste"===e?"paste":"type"}`)))}_keydown(e){switch(e.key){case"ArrowUp":e.preventDefault(),this._select(this._selected-1);break;case"ArrowDown":e.preventDefault(),this._select(this._selected+1);break;case"Enter":{let{ctrlKey:t,shiftKey:o,altKey:n,metaKey:a}=e,r=this._getSelectedItem();r instanceof HTMLElement&&(e.preventDefault(),r.dispatchEvent(new MouseEvent("click",{bubbles:!0,composed:!0,ctrlKey:t,shiftKey:o,altKey:n,metaKey:a})));break}default:return}}_getSelectedItem(){return this.shadowRoot?.querySelector("[data-selected] a")??null}_select(e){let t=(this._queryIndex.value?.length||0)+1,o=e%t;this._selected=o<0?t+e:o,setTimeout(()=>{let e=this._getSelectedItem();e instanceof HTMLElement&&e.scrollIntoView({behavior:"smooth",block:"nearest"})},0)}_submit(e){e.preventDefault();let t=this._getSelectedItem();t instanceof HTMLElement&&t.click()}_focus({target:e}){if(e instanceof HTMLElement){let t=e.closest("[data-result]");if(t instanceof HTMLElement){let e=Number.parseInt(t.dataset.result||"NaN",10);Number.isNaN(e)||(this._selected=e,this._shiftFocus=!0)}else this._shiftFocus=!1}}_globalKeydown(e){let t=e.composedPath()?.[0]||e.target;if(t instanceof HTMLElement&&(["TEXTAREA","INPUT"].includes(t.tagName)||t.isContentEditable))return;let o=globalThis.getSelection()?.toString(),n=e.key,a=e.ctrlKey||e.metaKey,r="/"===n&&!a,i="k"===n&&a&&!e.shiftKey;(r||i)&&(e.preventDefault(),(0,s.w)(`quick-search-open: keyboard -> ${r?"slash":"ctrl-k"}`),this.showModal(),o&&(this._query=o,this._hasEngaged||(this._hasEngaged=!0,(0,s.w)("quick-search-change: selection"))))}_queryIndex=new n.YZ(this,{args:()=>[this._index,this._query],task:async([e,t])=>{if(e&&t){var o,n;let a,r;return o=t,n=await e,a=o.toLowerCase().trim(),r=d(o),n.flex.filter(({title:e})=>r.every(t=>e.includes(t))).map(({index:e,title:t,slugTail:o})=>[Number([t,o].includes(a)),e]).sort(([e],[t])=>t-e).map(([e,t])=>t).slice(0,10).map(e=>e&&(n.items||[])[e]).filter(Boolean)}}});_close(){this.shadowRoot?.querySelector("dialog")?.close()}_toggle({newState:e}){document.documentElement.classList.toggle("search-modal-open","open"===e)}connectedCallback(){super.connectedCallback(),this._globalKeydown=this._globalKeydown.bind(this),document.addEventListener("keydown",this._globalKeydown),this._loadIndex=this._loadIndex.bind(this),this.renderRoot.addEventListener("mouseover",this._loadIndex)}disconnectedCallback(){super.disconnectedCallback(),this.renderRoot.removeEventListener("mouseover",this._loadIndex),document.removeEventListener("keydown",this._globalKeydown),document.documentElement.classList.remove("search-modal-open")}_renderLoadingSearchIndex(){return(0,a.qy)`<progress
+      aria-label=${this.l10n("search-modal-loading-search-index")`Loading search index…`}
+    ></progress>`}render(){let e=this._queryIndex.value?.length||0,t=this._query?`/${this.locale}/search?${new URLSearchParams({q:this._query})}`:null;return(0,a.qy)`
+      <dialog
+        @keydown=${this._keydown}
+        @focusin=${this._focus}
+        @toggle=${this._toggle}
+        closedby="any"
+      >
+        <form
+          method="get"
+          action=${`/${this.locale}/search`}
+          @submit=${this._submit}
+        >
+          <input
+            type="search"
+            name="q"
+            .value=${this._query}
+            autocomplete="off"
+            autofocus
+            @input=${this._input}
+            placeholder=${this.l10n("search-modal-search")`Search`}
+            aria-label=${this.l10n("search-modal-search")`Search`}
+          />
+        </form>
+        <mdn-button
+          class="close"
+          variant="plain"
+          icon-only
+          .icon=${l.A}
+          @click=${this._close}
+          >${this.l10n("search-modal-exit-search")`Exit search`}</mdn-button
+        >
+        ${this._queryIndex.render({initial:this._renderLoadingSearchIndex.bind(this),pending:this._renderLoadingSearchIndex.bind(this)})}
+        <ul>
+          ${this._queryIndex.render({complete:e=>e?.map(({title:e,url:t},o)=>{var n;let r,s;return(0,a.qy)`
+                  <li ?data-selected=${this._selected===o} data-result=${o}>
+                    <a
+                      href=${t}
+                      data-glean-id=${`quick-search: results[${1+o}] -> ${this._query} -> ${t}`}
+                      ><span class="slug"
+                        >${(0,i.o)(t,this.locale)}</span
+                      >
+                      <span class="title"
+                        >${n=e,s=(r=d(this._query)).map(e=>e.replaceAll(/[.*+?^${}()|[\]\\]/g,String.raw`\$&`)).map(e=>`(${e})`).join("|"),n.split(RegExp(s,"gi")).filter(Boolean).map(e=>r.includes(e.toLowerCase())?(0,a.qy)`<mark>${e}</mark>`:e)}</span
+                      ></a
+                    >
+                  </li>
+                `})})}
+          ${t?(0,a.qy)`<li
+                ?data-selected=${this._selected===e}
+                data-result=${e}
+              >
+                <a
+                  href=${t}
+                  data-glean-id=${`quick-search: site-search -> ${this._query}`}
+                  ><span class="title"
+                    >${this.l10n.raw({id:"search-modal-site-search",args:{query:this._query},elements:{query:{tag:"code"}}})}</span
+                  ></a
+                >
+              </li>`:a.s6}
+        </ul>
+      </dialog>
+    `}updated(){if(this._shiftFocus){let e=this._getSelectedItem();e instanceof HTMLElement&&e.focus()}}};function d(e){return(e=e.trim().toLowerCase()).startsWith(".")||e.endsWith(".")?e.split(/[ ,]+/):e.split(/[ ,.]+/)}customElements.define("mdn-search-modal",MDNSearchModal)},45742(e,t,o){let n;o.d(t,{L:()=>i});var a=o(99502);let r={country:"United States",country_iso:"US"},s={username:null,isAuthenticated:!1,avatarUrl:null,isSubscriber:!1,subscriptionType:null,email:null,geo:r,settings:null};function i(){return a.QD?new Promise(()=>{}):(n||(n=l().catch(e=>(console.error(e),s))),n)}async function l(){let e=await fetch("/api/v1/whoami");if(!e.ok)throw Error(e.statusText);try{let t=await e.json(),o=t?.settings?{aiHelpHistory:"boolean"==typeof t.settings?.ai_help_history?t.settings.ai_help_history:null,noAds:t.settings?.no_ads??null}:s.settings;return c.noAds=o?.noAds||!1,{username:t.username??s.username,isAuthenticated:t.is_authenticated??s.isAuthenticated,avatarUrl:t.avatar_url??s.avatarUrl,isSubscriber:t.is_subscriber??s.isSubscriber,subscriptionType:"core"===t.subscription_type?"mdn_core":t.subscription_type??s.subscriptionType,email:t.email??s.email,geo:{country:(t.geo&&t.geo.country)??r.country,country_iso:(t.geo&&t.geo.country_iso)??r.country_iso},settings:o}}catch{throw Error(e.statusText)}}let c={set noAds(value){value?globalThis.localStorage.setItem("nop","yes"):globalThis.localStorage.removeItem("nop")},get noAds(){return globalThis.localStorage?.getItem?.("nop")==="yes"}}},18376(e,t,o){o.d(t,{x:()=>ViewedObserver});let n={threshold:.5};let ViewedObserver=class ViewedObserver{#e;#t;#o;#n=null;#a=null;#r=!1;#s=!globalThis.document?.hidden;#i=this.#l.bind(this);constructor(e,t,o=n){this.#e=e,this.#t=t,this.#o=o}connect(){document.addEventListener("visibilitychange",this.#i),this.#n=new IntersectionObserver(e=>{for(let t of e)this.#c(t.isIntersecting)},this.#o),this.#n.observe(this.#e)}disconnect(){this.#n&&(this.#n.disconnect(),this.#n=null),null!==this.#a&&(clearTimeout(this.#a),this.#a=null),document.removeEventListener("visibilitychange",this.#i)}#l(){this.#s=!document.hidden,this.#c()}#c(e=!1){!this.#r&&this.#s&&e?null===this.#a&&(this.#a=globalThis.setTimeout(()=>{this.#r=!0,this.#t()},1e3)):null!==this.#a&&(clearTimeout(this.#a),this.#a=null)}}},33779(e,t,o){o.a(e,async function(e,t){try{o(95831),o(46079),o(41759),o(98769);var n=o(17765);o(31557),o(51874),o(70315),o(36153),o(70408);var a=o(88068),r=o(76787);o(98109);var s=o(15381),i=e([n,a,r,s]);[n,a,r,s]=i.then?(await i)():i,t()}catch(e){t(e)}})},88068(e,t,o){o.a(e,async function(e,t){try{for(let e of document.querySelectorAll('div.code-example pre:not(.hidden):not([class*="live-sample"]):not([class*="interactive-example"])')){let{upgradePre:t}=await Promise.all([o.e("6703"),o.e("6203"),o.e("1861"),o.e("6475"),o.e("7065"),o.e("7517")]).then(o.bind(o,84352));t(e)}t()}catch(e){t(e)}},1)},98769(){"closedBy"in HTMLDialogElement.prototype||addEventListener("click",e=>{let t=e.composedPath()[0];if(t instanceof HTMLDialogElement&&"any"===t.getAttribute("closedby")){let o=t.getBoundingClientRect(),{clientX:n,clientY:a}=e;o.top<=a&&a<=o.bottom&&o.left<=n&&n<=o.right||t.close()}})},41759(e,t,o){var n=o(91610),a=o(99502),r=o(18376),s=o(23727);let i=!document.cookie.split("; ").includes("moz-1st-party-data-opt-out=true")&&a._0;for(let e of(a.i7&&(n.A.setDebugViewTag("mdn-dev"),n.A.setLogPings(!0)),n.A.initialize("mdn-fred",i,{enableAutoPageLoadEvents:!0,enableAutoElementClickEvents:!0,channel:a.g_}),document.addEventListener("toggle",e=>{for(let t of e.composedPath())t instanceof HTMLElement&&"string"==typeof t.dataset.gleanToggleOpen&&"open"in t&&t.open&&(0,s.w)(t.dataset.gleanToggleOpen)}),document.querySelectorAll("[data-glean-view]"))){let t=e.dataset.gleanView;if(t){let o=new r.x(e,()=>{(0,s.w)(t),o.disconnect()});o.connect()}}document.addEventListener("click",e=>{let t=e.composedPath(),o=t?.[0];if(o!==e.target&&o instanceof Element)for(let e of t)e instanceof HTMLElement&&"string"==typeof e.dataset.gleanId&&(0,s.w)(e.dataset.gleanId);let n=o??e.target;if(n instanceof Element){let e=n.closest("a");if(e instanceof HTMLAnchorElement&&e.href&&e.origin&&e.origin!==document.location.origin&&(0,s.w)(`external-link: ${e.href}`),e instanceof HTMLAnchorElement&&e.href&&e.closest(".left-sidebar")){let t=e.getAttribute("href")||e.href;(0,s.w)(`sidebar_click: sidebar ${t}`)}}})},76787(e,t,o){o.a(e,async function(e,t){try{for(let e of document.querySelectorAll("iframe[data-live-id]"))if(e instanceof HTMLIFrameElement){let{liveId:t,livePath:n}=e.dataset;if(t){let a={},r=[],s=t.replaceAll(".",String.raw`\.`);for(let e of document.querySelectorAll(`.live-sample___${s}, .live-sample---${s}`)){let{MDNCodeExample:t,upgradePre:n}=await Promise.all([o.e("6703"),o.e("6203"),o.e("1861"),o.e("6475"),o.e("7065"),o.e("7517")]).then(o.bind(o,84352)),s=e instanceof t?e:n(e);if(s){r.push(s);let{language:e,code:t}=s;a[e]?a[e]+=t:a[e]=t}}await Promise.all([o.e("6703"),o.e("3611"),o.e("6203"),o.e("5950"),o.e("4098"),o.e("1861"),o.e("5330")]).then(o.bind(o,47849));let i=document.createElement("mdn-live-sample-result");for(let o of(i.liveId=t,i.code=a,i.srcPrefix=n,i.allow=e.allow||void 0,i.sandbox=e.sandbox.toString(),i.height=e.height,e.closest(".code-example")?.replaceWith(i),r))o.liveSample||=i}}t()}catch(e){t(e)}},1)},31557(e,t,o){let n=new Set;for(let e of document.querySelectorAll("*")){let t=e.tagName.toLowerCase();if(t.startsWith("mdn-")||"interactive-example"===t){let e=t.replace("mdn-","");n.has(e)||(n.add(e),o(98693)(`./${e}/element.js`).catch(t=>{console.error(`couldn't load code for <${e}>: does the element's code not match the naming schema?`,t)}))}}},70315(){let e=document.querySelector("#main-sidebar"),t=e?.querySelector('[aria-current="page"]');e&&t instanceof HTMLElement&&e.scrollTo({top:t.offsetTop-window.innerHeight/4})},98109(e,t,o){var n=o(97154);let a=document.querySelector('.a11y-menu a[href="#search"]');if(a instanceof HTMLAnchorElement){let e=document.querySelector("#search");e instanceof n.MDNSearchModal?a.addEventListener("click",t=>{let{target:o}=t;o instanceof HTMLElement&&(o.blur(),t.preventDefault()),e.showModal()}):(console.error("MDNSearchModal not found!"),a.hidden=!0)}},70408(){for(let e of document.querySelectorAll(".generic-toc, .reference-toc, .document-toc, .blog-toc"))e instanceof HTMLElement&&function(e){let t=[...e.querySelectorAll("a")],o=new Map;for(let e of t.reverse()){let t=document.querySelector(`[id="${decodeURIComponent(e.hash).slice(1)}"]`);if(!t)continue;let n=t.closest("section");for(;n&&n instanceof HTMLElement&&!o.has(n);)o.set(n,e),n=n.nextElementSibling}let n=new WeakMap,a=new Set,r={threshold:0},s=document.querySelector("header");s instanceof HTMLElement&&(r.rootMargin=`-${s.clientHeight}px 0px 0px 0px`);let i=new IntersectionObserver(e=>{for(let{target:t,isIntersecting:r}of e){if(!(t instanceof HTMLElement))continue;if(!a.has(t))if(!r)continue;else a.add(t);let e=o.get(t);if(!e)continue;let s=(n.get(e)??0)+(r?1:-1);e.ariaCurrent=s>0?"true":null,n.set(e,s)}},r);for(let e of o.keys())i.observe(e)}(e)},15381(e,t,o){o.a(e,async function(e,t){try{var n=o(45742);try{let e=await (0,n.L)(),t=new Date(localStorage.getItem("next-ping")||0);if(navigator.sendBeacon&&e.isAuthenticated&&t<new Date){let e=new URLSearchParams;navigator.sendBeacon("/api/v1/ping",e);let t=new Date;t.setUTCDate(t.getUTCDate()+1),t.setUTCHours(0),t.setUTCMinutes(0),t.setUTCSeconds(0),t.setUTCMilliseconds(0),localStorage.setItem("next-ping",t.toISOString())}}catch(e){console.error("Failed to send ping",e)}t()}catch(e){t(e)}},1)},99704(e,t,o){o.d(t,{Ay:()=>h,FU:()=>u});var n=o(83315),a=o(81233),r=o(17003),s=o(537);let i={"en-US":s.default},l=["i","strong","br","em"],c=["title","aria-label"];let Fluent=class Fluent{constructor(e="en-US",t=[]){this.locale=e,this.usBundle=Fluent.constructBundle(new n.Np(e,{useIsolating:!1}),[s.default]),t.length>0&&(this.bundle=Fluent.constructBundle(new n.Np(e,{useIsolating:!1}),[s.default,...t]))}static constructBundle(e,t=[]){for(let o of t){let t=e.addResource(new n.B$(o),{allowOverrides:!0});t.length>0&&console.error(t)}return e}get(e,t,o,n){let a=this.getMessage(e,t,o);if(a)return Fluent.sanitize(a,n)}static sanitize(e,t={}){let o={};for(let e of Object.values(t))o[e.tag]=[...Object.keys(e).filter(e=>"tag"!==e),...c];let n=[...Object.values(t).map(e=>e.tag),...l],s=!0,i=a(e,{allowedAttributes:o,allowedTags:n,allowedSchemes:["http","https","mailto"],filter(e){let o=e.attrs["data-l10n-name"];if(o)for(let[n,a]of Object.entries(t[o]||{}))e.attrs[n]=a;return!!(l.includes(e.tag)||o&&Object.keys(t).includes(o)&&t[o]?.tag===e.tag)&&(s=!1,!0)}},!0);return s?i:(0,r._)(i)}getMessage(e,t,o={},n=this.bundle,a=!1){let r,s=n?n.getMessage(e):void 0;if("qai"===this.locale)return`[${e}${t?`.${t}`:""}]`;if(!s){if(a)return;return this.getMessage(e,t,o,this.usBundle,!0)}if(t){if(!(r=s.attributes[t])){if(a)return;return this.getMessage(e,t,o,this.usBundle,!0)}}else s.value&&(r=s.value);if(!r||!n)return"";let i=[],l=n?.formatPattern(r,o,i);return i.length>0&&console.error(i),l}};let d=new Map;function m(e){if(e){if(!d.has(e)){let t=i[e];if(!t)return new Fluent(e);let o=new Fluent(e,[t]);d.set(e,o)}return d.get(e)}}async function u(e){if("qai"!==e&&!i[e])try{let{default:t}=await o(9177)(`./${e}.ftl`);i[e]=t}catch(e){console.error(e)}}function h(e){function t(t,o){let n=m(e)?.get(t),a="string"==typeof n?n:void 0,r=`[${t}]`,s=e=>{let t=e[0];return a||t||r};return s.toString=()=>a||r,s}return t.raw=function({id:t,attr:o,args:n,elements:a}){let r=m(e);return r?r.get(t,o,n,a):`[${t}]`},t}},17765(e,t,o){o.a(e,async function(e,t){try{var n=o(36611),a=o(99704);let e=(0,n.V)().locale;e&&await (0,a.FU)(e),t()}catch(e){t(e)}},1)},70693(e,t,o){o.d(t,{J:()=>r});var n=o(36611),a=o(99704);let r=e=>class extends e{constructor(...e){super(...e);let t=(0,n.V)();this.locale=t.locale,this.l10n=(0,a.Ay)(this.locale)}}},36611(e,t,o){o.d(t,{V:()=>n});function n(){let e=globalThis.__MDNServerContext?.getStore(),t=globalThis.__MDNClientContext;return e||t}},95831(){globalThis.__MDNClientContext={locale:globalThis.location.pathname.split("/")[1]||"en-US"}},23727(e,t,o){o.d(t,{w:()=>a});var n=o(34388);function a(e){n.A.recordElementClick({id:e,url:globalThis.location.href,referrer:document.referrer,title:document.title})}},14632(e,t,o){o.d(t,{o:()=>n});function n(e,t){let o=e.replaceAll("_"," ").split("/").filter(e=>!["",t,"docs"].includes(e));return(o=o.map(e=>"API"===e?"Web APIs":e)).length>1&&"Web"===o.at(0)&&o.splice(0,1),o.length>1&&o.splice(-1,1),o.join(" / ")}}};import{__webpack_require__ as e}from"./runtime.b0746d894b1ea8cc.js";import*as t from"./1111.53dba753dc3eb961.js";e.C(t);import*as o from"./8903.f870aafb338b203a.js";e.C(o);import*as n from"./index.88050de47c563cea.js";e.C(n),e(e.s=33779);
+//# sourceMappingURL=index.88050de47c563cea.js.map

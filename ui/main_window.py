@@ -531,11 +531,28 @@ class MainWindow(QMainWindow):
 
         for resource in self.project.resources:
             if resource.resource_type == "unsupported":
-                resource.attempted_size = resource.original_size
-                resource.compressed_size = resource.original_size
-                resource.compression_strategy = "skip"
-                resource.compression_success = True
-                resource.restored_success = True
+                try:
+                    original_data = read_binary(resource.file_path)
+                    stored_path = self.package_manager.save_stored_asset(
+                        output_root, resource.relative_path, original_data
+                    )
+
+                    resource.attempted_size = len(original_data)
+                    resource.compressed_size = len(original_data)
+                    resource.compression_strategy = "store_original_asset"
+                    resource.compression_success = True
+                    resource.restored_success = True
+
+                    manifest_files.append({
+                        "relative_path": resource.relative_path.replace("\\", "/"),
+                        "type": resource.resource_type,
+                        "strategy": resource.compression_strategy,
+                        "stored_path": stored_path,
+                        "restored_success": True
+                    })
+                except Exception as e:
+                    resource.compression_success = False
+                    resource.compression_strategy = f"error: {e}"
 
         self.package_manager.save_manifest(output_root, {
             "project_root": self.project.root_dir,
@@ -651,10 +668,10 @@ class MainWindow(QMainWindow):
                         write_binary(target_path, raw)
 
             for item in manifest.get("files", []):
-                if item.get("type") != "image":
+                if item.get("type") not in {"image", "unsupported"}:
                     continue
 
-                compressed_path = item.get("compressed_path", "")
+                compressed_path = item.get("compressed_path", "") or item.get("stored_path", "")
                 relative_path = item.get("relative_path", "")
 
                 if compressed_path and os.path.exists(compressed_path):

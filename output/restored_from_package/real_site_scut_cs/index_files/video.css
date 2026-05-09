@@ -1,0 +1,185 @@
+.video-content {
+  width: 7.04rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-content .common-top-panel {
+  margin-top: .4rem;
+}
+
+.video-content .wrapper-more .more {
+  color: #fff;
+}
+
+
+.video_list {
+  position: relative;
+  margin-top: auto;
+  width: 7.24rem;
+  height: 4.44rem;
+  z-index: 14;
+}
+
+/* .video_list ul {
+  width: 7.04rem;
+  height: 4.24rem;
+  z-index: 4;
+}
+
+.video_list ul li {
+  width: 7.04rem;
+  height: 4.24rem;
+}
+
+.video_list ul li:nth-child(n+2) {
+  display: none;
+}
+
+.video_list ul li .info {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 4;
+}
+
+.video_list ul li .info img {
+  /* position: absolute; */
+/* z-index: 16;
+  width: 100%;
+  height: 100%;
+} */
+
+/* .video_list ul li .info:hover img {
+  transform: scale(1.1);
+} */
+
+
+/* 
+.video_list ul li::after {
+  content: '  ';
+  width: 7.04rem;
+  height: 4.24rem;
+  background: rgba(244, 179, 88, 1);
+  left: -.2rem;
+  top: -.2rem;
+  position: absolute;
+  z-index: 2;
+}  */
+
+
+.swiper-container8 .bannerBox::before {
+  content: '  ';
+  width: 7.04rem;
+  height: 4.24rem;
+  background: rgba(244, 179, 88, 1);
+  position: absolute;
+  z-index: 2;
+}
+
+.home-swiper .swiper-container8 .swiper-slide {
+  background: none;
+}
+
+
+.swiper-container8 {
+  overflow: hidden;
+}
+
+.swiper-container8 {
+  overflow: hidden;
+  position: relative;
+  width: 7.24rem;
+  height: 4.44rem;
+  margin-left: -.2rem;
+  margin-top: -.2rem;
+}
+
+.swiper-container8 .bannerBox {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container8 .bannerBox {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container8 .bannerBox img {
+  margin-left: .2rem;
+  margin-top: .2rem;
+  width: 7.04rem;
+  height: 4.24rem;
+  z-index: 5;
+  position: relative;
+}
+
+
+
+.swiper-container8 .swiper-button-next:after {
+  display: none;
+}
+
+.swiper-container8 .swiper-button-prev:after {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+
+  .swiper-container8 {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-container8 .bannerBox img {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    position: relative;
+  }
+
+  .swiper-container8 .bannerBox::before {
+    display: none;
+  }
+
+  .video-content {
+    width: 100%;
+    height: 11rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video_list {
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2;
+    z-index: 14;
+  }
+
+  .video_list ul {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2;
+    z-index: 4;
+  }
+
+  .video_list ul li {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2;
+  }
+
+  .video_list ul li::after {
+    display: none;
+  }
+
+}

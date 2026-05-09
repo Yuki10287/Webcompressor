@@ -1,0 +1,293 @@
+.notice_content {
+  width: 12.4rem;
+}
+
+.notice_content .common-top-panel {
+  width: 4.98rem;
+}
+
+.notice_content .notice_content_panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.notice_content .notice_content_panel_left {
+  width: 3.00rem;
+  height: 4rem;
+  background: #0946E2;
+  border-radius: .15rem 0 .15rem .15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: .3rem;
+  padding-top: 1.2rem;
+  margin-top: .2rem;
+
+  background: url(../images/home/notice_left_bg.png) no-repeat;
+  background-size: cover;
+}
+
+
+
+.notice_content .tag-item-0-common {
+  width: 2.27rem;
+  height: .66rem;
+  background: rgba(253, 253, 253, 0.3);
+  border-radius: .10rem;
+  text-align: center;
+  line-height: .66rem;
+  /* border: .05rem solid rgba(253, 253, 253, 0.3); */
+  font-weight: 500;
+  font-size: .30rem;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.notice_content .tag-item-0-common:hover {
+  background: #4866D8;
+}
+
+.notice_content .tag-item-0-common-selected {
+  background: #E0A74F;
+}
+
+.notice_content .tag-item-0-common-selected:hover {
+  background: #E0A74F;
+}
+
+.notice_content .notice_right {
+  position: relative;
+  width: 9.2rem;
+  height: 4.63rem;
+  background: #FFFFFF;
+  box-shadow: .01rem -.08rem .15rem .01rem rgba(6, 16, 88, 0.04);
+  border-radius: .10rem;
+}
+
+.notice_content .notice_right::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0.02rem;
+  /* 位于div的顶部上方 */
+  right: 0.02rem;
+  width: 2.89rem;
+  height: 2.89rem;
+  background: url('../images/home/notice_list_bg.png') no-repeat;
+  background-size: cover;
+}
+
+
+.notice_content .notice_right ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: .24rem;
+}
+
+.notice_content .notice_right .more {
+  display: none;
+}
+
+.notice_content .notice_right li {
+  width: 100%;
+  height: .47rem;
+  margin-bottom: .24rem;
+}
+
+.notice_content .notice_right li:nth-child(n+7) {
+  display: none;
+}
+
+
+
+
+.notice_content .notice_right li .info {
+  display: flex;
+}
+
+
+
+.notice_content .notice_right li .info .date {
+  height: 100%;
+  width: .91rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.notice_content .notice_right li .info .date .day {
+  font-weight: bold;
+  font-size: .24rem;
+  color: #E0A74F;
+}
+
+.notice_content .notice_right li .info .date .day {
+  font-weight: bold;
+  font-size: .24rem;
+  color: #E0A74F;
+}
+
+.notice_content .notice_right li .info .date .year-month {
+  font-weight: 400;
+  font-size: .14rem;
+  color: #E0A74F;
+}
+
+
+
+.notice_content .notice_right li .info .title {
+  padding: 0 .32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.notice_content .notice_right li .info .title .ct {
+  font-weight: 400;
+  font-size: .20rem;
+  color: #3B3B3B;
+  width: 7.4rem;
+  white-space: nowrap;
+  /* 禁止换行 */
+  overflow: hidden;
+  /* 隐藏超出部分 */
+  text-overflow: ellipsis;
+  /* 超出部分显示省略号 */
+  display: block;
+}
+
+.notice_content .notice_right li .info .title .ct p,
+.notice_content .notice_right li .info .title .ct span,
+.notice_content .notice_right li .info .title .ct a {
+  color: #3B3B3B;
+}
+
+.notice_content .notice_right li .info .title .ct-more {
+  font-weight: 400;
+  font-size: .14rem;
+  color: #3B3B3B;
+}
+
+
+.notice_content .notice_right li:hover .info .date {
+  border-right: 1px solid rgba(9, 70, 226, 0.3);
+}
+
+
+.notice_content .notice_right li:hover .info .date .day,
+.notice_content .notice_right li:hover .info .date .year-month,
+.notice_content .notice_right li:hover .title .ct,
+.notice_content .notice_right li:hover .title .ct p,
+.notice_content .notice_right li:hover .title .ct span,
+.notice_content .notice_right li:hover .title .ct a,
+.notice_content .notice_right li:hover .title .ct-more,
+.notice_content .notice_right li:hover .title .ct-more span,
+.notice_content .notice_right li:hover .title .ct-more a,
+.notice_content .notice_right li:hover .title .ct-more p,
+.notice_content .notice_right li:hover span,
+.notice_content .notice_right li:hover a,
+.notice_content .notice_right li:hover p {
+  color: rgba(9, 70, 226, 1);
+}
+
+
+/* 媒体查询样式 */
+@media (max-width: 768px) {
+
+  .notice_content {
+    width: 17rem;
+  }
+
+
+  .notice_content .notice_content_panel_left {
+    width: 4.5rem;
+    height: 6rem;
+    padding-bottom: .45rem;
+    padding-top: 1.8rem;
+    margin-top: .2rem;
+  }
+
+  .notice_content .tag-item-0-common {
+    width: 3.39rem;
+    height: .99rem;
+    line-height: .99rem;
+    font-size: .45rem;
+  }
+
+  .notice_content .notice_right {
+    position: relative;
+    width: 11.70rem;
+    height: 4.63rem;
+    margin-top: 1.6rem;
+
+  }
+
+  .notice_content .common-top-panel {
+    width: 100%;
+  }
+
+
+  .notice_content .notice_right li:not(:nth-child(-n+3)) {
+    display: none;
+  }
+
+  .notice_content .notice_right li {
+    width: 90%;
+    height: 1.2rem;
+    margin-bottom: .24rem;
+  }
+
+
+  .notice_content .notice_right li .info .title .ct-more {
+    font-weight: 400;
+    font-size: .28rem;
+    color: #3B3B3B;
+  }
+
+  .notice_content .notice_right li .info .title .ct {
+    font-weight: 500;
+    font-size: .40rem;
+    color: #3B3B3B;
+    /* width: 70%; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+  }
+
+  .notice_content .notice_right li .info .date .day {
+    font-weight: bold;
+    font-size: .48rem;
+    color: #E0A74F;
+  }
+
+  .notice_content .notice_right li .info .date .year-month {
+    font-weight: 400;
+    font-size: .30rem;
+    color: #E0A74F;
+  }
+
+  .notice_content .notice_right li .info .date {
+    height: 100%;
+    width: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(128, 128, 128, 0.3);
+  }
+
+  .notice_content .notice_right li .info .title {
+    padding: 0 .32rem;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+}

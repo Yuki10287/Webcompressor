@@ -1,0 +1,322 @@
+.teach-content {
+    width: 7.63rem;
+    height: 100%;
+}
+
+.teach-content .common-top-panel {
+    width: 7rem;
+}
+
+.teach-content .commom-title-pannel .commom-title {
+    color: #fff;
+}
+
+.teach-content .commom-title-pannel .commom-sub-title {
+    color: #fff;
+}
+
+.teach-content .commom-title-pannel .commom-sub-title::before {
+    background-color: #fff;
+}
+
+.teach-content .wrapper-more .more {
+    color: #fff;
+}
+
+
+
+.teacher-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#carousel {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: .62rem;
+    width: 7.63rem;
+    height: 2.06rem;
+}
+
+
+#carousel .swiper {
+    position: relative;
+}
+
+#carousel .swiper-button-next:after {
+    background: url("../images/right_teacher_arrow.png");
+    position: absolute;
+    right: -.5rem !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 0;
+    width: .15rem;
+    aspect-ratio: 0.6;
+    left: auto;
+}
+
+#carousel .swiper-button-prev:after {
+    background-image: url("../images/left_teacher_arrow.png");
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: -.5rem !important;
+    font-size: 0;
+    width: .15rem;
+    aspect-ratio: 0.6;
+    right: auto;
+}
+
+#carousel .swiper-slide {
+    width: 1.32rem;
+    height: 2.16rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#carousel .swiper-slide img {
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    width: 1.32rem;
+    height: 1.73rem;
+}
+
+#carousel .swiper-slide .swiper-title,
+#carousel .swiper-slide .swiper-title p,
+#carousel .swiper-slide .swiper-title a,
+#carousel .swiper-slide .swiper-title span {
+    font-weight: 500;
+    font-size: .24rem;
+    color: #FFFFFF;
+}
+
+
+
+#carousel .more {
+    display: none;
+}
+
+#carousel .swiper-pagination {
+    display: none;
+}
+
+
+.teacher_detail_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.teacher_detail_info .teacher_detail_info_bg {
+    position: relative;
+    width: 5rem;
+    height: 2.52rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.teacher_detail_info .teacher_detail_info_bg .info_title {
+    font-weight: 500;
+    font-size: .32rem;
+    color: #FFFFFF;
+    margin-top: .25rem;
+}
+
+.teacher_detail_info .teacher_detail_info_bg .info_desc {
+    margin-top: .27rem;
+    font-weight: 400;
+    font-size: .20rem;
+    color: #FFFFFF;
+    display: block;
+    width: 100%;
+    height: 1.18rem;
+
+    display: -webkit-box;
+    /* 使用弹性盒子布局 */
+    -webkit-box-orient: vertical;
+    /* 垂直方向排列 */
+    -webkit-line-clamp: 4;
+    /* 限制最多 2 行 */
+    overflow: hidden;
+    /* 超出部分隐藏 */
+    text-overflow: ellipsis;
+    /* 超出部分显示省略号 */
+    word-break: break-all;
+    /* 允许单词换行（防止长单词溢出） */
+
+}
+
+.teacher_detail_info .teacher_detail_info_bg .info_more {
+    font-weight: bold;
+    font-size: .16rem;
+    color: #FFFFFF;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+
+.teacher_head_icon {
+    width: 2.04rem;
+    height: 2.53rem;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+
+    .teach-content {
+        width: 100%;
+        height: 8rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .teach-content .common-top-panel {
+        width: 100%;
+    }
+
+    .teach-content .commom-title-pannel {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .teach-content .commom-title-pannel .commom-title {
+        color: #0946E2;
+    }
+
+    .teach-content .commom-title-pannel .commom-sub-title {
+        color: #0946E2;
+    }
+
+    .teach-content .commom-title-pannel .commom-sub-title::before {
+        background-color: #0946E2;
+    }
+
+    .teach-content .wrapper-more .more {
+        color: #0946E2;
+    }
+
+    .teacher_detail_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 1.3rem;
+        align-self: flex-end;
+    }
+
+    .teacher_detail_info .teacher_detail_info_bg {
+        position: relative;
+        width: 11rem;
+        height: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .teacher_head_icon {
+        width: 4rem;
+        height: 5rem;
+        object-fit: contain;
+    }
+
+
+    .teacher_detail_info .teacher_detail_info_bg .info_title {
+        margin-top: 1rem;
+        font-weight: 500;
+        font-size: .60rem;
+        color: #FFFFFF;
+    }
+
+    .teacher_detail_info .teacher_detail_info_bg .info_desc {
+        margin-top: .27rem;
+        font-weight: 400;
+        font-size: .50rem;
+        color: #FFFFFF;
+        display: block;
+        width: 100%;
+        height: 2rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+    }
+
+    .teacher_detail_info .teacher_detail_info_bg .info_more {
+        display: none;
+    }
+
+    #carousel {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+        width: 13rem;
+        height: 3.4rem;
+    }
+
+    #carousel .swiper-slide img {
+        object-fit: cover;
+        display: block;
+        background-size: cover;
+        width: 2.6rem;
+        height: 3.4rem;
+    }
+
+    #carousel .swiper-slide .swiper-title,
+    #carousel .swiper-slide .swiper-title p,
+    #carousel .swiper-slide .swiper-title a,
+    #carousel .swiper-slide .swiper-title span {
+        font-weight: 500;
+        font-size: .50rem;
+        color: #FFFFFF;
+    }
+
+    #carousel .swiper-button-prev:after {
+        background-image: url("../images/left_teacher_arrow.png");
+        background-size: cover;
+        position: absolute;
+        background-repeat: no-repeat;
+        left: -1rem !important;
+        font-size: 0;
+        width: .3rem;
+        aspect-ratio: 0.6;
+        right: auto;
+    }
+
+
+    #carousel .swiper-button-next:after {
+        background: url("../images/right_teacher_arrow.png");
+        position: absolute;
+        right: -1rem !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 0;
+        width: .3rem;
+        aspect-ratio: 0.6;
+        left: auto;
+    }
+
+    #carousel .swiper-slide {
+        width: 2.6rem;
+        height: 4.6rem;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+}

@@ -1,0 +1,112 @@
+.focus-content-panel {
+    margin-top: .7rem;
+    height: calc(100% - 0.7rem - 2.58rem);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.focus-content {
+    height: 5.7rem;
+    width: 100%;
+}
+
+.focus-content .common-top-panel {
+    margin-top: .3rem;
+    z-index: 11;
+}
+
+.focus-title-panel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.focus-title-panel .wrapper-more{
+    position: absolute;
+    right: 0;
+}
+
+.focus_list {
+    width: 100%;
+    height: 3.87rem;
+    margin-top: .39rem;
+}
+
+.focus_list .more {
+    display: none;
+}
+
+.focus_list ul {
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+}
+
+.focus_list li {
+    float: left;
+    border-radius: .1rem;
+    overflow: hidden;
+}
+
+.focus_list li:hover img {
+    transform: scale(1.1);
+    transition: all 0.4s linear;
+    /* 所有属性在0.3秒内线性过渡 */
+}
+
+.focus_list li:first-child {
+    width: 6.9rem;
+    height: 3.87rem;
+}
+
+.focus_list li:nth-child(2),
+.focus_list li:nth-child(3) {
+    margin-bottom: .07rem;
+}
+
+.focus_list li:not(:first-child) {
+    width: 4.3rem;
+    height: 1.9rem;
+    margin-bottom: .07rem;
+    margin-left: calc((100% - 4.3rem * 2 - 6.9rem) / 2);
+}
+
+.focus_list li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.focus_list li:nth-child(n+6) {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .focus-content-panel {
+        margin-top: .7rem;
+        height: 8rem;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .focus_list li:first-child {
+        width: 7.25rem;
+        height: 4.06rem;
+    }
+
+
+    .focus_list li:not(:first-child) {
+        width: 4.52rem;
+        height: 2rem;
+        margin-bottom: 0.1rem;
+        margin-left: calc((100% - 4.52rem * 2 - 7.25rem) / 2);
+    }
+}

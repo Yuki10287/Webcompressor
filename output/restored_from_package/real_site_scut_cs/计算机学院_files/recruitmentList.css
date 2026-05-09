@@ -1,0 +1,170 @@
+.recruitment_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: .65rem;
+}
+
+.recruitment_content .common-top-panel {
+    padding: 0 .16rem;
+}
+
+.recruitment_content .recruitment_list .more {
+    display: none;
+}
+
+/* 列表 */
+.recruitment_list {
+    margin-top: .1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px .15rem .01rem rgba(6, 16, 88, 0.06);
+    border-radius: .1rem;
+    padding: .18rem .18rem .05rem .19rem;
+}
+
+.recruitment_list .l-recruitment_list {
+    margin: 0;
+}
+
+.recruitment_list .l-recruitment_list li {
+    width: 100%;
+    background: #FFFFFF;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.recruitment_list .l-recruitment_list li:not(:nth-last-child(1)) {
+    margin-bottom: .17rem;
+}
+
+
+.recruitment_list .l-recruitment_list li {
+    width: 100%;
+}
+
+
+
+.recruitment_list .l-recruitment_list li:nth-child(n+3) {
+    display: none;
+}
+
+
+
+/* 文字 */
+.l-recruitment_list>li .info .date,
+.l-recruitment_list>li .info .date p,
+.l-recruitment_list>li .info .date a,
+.l-recruitment_list>li .info .date span {
+    margin: 0;
+    line-height: .20rem;
+    width: 4.72rem;
+    white-space: nowrap;
+    /* 禁止换行 */
+    overflow: hidden;
+    /* 隐藏超出部分 */
+    text-overflow: ellipsis;
+    /* 超出部分显示省略号 */
+    display: block;
+
+    color: #343333;
+
+    font-weight: 400;
+    font-size: .18rem;
+}
+
+
+
+
+.l-recruitment_list>li .info .ct,
+.l-recruitment_list>li .info .ct p,
+.l-recruitment_list>li .info .ct a,
+.l-recruitment_list>li .info .ct span {
+    margin: 0;
+    font-size: .20rem;
+    line-height: .22rem;
+    width: 4.72rem;
+    font-weight: 400;
+    color: #343333;
+
+    white-space: nowrap;
+    /* 禁止换行 */
+    overflow: hidden;
+    /* 隐藏超出部分 */
+    text-overflow: ellipsis;
+    /* 超出部分显示省略号 */
+    display: block;
+}
+
+
+
+.l-recruitment_list>li:hover .info .ct,
+.l-recruitment_list>li:hover .info .ct p,
+.l-recruitment_list>li:hover .info .ct a,
+.l-recruitment_list>li:hover .info .ct span {
+    color: #0946E2;
+}
+
+.l-recruitment_list>li:hover .info .date,
+.l-recruitment_list>li:hover .info .date p,
+.l-recruitment_list>li:hover .info .date a,
+.l-recruitment_list>li:hover .info .date span {
+    color: #0946E2;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .recruitment_content {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 1.2rem;
+    }
+
+
+    .recruitment_list {
+        margin-top: .2rem;
+        padding: .40rem .36rem 0rem .38rem;
+    }
+
+    .l-recruitment_list>li .info .date {
+        margin-bottom: 0rem;
+    }
+
+    .l-recruitment_list>li .info .date,
+    .l-recruitment_list>li .info .date p,
+    .l-recruitment_list>li .info .date a,
+    .l-recruitment_list>li .info .date span {
+        line-height: .42rem;
+        width: 100%;
+        font-size: .46rem;
+        color: #1A0A04;
+    }
+
+    .l-recruitment_list>li .info .ct,
+    .l-recruitment_list>li .info .ct p,
+    .l-recruitment_list>li .info .ct a,
+    .l-recruitment_list>li .info .ct span {
+        margin: 0;
+        font-size: .45rem;
+        line-height: 1.5rem;
+        width: 100%;
+        color: #1A0A04;
+    }
+
+    .recruitment_list .l-recruitment_list li:not(:nth-last-child(1)) {
+        margin-bottom: .4rem;
+    }
+
+
+}

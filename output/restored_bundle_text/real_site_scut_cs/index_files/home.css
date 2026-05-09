@@ -1,0 +1,457 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.platform-swiper {
+  overflow: hidden;
+}
+
+.platform-swiper .home-swiper {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+
+
+
+
+/* .home-swiper .swiper-wrapper {
+  width: 100%;
+} */
+
+.home-swiper .home-wrapper {
+  width: 100%;
+}
+
+.sticky-nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  top: -.7rem;
+  /* top: 0rem; */
+  left: 0;
+  transition: top 0.5s ease;
+  /* 平滑动画 */
+  z-index: 100;
+  background-color: #0946E2;
+}
+
+.sticky-nav-0 {
+  top: 0rem;
+}
+
+/* 隐藏滚动条（适用于Webkit浏览器） */
+.home-swiper::-webkit-scrollbar {
+  display: none;
+}
+
+.home-swiper .swiper-slide {
+  overflow: hidden;
+  height: 100%;
+  /* 全屏高度 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5f8fc;
+}
+
+
+.home-swiper .page7-bg {
+  background-color: transparent !important;
+}
+
+.padding-nav-height {
+  margin-top: .71rem;
+  /* margin-top: 1.3rem; */
+  /* padding-top: ; */
+}
+
+.padding-navHeight {
+  /* margin-top: .71rem; */
+  margin-top: 1.3rem;
+  /* padding-top: ; */
+}
+
+/* .page2-bg {
+  background-color: #f5f8fc;
+} */
+
+.mix-panel2 {
+  height: calc(100% - .7rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.2rem;
+  z-index: 1;
+}
+
+
+.page3-bg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 98%;
+  aspect-ratio: 2.7;
+  bottom: 0;
+  right: 0;
+  background: url('../images/home/academic_big_bg.png') no-repeat;
+  background-size: cover;
+}
+
+
+.page3-bg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60%;
+  aspect-ratio: 1.48;
+  top: 1.4rem;
+  right: 4%;
+  background: url('../images/home/notice_right_bg.png') no-repeat;
+  background-size: cover;
+}
+
+.mixpanel3 {
+  z-index: 11;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100% - .7rem);
+  margin-top: .7rem;
+}
+
+.mixpanel3-content {
+  width: 100%;
+  margin-top: .8rem;
+  height: 6.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.padding-mixpanel3 {
+  margin-top: 2.5rem;
+}
+
+
+.page4-bg {
+  position: relative;
+}
+
+.page4-bg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 95%;
+  aspect-ratio: 1.78;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  background: url('../images/home/video_bg.png') no-repeat;
+  background-size: cover;
+}
+
+.page4-bg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 95%;
+  height: 9rem;
+  right: 0;
+  z-index: 0;
+  top: 55%;
+  /* 垂直居中关键 */
+  transform: translate(0, -50%);
+  /* 水平和垂直居中修正 */
+  background: url('../images/home/teacher_bg.png') no-repeat;
+  background-size: cover;
+}
+
+
+.page5-bg {
+  /* background-color: #f5f8fc; */
+  position: relative;
+}
+
+.page5-bg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 42%;
+  aspect-ratio: 3.28;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  background: url('../images/home/couse_right_bg.png') no-repeat;
+  background-size: cover;
+}
+
+.page5-book-bg {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 6.27;
+  object-fit: contain;
+  bottom: 0;
+  left: 0;
+  transform: scale(0.5);
+  transition: transform 2s ease-out, opacity 1s ease-out;
+}
+
+
+.bookScale {
+  /* 进入视口后的状态 */
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+.page6-bg {
+  /* background-color: #f5f8fc; */
+  position: relative;
+}
+
+.page7-bg::after {
+  /* background-color: #f6f9fc; */
+  position: relative;
+}
+
+.focus-content-panel::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  /* 将左边缘移动到容器中心 */
+  transform: translateX(-50%);
+  /* 向左移动自身宽度的一半以实现居中 */
+  z-index: -1;
+  background: url('../images/home/focus_bg.png') no-repeat center center;
+  /* 背景图像水平和垂直居中 */
+  background-size: cover;
+}
+
+
+/* 通用标题栏 */
+
+.commom-title-pannel {
+  display: flex;
+  flex-direction: column;
+}
+
+.commom-title-pannel .commom-title {
+  font-weight: bold;
+  font-size: .36rem;
+  color: #0946E2;
+  position: relative;
+}
+
+.commom-title-pannel .commom-sub-title {
+  font-weight: bold;
+  font-size: .16rem;
+  color: #0946E2;
+
+  position: relative;
+  padding-left: .4rem;
+  /* 为横线留出空间 */
+  display: inline-flex;
+  align-items: center;
+}
+
+.commom-title-pannel .commom-sub-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: .34rem;
+  /* 横线长度 */
+  height: .05rem;
+  /* 横线粗细 */
+  background-color: #0946E2;
+  /* 横线颜色 */
+}
+
+
+.commom-title-pannel .commom-title::after {
+  content: '';
+  position: absolute;
+  left: -.3rem;
+  top: -0.4rem;
+  z-index: 11;
+  width: 2.02rem;
+  height: .93rem;
+  background: url(../images/home/commom-title-bg.png) no-repeat;
+  background-repeat: round;
+}
+
+
+/* 通用标题栏 更多*/
+
+.wrapper-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: .94rem;
+  height: .40rem;
+  /* background-color: #C88D1B;
+  border-radius: .20rem; */
+  box-sizing: border-box;
+}
+
+
+.wrapper-more-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-more .more {
+  align-self: center;
+  text-decoration: none;
+  letter-spacing: 0;
+  white-space: nowrap;
+  margin-top: 0px !important;
+  lines: 1;
+  font-weight: bold;
+  font-size: .16rem;
+  color: #0946E2;
+}
+
+.wrapper-more .icon-right {
+  align-self: center;
+  width: .12rem;
+  height: .22rem;
+  margin-left: 0.08rem;
+}
+
+/* 通用标题栏 */
+.common-top-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.home-footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.center-panel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .sticky-nav {
+    display: none;
+  }
+
+  .home-swiper .swiper-slide {
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f5f8fc;
+  }
+
+  .home-footer {
+    position: relative;
+  }
+
+  .footer .footer-content .bottom span {
+    font-size: .40rem;
+  }
+
+
+  .commom-title-pannel .commom-title {
+    font-size: .60rem;
+  }
+
+  .commom-title-pannel .commom-title::after {
+    left: -.4rem;
+    top: -.6rem;
+    width: 3.2rem;
+    height: 1.4rem;
+  }
+
+
+  .commom-title-pannel .commom-sub-title {
+    font-size: .40rem;
+    color: #0946E2;
+    padding-left: 1rem;
+  }
+
+  .commom-title-pannel .commom-sub-title::before {
+    width: .85rem;
+    height: .125rem;
+  }
+
+  .wrapper-more {
+    width: 2.15rem;
+    height: 1rem;
+  }
+
+  .wrapper-more .more {
+    font-size: .45rem;
+  }
+
+
+  .page3-bg::after {
+    display: none;
+  }
+
+  .page3-bg::before {
+    display: none;
+  }
+
+  /* .mixpanel3 {
+    height: 10rem;
+  } */
+
+  .mixpanel3-content {
+    width: 100%;
+    margin-top: .8rem;
+    height: 26rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page4-bg::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 110%;
+    height: 13.5rem;
+    /* aspect-ratio: 1.63; */
+    /* right: 0; */
+    left: 50%;
+    z-index: 0;
+    /* 垂直居中关键 */
+    /* 水平和垂直居中修正 */
+    background: url('../images/home/teacher_bg1.png') no-repeat;
+    background-size: cover;
+    top: 2.3rem;
+    transform: translate(-50%, 0);
+  }
+
+
+
+}

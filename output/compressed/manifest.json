@@ -1,273 +1,211 @@
 {
-  "project_root": "C:/Users/15591/PycharmProjects/Webcompressor/sample_data/benchmark_site_rich",
+  "project_root": "C:/Users/15591/Desktop/real_site/real_site_htmlimage_mdn",
   "text_bundle_enabled": true,
-  "text_bundle_original_size": 142387,
-  "text_bundle_compressed_size": 47636,
-  "text_bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+  "text_bundle_original_size": 321828,
+  "text_bundle_compressed_size": 84742,
+  "text_bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
   "files": [
     {
-      "relative_path": "about.html",
+      "relative_path": "HTML images - Learn web development _ MDN.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "blog.html",
+      "relative_path": "HTML images - Learn web development _ MDN_files/270.66bae6059a1c23f9.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "contact.html",
+      "relative_path": "HTML images - Learn web development _ MDN_files/styles-a11y-menu.5796ee87cb69f93f.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "docs.html",
+      "relative_path": "HTML images - Learn web development _ MDN_files/styles-article-footer.81ae18c89fc527dc.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "faq.html",
+      "relative_path": "HTML images - Learn web development _ MDN_files/styles-breadcrumbs-bar.9a51a3c76a6231d0.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "gallery.html",
+      "relative_path": "HTML images - Learn web development _ MDN_files/styles-breadcrumbs.87eb742f4e711dc3.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "index.html",
+      "relative_path": "HTML images - Learn web development _ MDN_files/styles-content-section.f309b96d462d3c5d.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "pricing.html",
+      "relative_path": "HTML images - Learn web development _ MDN_files/styles-footer.66072dd619a4ef50.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "products.html",
+      "relative_path": "HTML images - Learn web development _ MDN_files/styles-global.401d0cd6564b08c2.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "services.html",
+      "relative_path": "HTML images - Learn web development _ MDN_files/styles-heading-anchor.0eec5185ab9425b7.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "css/animation.css",
+      "relative_path": "HTML images - Learn web development _ MDN_files/styles-left-sidebar.46e37af4d0b5c883.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "css/base.css",
+      "relative_path": "HTML images - Learn web development _ MDN_files/styles-logo.aea5ff6edf1b9cfb.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "css/components.css",
+      "relative_path": "HTML images - Learn web development _ MDN_files/styles-menu.e2c5c8a53a8854c2.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "css/forms.css",
+      "relative_path": "HTML images - Learn web development _ MDN_files/styles-navigation.c3ebf384e65df345.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "css/layout.css",
+      "relative_path": "HTML images - Learn web development _ MDN_files/styles-page-layout.5a4354f33e894319.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "css/reset.css",
+      "relative_path": "HTML images - Learn web development _ MDN_files/styles-reference-layout.632d2f3884f10ca3.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "css/theme.css",
+      "relative_path": "HTML images - Learn web development _ MDN_files/styles-reference-toc.9b9bd019efd16b86.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_htmlimage_mdn_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "js/app.js",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
-      "restored_success": true
+      "relative_path": "HTML images - Learn web development _ MDN_files/alt-text.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\alt-text.png.png",
+      "restored_success": true,
+      "compress_time_ms": 31.808
     },
     {
-      "relative_path": "js/charts.js",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
-      "restored_success": true
+      "relative_path": "HTML images - Learn web development _ MDN_files/basic-image.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\basic-image.png.png",
+      "restored_success": true,
+      "compress_time_ms": 62.7
     },
     {
-      "relative_path": "js/data.js",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "js/dom.js",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "js/gallery.js",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "js/search.js",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "js/utils.js",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "images/avatar1.jpg",
+      "relative_path": "HTML images - Learn web development _ MDN_files/dinosaur_small.jpg",
       "type": "image",
       "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\avatar1.jpg.jpg",
+      "compressed_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\dinosaur_small.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 59.68
+      "compress_time_ms": 2.677
     },
     {
-      "relative_path": "images/avatar2.jpg",
+      "relative_path": "HTML images - Learn web development _ MDN_files/image-with-title.png",
       "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\avatar2.jpg.jpg",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\image-with-title.png.png",
       "restored_success": true,
-      "compress_time_ms": 2.867
+      "compress_time_ms": 17.258
     },
     {
-      "relative_path": "images/avatar3.jpg",
+      "relative_path": "HTML images - Learn web development _ MDN_files/no-size.png",
       "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\avatar3.jpg.jpg",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\no-size.png.png",
       "restored_success": true,
-      "compress_time_ms": 3.956
+      "compress_time_ms": 312.174
     },
     {
-      "relative_path": "images/banner.jpg",
+      "relative_path": "HTML images - Learn web development _ MDN_files/size.png",
       "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\banner.jpg.jpg",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\size.png.png",
       "restored_success": true,
-      "compress_time_ms": 15.452
+      "compress_time_ms": 279.755
     },
     {
-      "relative_path": "images/bg.png",
-      "type": "image",
-      "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\images\\bg.png.png",
-      "restored_success": true,
-      "compress_time_ms": 121.805
+      "relative_path": "HTML images - Learn web development _ MDN_files/1111.53dba753dc3eb961.js.下载",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\1111.53dba753dc3eb961.js.下载",
+      "restored_success": true
     },
     {
-      "relative_path": "images/card_bg.png",
-      "type": "image",
-      "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\images\\card_bg.png.png",
-      "restored_success": true,
-      "compress_time_ms": 103.55
+      "relative_path": "HTML images - Learn web development _ MDN_files/8903.f870aafb338b203a.js.下载",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\8903.f870aafb338b203a.js.下载",
+      "restored_success": true
     },
     {
-      "relative_path": "images/gallery1.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\gallery1.jpg.jpg",
-      "restored_success": true,
-      "compress_time_ms": 9.586
+      "relative_path": "HTML images - Learn web development _ MDN_files/airgap.js.下载",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\airgap.js.下载",
+      "restored_success": true
     },
     {
-      "relative_path": "images/gallery2.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\gallery2.jpg.jpg",
-      "restored_success": true,
-      "compress_time_ms": 9.811
+      "relative_path": "HTML images - Learn web development _ MDN_files/index.88050de47c563cea.js.下载",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\index.88050de47c563cea.js.下载",
+      "restored_success": true
     },
     {
-      "relative_path": "images/gallery3.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\gallery3.jpg.jpg",
-      "restored_success": true,
-      "compress_time_ms": 11.417
-    },
-    {
-      "relative_path": "images/gallery4.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\gallery4.jpg.jpg",
-      "restored_success": true,
-      "compress_time_ms": 10.827
-    },
-    {
-      "relative_path": "images/hero_pattern.png",
-      "type": "image",
-      "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\images\\hero_pattern.png.png",
-      "restored_success": true,
-      "compress_time_ms": 87.031
-    },
-    {
-      "relative_path": "images/logo.png",
-      "type": "image",
-      "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\images\\logo.png.png",
-      "restored_success": true,
-      "compress_time_ms": 18.929
+      "relative_path": "HTML images - Learn web development _ MDN_files/runtime.b0746d894b1ea8cc.js.下载",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\HTML images - Learn web development _ MDN_files\\runtime.b0746d894b1ea8cc.js.下载",
+      "restored_success": true
     }
   ]
 }

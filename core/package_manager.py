@@ -9,6 +9,11 @@ class PackageManager:
         write_binary(target_path, data)
         return target_path
 
+    def save_stored_asset(self, output_root: str, relative_path: str, data: bytes) -> str:
+        target_path = os.path.join(output_root, relative_path)
+        write_binary(target_path, data)
+        return target_path
+
     def save_manifest(self, output_root: str, manifest_data: dict) -> str:
         ensure_dir(output_root)
         manifest_path = os.path.join(output_root, "manifest.json")

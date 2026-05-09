@@ -1,0 +1,229 @@
+.scientific-panel {
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  /* 图片等比缩放，填满整个容器 */
+  background-position: center;
+  /* 图片居中显示 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 0.7rem);
+  margin-top: .7rem;
+}
+
+.scientific-panel-content {
+  position: relative;
+  width: 100%;
+  height: 7.38rem;
+}
+
+.scientific-panel .commom-title-pannel {
+  position: absolute;
+}
+
+/* .scientific-panel .wrapper-more {
+  display: flex;
+  justify-content: left;
+
+} */
+
+.scientific-content {
+  position: absolute;
+  width: 100%;
+  height: 4.68rem;
+  /* background: #FFFFFF; */
+  top: 1rem;
+  padding-top: .45rem;
+}
+
+.scientific-content::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -.5rem;
+  width: 18rem;
+  height: 4.68rem;
+  background: #FFFFFF;
+}
+
+
+/* .scientific-content-desc {
+  font-weight: 500;
+  font-size: .24rem;
+  color: #1B1B1A;
+  display: block;
+  padding-bottom: .4rem;
+} */
+
+.scientific-content-desc {
+  font-weight: 500;
+  font-size: .20rem;
+  color: #3A3A3A;
+  display: block;
+  padding-bottom: .4rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.scientific-content-img {
+  position: absolute;
+  width: 9.67rem;
+  height: 4.43rem;
+  right: 0rem;
+  top: -.3rem;
+}
+
+.scientific_list {
+  width: 100%;
+  top: 4.8rem;
+  right: 0;
+  position: absolute;
+}
+
+.scientific_list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.scientific_list li:not(:nth-child(-n+5)) {
+  display: none;
+}
+
+.scientific_list li .info {
+  width: 2.66rem;
+  height: 2.47rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.scientific_list li .info img {
+  width: 100%;
+  height: 100%;
+}
+
+.scientific_list li .info img:hover {
+  transform: scale(1.1);
+  transition: all 0.4s linear; /* 所有属性在0.3秒内线性过渡 */
+}
+
+.scientific_list li .info .ct {
+  position: absolute;
+  width: 2.33rem;
+  left: .15rem;
+  bottom: 0;
+  display: inline-block;
+  /* 让伪元素宽度适应标题 */
+  padding-bottom: .35rem;
+  /* 为图片预留空间 */
+
+}
+
+.scientific_list li .info .ct,
+.scientific_list li .info .ct span,
+.scientific_list li .info .ct a {
+  font-weight: 500;
+  font-size: .24rem;
+  color: #FFFFFF;
+  width: 2.33rem;
+
+  display: -webkit-box;
+  /* 使用弹性盒子布局 */
+  -webkit-box-orient: vertical;
+  /* 垂直方向排列 */
+  -webkit-line-clamp: 2;
+  /* 限制最多 2 行 */
+  overflow: hidden;
+  /* 超出部分隐藏 */
+  text-overflow: ellipsis;
+  /* 超出部分显示省略号 */
+  word-break: break-word;
+  /* 允许单词换行（防止长单词溢出） */
+}
+
+.scientific_list .more {
+  display: none;
+}
+
+#scientific-mobile-more {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .scientific-panel .commom-title-pannel {
+    position: relative;
+  }
+
+  .scientific-panel-content {
+    position: relative;
+    width: 100%;
+    height: 8.38rem;
+  }
+
+  .scientific-content-desc {
+    font-size: .36rem;
+    padding-bottom: .4rem;
+  }
+
+  .scientific-content-img {
+    position: absolute;
+    width: 5.5rem;
+    height: 3rem;
+    right: 0rem;
+    top: 2.5rem;
+  }
+
+  .scientific-content {
+    position: absolute;
+    width: 100%;
+    height: 6.8rem;
+    /* background: #FFFFFF; */
+    top: 2rem;
+    padding-top: .45rem;
+  }
+
+  .scientific-panel {
+    height: 12.30rem;
+  }
+
+
+
+  .scientific_list li:not(:nth-child(-n+4)) {
+    display: none;
+  }
+
+  .scientific_list li .info {
+    width: 3.54rem;
+    height: 3.93rem;
+    position: relative;
+  }
+
+  .scientific_list li .info .ct,
+  .scientific_list li .info .ct span,
+  .scientific_list li .info .ct a {
+    font-size: .396rem;
+    width: 2.796rem;
+  }
+
+  .scientific_list {
+    width: 100%;
+    top: 6.3rem;
+    right: 0;
+    position: absolute;
+  }
+
+  #scientific-full-more {
+    display: none;
+  }
+
+  #scientific-mobile-more {
+    display: flex;
+  }
+
+}
