@@ -123,7 +123,7 @@ class MainWindow(QMainWindow):
 
         # 按钮区
         self.button_panel = GlassPanel()
-        button_layout = QHBoxLayout(self.button_panel)
+        button_layout = QGridLayout(self.button_panel)
         button_layout.setContentsMargins(16, 14, 16, 14)
         button_layout.setSpacing(12)
 
@@ -143,14 +143,24 @@ class MainWindow(QMainWindow):
         self.open_restore_folder_button = QPushButton("打开恢复目录")
         self.open_restore_folder_button.clicked.connect(self.open_restore_folder)
 
-        for btn in [
+        self.open_report_folder_button = QPushButton("打开报告目录")
+        self.open_report_folder_button.clicked.connect(self.open_report_folder)
+
+        self.open_chart_folder_button = QPushButton("打开图表目录")
+        self.open_chart_folder_button.clicked.connect(self.open_chart_folder)
+
+        buttons = [
             self.scan_button,
             self.compress_button,
             self.restore_button,
             self.open_page_button,
             self.open_restore_folder_button,
-        ]:
-            button_layout.addWidget(btn)
+            self.open_report_folder_button,
+            self.open_chart_folder_button,
+        ]
+
+        for index, btn in enumerate(buttons):
+            button_layout.addWidget(btn, index // 4, index % 4)
 
         # 信息卡片区
         self.card_original = InfoCard("原始总大小")
@@ -592,6 +602,26 @@ class MainWindow(QMainWindow):
 
         if not opened:
             QMessageBox.warning(self, "提示", f"尝试打开目录失败，请手动打开：\n{restore_root}")
+
+    def open_report_folder(self):
+        project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        report_root = os.path.join(project_root, "output", "reports")
+
+        if not os.path.exists(report_root):
+            QMessageBox.warning(self, "提示", "请先运行实验评估脚本和图表生成脚本")
+            return
+
+        QDesktopServices.openUrl(QUrl.fromLocalFile(os.path.abspath(report_root)))
+
+    def open_chart_folder(self):
+        project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        chart_root = os.path.join(project_root, "output", "reports", "charts")
+
+        if not os.path.exists(chart_root):
+            QMessageBox.warning(self, "提示", "请先运行实验评估脚本和图表生成脚本")
+            return
+
+        QDesktopServices.openUrl(QUrl.fromLocalFile(os.path.abspath(chart_root)))
 
     def restore_project(self):
         manifest_path = os.path.join("output", "compressed", "manifest.json")
