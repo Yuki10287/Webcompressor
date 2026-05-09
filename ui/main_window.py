@@ -18,6 +18,11 @@ from core.resource_manager import ResourceManager
 from core.package_manager import PackageManager
 from compress.image_compressor import ImageCompressor
 from compress.text_bundle_compressor import TextBundleCompressor
+from experiments.evaluate_current_site import (
+    evaluate_current_site,
+    get_site_chart_dir,
+    record_recent_site_path,
+)
 from utils.file_utils import read_binary, write_binary, ensure_dir
 
 
@@ -149,6 +154,12 @@ class MainWindow(QMainWindow):
         self.open_chart_folder_button = QPushButton("打开图表目录")
         self.open_chart_folder_button.clicked.connect(self.open_chart_folder)
 
+        self.generate_current_report_button = QPushButton("生成当前网页报告")
+        self.generate_current_report_button.clicked.connect(self.generate_current_site_report)
+
+        self.open_current_chart_button = QPushButton("查看当前网页图表")
+        self.open_current_chart_button.clicked.connect(self.open_current_site_charts)
+
         buttons = [
             self.scan_button,
             self.compress_button,
@@ -157,6 +168,8 @@ class MainWindow(QMainWindow):
             self.open_restore_folder_button,
             self.open_report_folder_button,
             self.open_chart_folder_button,
+            self.generate_current_report_button,
+            self.open_current_chart_button,
         ]
 
         for index, btn in enumerate(buttons):
@@ -326,6 +339,7 @@ class MainWindow(QMainWindow):
             return
 
         self.project = self.resource_manager.scan_project(folder)
+        record_recent_site_path(folder)
 
         self.text_bundle_enabled = False
         self.text_bundle_original_size = 0
@@ -639,6 +653,35 @@ class MainWindow(QMainWindow):
             return
 
         QDesktopServices.openUrl(QUrl.fromLocalFile(os.path.abspath(chart_root)))
+
+    def generate_current_site_report(self):
+        if not self.project:
+            QMessageBox.warning(self, "提示", "请先选择网页目录")
+            return
+
+        try:
+            result = evaluate_current_site(self.project.root_dir)
+            QMessageBox.information(
+                self,
+                "当前网页报告已生成",
+                f"报告目录：\n{result['report_dir']}"
+            )
+        except Exception as e:
+            QMessageBox.critical(self, "生成失败", f"生成当前网页报告时出错：{e}")
+
+    def open_current_site_charts(self):
+        if not self.project:
+            QMessageBox.warning(self, "提示", "请先选择网页目录")
+            return
+
+        chart_root = get_site_chart_dir(self.project.root_dir)
+        if not os.path.exists(chart_root):
+            QMessageBox.warning(self, "提示", "请先生成当前网页报告")
+            return
+
+        opened = QDesktopServices.openUrl(QUrl.fromLocalFile(os.path.abspath(chart_root)))
+        if not opened:
+            QMessageBox.warning(self, "提示", f"尝试打开目录失败，请手动打开：\n{chart_root}")
 
     def restore_project(self):
         manifest_path = os.path.join("output", "compressed", "manifest.json")

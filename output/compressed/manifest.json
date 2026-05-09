@@ -1,196 +1,134 @@
 {
-  "project_root": "C:/Users/15591/Desktop/real_site/real_site_bootstrap",
+  "project_root": "C:/Users/15591/Desktop/real_site/real_site_pythonTutorial",
   "text_bundle_enabled": true,
-  "text_bundle_original_size": 179214,
-  "text_bundle_compressed_size": 38461,
-  "text_bundle_path": "output\\bundles\\real_site_bootstrap_text_bundle.bin",
+  "text_bundle_original_size": 84330,
+  "text_bundle_compressed_size": 25584,
+  "text_bundle_path": "output\\bundles\\real_site_pythonTutorial_text_bundle.bin",
   "files": [
     {
-      "relative_path": "Examples · Bootstrap.html",
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_bootstrap_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_pythonTutorial_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "Examples · Bootstrap_files/bootstrap.css",
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/classic.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_site_bootstrap_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_pythonTutorial_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "Examples · Bootstrap_files/album.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\album.png.png",
-      "restored_success": true,
-      "compress_time_ms": 38.898
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/blog.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\blog.png.png",
-      "restored_success": true,
-      "compress_time_ms": 51.763
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/carousel.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\carousel.png.png",
-      "restored_success": true,
-      "compress_time_ms": 39.623
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/checkout.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\checkout.png.png",
-      "restored_success": true,
-      "compress_time_ms": 39.032
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/cover.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\cover.png.png",
-      "restored_success": true,
-      "compress_time_ms": 45.323
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/dashboard.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\dashboard.png.png",
-      "restored_success": true,
-      "compress_time_ms": 43.693
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/floating-labels.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\floating-labels.png.png",
-      "restored_success": true,
-      "compress_time_ms": 17.487
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/grid.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\grid.png.png",
-      "restored_success": true,
-      "compress_time_ms": 45.924
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/jumbotron.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\jumbotron.png.png",
-      "restored_success": true,
-      "compress_time_ms": 43.218
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/navbar-bottom.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\navbar-bottom.png.png",
-      "restored_success": true,
-      "compress_time_ms": 15.114
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/navbar-fixed.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\navbar-fixed.png.png",
-      "restored_success": true,
-      "compress_time_ms": 17.877
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/navbar-static.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\navbar-static.png.png",
-      "restored_success": true,
-      "compress_time_ms": 17.263
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/navbars.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\navbars.png.png",
-      "restored_success": true,
-      "compress_time_ms": 34.195
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/offcanvas.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\offcanvas.png.png",
-      "restored_success": true,
-      "compress_time_ms": 32.877
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/pricing.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\pricing.png.png",
-      "restored_success": true,
-      "compress_time_ms": 50.037
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/product.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\product.png.png",
-      "restored_success": true,
-      "compress_time_ms": 30.158
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/sign-in.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\sign-in.png.png",
-      "restored_success": true,
-      "compress_time_ms": 13.663
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/starter-template.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\starter-template.png.png",
-      "restored_success": true,
-      "compress_time_ms": 21.857
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/sticky-footer-navbar.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\sticky-footer-navbar.png.png",
-      "restored_success": true,
-      "compress_time_ms": 28.827
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/sticky-footer.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Examples · Bootstrap_files\\sticky-footer.png.png",
-      "restored_success": true,
-      "compress_time_ms": 20.613
-    },
-    {
-      "relative_path": "Examples · Bootstrap_files/bootstrap.bundle.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\Examples · Bootstrap_files\\bootstrap.bundle.js.下载",
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/pydoctheme.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_pythonTutorial_text_bundle.bin",
       "restored_success": true
     },
     {
-      "relative_path": "Examples · Bootstrap_files/jquery-3.3.1.slim.min.js.下载",
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/pydoctheme_dark.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_pythonTutorial_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/pygments.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_pythonTutorial_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/pygments_dark.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_pythonTutorial_text_bundle.bin",
+      "restored_success": true
+    },
+    {
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/copybutton.js.下载",
       "type": "unsupported",
       "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\Examples · Bootstrap_files\\jquery-3.3.1.slim.min.js.下载",
+      "stored_path": "output\\compressed\\The Python Tutorial — Python 3.14.5rc1 documentation_files\\copybutton.js.下载",
+      "restored_success": true
+    },
+    {
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/doctools.js.下载",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\The Python Tutorial — Python 3.14.5rc1 documentation_files\\doctools.js.下载",
+      "restored_success": true
+    },
+    {
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/documentation_options.js.下载",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\The Python Tutorial — Python 3.14.5rc1 documentation_files\\documentation_options.js.下载",
+      "restored_success": true
+    },
+    {
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/menu.js.下载",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\The Python Tutorial — Python 3.14.5rc1 documentation_files\\menu.js.下载",
+      "restored_success": true
+    },
+    {
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/py.svg",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\The Python Tutorial — Python 3.14.5rc1 documentation_files\\py.svg",
+      "restored_success": true
+    },
+    {
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/rtd_switcher.js.下载",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\The Python Tutorial — Python 3.14.5rc1 documentation_files\\rtd_switcher.js.下载",
+      "restored_success": true
+    },
+    {
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/script.file-downloads.outbound-links.js.下载",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\The Python Tutorial — Python 3.14.5rc1 documentation_files\\script.file-downloads.outbound-links.js.下载",
+      "restored_success": true
+    },
+    {
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/search-focus.js.下载",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\The Python Tutorial — Python 3.14.5rc1 documentation_files\\search-focus.js.下载",
+      "restored_success": true
+    },
+    {
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/sidebar.js.下载",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\The Python Tutorial — Python 3.14.5rc1 documentation_files\\sidebar.js.下载",
+      "restored_success": true
+    },
+    {
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/sphinx_highlight.js.下载",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\The Python Tutorial — Python 3.14.5rc1 documentation_files\\sphinx_highlight.js.下载",
+      "restored_success": true
+    },
+    {
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/switchers.js.下载",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\The Python Tutorial — Python 3.14.5rc1 documentation_files\\switchers.js.下载",
+      "restored_success": true
+    },
+    {
+      "relative_path": "The Python Tutorial — Python 3.14.5rc1 documentation_files/themetoggle.js.下载",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\The Python Tutorial — Python 3.14.5rc1 documentation_files\\themetoggle.js.下载",
       "restored_success": true
     }
   ]

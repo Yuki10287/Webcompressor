@@ -1,0 +1,19 @@
+﻿sample_name,relative_path,resource_type,original_size,compressed_size,compression_rate,strategy,note
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation.html,text,48426,14691,69.66,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/classic.css,text,5290,1604,69.68,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/pydoctheme.css,text,17045,5171,69.66,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/pydoctheme_dark.css,text,3666,1112,69.67,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/pygments.css,text,4848,1470,69.68,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/pygments_dark.css,text,5055,1533,69.67,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/copybutton.js.下载,unsupported,3055,3055,0.00,skip,不支持资源直接跳过
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/doctools.js.下载,unsupported,4322,4322,0.00,skip,不支持资源直接跳过
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/documentation_options.js.下载,unsupported,332,332,0.00,skip,不支持资源直接跳过
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/menu.js.下载,unsupported,2137,2137,0.00,skip,不支持资源直接跳过
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/py.svg,unsupported,2041,2041,0.00,skip,不支持资源直接跳过
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/rtd_switcher.js.下载,unsupported,2108,2108,0.00,skip,不支持资源直接跳过
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/script.file-downloads.outbound-links.js.下载,unsupported,3960,3960,0.00,skip,不支持资源直接跳过
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/search-focus.js.下载,unsupported,559,559,0.00,skip,不支持资源直接跳过
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/sidebar.js.下载,unsupported,2395,2395,0.00,skip,不支持资源直接跳过
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/sphinx_highlight.js.下载,unsupported,5123,5123,0.00,skip,不支持资源直接跳过
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/switchers.js.下载,unsupported,7895,7895,0.00,skip,不支持资源直接跳过
+real_site_pythonTutorial,The Python Tutorial — Python 3.14.5rc1 documentation_files/themetoggle.js.下载,unsupported,779,779,0.00,skip,不支持资源直接跳过

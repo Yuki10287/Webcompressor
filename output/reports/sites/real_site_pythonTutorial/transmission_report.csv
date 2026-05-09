@@ -1,0 +1,4 @@
+﻿sample_name,network,bandwidth_mbps,original_transfer_s,system_transfer_s,zip_transfer_s,tar_gzip_transfer_s,system_saved_s,system_improvement_rate
+real_site_pythonTutorial,4G_10Mbps,10,0.095229,0.048232,0.028245,0.023733,0.046997,49.35
+real_site_pythonTutorial,WiFi_50Mbps,50,0.019046,0.009646,0.005649,0.004747,0.009399,49.35
+real_site_pythonTutorial,5G_200Mbps,200,0.004761,0.002412,0.001412,0.001187,0.002350,49.35
