@@ -1,0 +1,222 @@
+{
+  "site_name": "benchmark_site_rich",
+  "site_root": "C:\\Users\\15591\\PycharmProjects\\Webcompressor\\sample_data\\benchmark_site_rich",
+  "files": {
+    "about.html": {
+      "relative_path": "about.html",
+      "size": 4458,
+      "mtime": 1778241218.3306582,
+      "md5": "eb533859505936f67f68c7ed8d41445d"
+    },
+    "blog.html": {
+      "relative_path": "blog.html",
+      "size": 15374,
+      "mtime": 1778241567.0634181,
+      "md5": "52537cca2bc3b70dc43631a9fc234330"
+    },
+    "contact.html": {
+      "relative_path": "contact.html",
+      "size": 5754,
+      "mtime": 1778241218.3424933,
+      "md5": "4c8d6c2c97e6b7bfa947f0f26ed79fc5"
+    },
+    "css/animation.css": {
+      "relative_path": "css/animation.css",
+      "size": 4793,
+      "mtime": 1778241913.4372299,
+      "md5": "38c32611a8a0e216c83db7b69260f2b5"
+    },
+    "css/base.css": {
+      "relative_path": "css/base.css",
+      "size": 1507,
+      "mtime": 1776946288.1859138,
+      "md5": "19f40b33f74f1fd24db705f4f16862d7"
+    },
+    "css/components.css": {
+      "relative_path": "css/components.css",
+      "size": 2104,
+      "mtime": 1776946288.1879196,
+      "md5": "519523b3ef726048c3c6da0ef6eb19c5"
+    },
+    "css/forms.css": {
+      "relative_path": "css/forms.css",
+      "size": 6072,
+      "mtime": 1778241913.439235,
+      "md5": "788a7add5d38aad469958c9bc419d692"
+    },
+    "css/layout.css": {
+      "relative_path": "css/layout.css",
+      "size": 2073,
+      "mtime": 1776946288.188922,
+      "md5": "355d53cecd0b497bed71a4fea2c1a753"
+    },
+    "css/reset.css": {
+      "relative_path": "css/reset.css",
+      "size": 402,
+      "mtime": 1776946288.1899252,
+      "md5": "1db79ebdcedbd8905ccd54bf2b7f1bf0"
+    },
+    "css/theme.css": {
+      "relative_path": "css/theme.css",
+      "size": 1020,
+      "mtime": 1776946288.1913507,
+      "md5": "b47df16f2040d6b9222115b4e132e9f6"
+    },
+    "docs.html": {
+      "relative_path": "docs.html",
+      "size": 14930,
+      "mtime": 1778241567.0644248,
+      "md5": "1d9f351008bd0275af36458285b2fb2e"
+    },
+    "faq.html": {
+      "relative_path": "faq.html",
+      "size": 17070,
+      "mtime": 1778241567.06745,
+      "md5": "b22c096694eed19962692c6966a16af4"
+    },
+    "gallery.html": {
+      "relative_path": "gallery.html",
+      "size": 4099,
+      "mtime": 1778241218.338046,
+      "md5": "4644b814b918066128463483307e677b"
+    },
+    "images/avatar1.jpg": {
+      "relative_path": "images/avatar1.jpg",
+      "size": 6275,
+      "mtime": 1778242007.8385346,
+      "md5": "35a894f1b15f697496ba822d0ee02892"
+    },
+    "images/avatar2.jpg": {
+      "relative_path": "images/avatar2.jpg",
+      "size": 6267,
+      "mtime": 1778242007.8406737,
+      "md5": "cb28098c975f9b9d4a614381fd262e81"
+    },
+    "images/avatar3.jpg": {
+      "relative_path": "images/avatar3.jpg",
+      "size": 5933,
+      "mtime": 1778242007.8428302,
+      "md5": "0a8c8e99ea34cb83e1ea06f834a3a223"
+    },
+    "images/banner.jpg": {
+      "relative_path": "images/banner.jpg",
+      "size": 45531,
+      "mtime": 1778242007.83519,
+      "md5": "46ff14833e606557778d9953c1e5bab6"
+    },
+    "images/bg.png": {
+      "relative_path": "images/bg.png",
+      "size": 16224,
+      "mtime": 1778242007.8833556,
+      "md5": "3cdea7bd07d3f0d272e427e6b0d6ffe8"
+    },
+    "images/card_bg.png": {
+      "relative_path": "images/card_bg.png",
+      "size": 14758,
+      "mtime": 1778242007.9692273,
+      "md5": "09472b4d449730ba9a166593c1d614a7"
+    },
+    "images/gallery1.jpg": {
+      "relative_path": "images/gallery1.jpg",
+      "size": 48518,
+      "mtime": 1778242007.9042735,
+      "md5": "f49957ef8d044876068c696dceb54db6"
+    },
+    "images/gallery2.jpg": {
+      "relative_path": "images/gallery2.jpg",
+      "size": 46707,
+      "mtime": 1778242007.9154346,
+      "md5": "f05da1db143628c09e8270d481d7e0f5"
+    },
+    "images/gallery3.jpg": {
+      "relative_path": "images/gallery3.jpg",
+      "size": 89448,
+      "mtime": 1778242007.9263053,
+      "md5": "40012f2eea36d687f584723797442b28"
+    },
+    "images/gallery4.jpg": {
+      "relative_path": "images/gallery4.jpg",
+      "size": 76255,
+      "mtime": 1778242007.938036,
+      "md5": "65e45085814058568512886a4d257630"
+    },
+    "images/hero_pattern.png": {
+      "relative_path": "images/hero_pattern.png",
+      "size": 9714,
+      "mtime": 1778242007.9980736,
+      "md5": "69d58b74f0b25df00afaa8104492dc1e"
+    },
+    "images/logo.png": {
+      "relative_path": "images/logo.png",
+      "size": 2712,
+      "mtime": 1778242007.8922744,
+      "md5": "60b0414f1857872f83fc6b675b2418a8"
+    },
+    "index.html": {
+      "relative_path": "index.html",
+      "size": 5765,
+      "mtime": 1778326208.5933368,
+      "md5": "42a111acb68b6f8445ac6c7110a45885"
+    },
+    "js/app.js": {
+      "relative_path": "js/app.js",
+      "size": 8072,
+      "mtime": 1776946288.2130623,
+      "md5": "16b8d505a3d8f2a2fa62c53edb5bca5d"
+    },
+    "js/charts.js": {
+      "relative_path": "js/charts.js",
+      "size": 6661,
+      "mtime": 1778241913.4412405,
+      "md5": "84e4a6ed11c69cc4bac93c6ba1902f71"
+    },
+    "js/data.js": {
+      "relative_path": "js/data.js",
+      "size": 2794,
+      "mtime": 1776946288.2151854,
+      "md5": "8c9e7d5fcac71ea85458d3ec90b66c66"
+    },
+    "js/dom.js": {
+      "relative_path": "js/dom.js",
+      "size": 3376,
+      "mtime": 1776946288.2161894,
+      "md5": "75feba991ad8ece9ccc2796cf99cd2d5"
+    },
+    "js/gallery.js": {
+      "relative_path": "js/gallery.js",
+      "size": 1856,
+      "mtime": 1776946288.2182066,
+      "md5": "6dd3ad07729a6dd50c03e4160db281f1"
+    },
+    "js/search.js": {
+      "relative_path": "js/search.js",
+      "size": 7992,
+      "mtime": 1778241913.4402378,
+      "md5": "ab08c3814560beb3881585a5de7da775"
+    },
+    "js/utils.js": {
+      "relative_path": "js/utils.js",
+      "size": 2893,
+      "mtime": 1776946288.219485,
+      "md5": "a4d6cdfcaed0c3ddeb6b838ce2bc8486"
+    },
+    "pricing.html": {
+      "relative_path": "pricing.html",
+      "size": 14971,
+      "mtime": 1778241567.065436,
+      "md5": "6df6db6f21c0e7f529a23be8a69b0fb0"
+    },
+    "products.html": {
+      "relative_path": "products.html",
+      "size": 4375,
+      "mtime": 1778241218.336029,
+      "md5": "d9db5b590d9e3c7c70eb4b3e767e08a5"
+    },
+    "services.html": {
+      "relative_path": "services.html",
+      "size": 4001,
+      "mtime": 1778241218.3327084,
+      "md5": "479772d20e9b42077bbeac3b333dd13a"
+    }
+  }
+}

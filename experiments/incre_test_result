@@ -1,0 +1,200 @@
+======================================================================
+网页资源增量压缩检测实验
+======================================================================
+站点路径: C:\Users\15591\PycharmProjects\Webcompressor\sample_data\benchmark_site_rich
+缓存文件: C:\Users\15591\PycharmProjects\Webcompressor\output\incremental_cache\benchmark_site_rich_state.json
+当前文件总数: 36
+----------------------------------------------------------------------
+新增文件数量: 36
+修改文件数量: 0
+未变化文件数量: 0
+删除文件数量: 0
+
+新增文件 new_files (36)
+------------------------------------------------------------
+  about.html
+  blog.html
+  contact.html
+  css/animation.css
+  css/base.css
+  css/components.css
+  css/forms.css
+  css/layout.css
+  css/reset.css
+  css/theme.css
+  docs.html
+  faq.html
+  gallery.html
+  images/avatar1.jpg
+  images/avatar2.jpg
+  images/avatar3.jpg
+  images/banner.jpg
+  images/bg.png
+  images/card_bg.png
+  images/gallery1.jpg
+  images/gallery2.jpg
+  images/gallery3.jpg
+  images/gallery4.jpg
+  images/hero_pattern.png
+  images/logo.png
+  index.html
+  js/app.js
+  js/charts.js
+  js/data.js
+  js/dom.js
+  js/gallery.js
+  js/search.js
+  js/utils.js
+  pricing.html
+  products.html
+  services.html
+
+修改文件 modified_files (0)
+------------------------------------------------------------
+  无
+
+未变化文件 unchanged_files (0)
+------------------------------------------------------------
+  无
+
+删除文件 deleted_files (0)
+------------------------------------------------------------
+  无
+
+检测完成，已更新增量缓存。
+======================================================================
+
+
+
+======================================================================
+网页资源增量压缩检测实验
+======================================================================
+站点路径: C:\Users\15591\PycharmProjects\Webcompressor\sample_data\benchmark_site_rich
+缓存文件: C:\Users\15591\PycharmProjects\Webcompressor\output\incremental_cache\benchmark_site_rich_state.json
+当前文件总数: 36
+----------------------------------------------------------------------
+新增文件数量: 0
+修改文件数量: 0
+未变化文件数量: 36
+删除文件数量: 0
+
+新增文件 new_files (0)
+------------------------------------------------------------
+  无
+
+修改文件 modified_files (0)
+------------------------------------------------------------
+  无
+
+未变化文件 unchanged_files (36)
+------------------------------------------------------------
+  about.html
+  blog.html
+  contact.html
+  css/animation.css
+  css/base.css
+  css/components.css
+  css/forms.css
+  css/layout.css
+  css/reset.css
+  css/theme.css
+  docs.html
+  faq.html
+  gallery.html
+  images/avatar1.jpg
+  images/avatar2.jpg
+  images/avatar3.jpg
+  images/banner.jpg
+  images/bg.png
+  images/card_bg.png
+  images/gallery1.jpg
+  images/gallery2.jpg
+  images/gallery3.jpg
+  images/gallery4.jpg
+  images/hero_pattern.png
+  images/logo.png
+  index.html
+  js/app.js
+  js/charts.js
+  js/data.js
+  js/dom.js
+  js/gallery.js
+  js/search.js
+  js/utils.js
+  pricing.html
+  products.html
+  services.html
+
+删除文件 deleted_files (0)
+------------------------------------------------------------
+  无
+
+检测完成，已更新增量缓存。
+======================================================================
+
+======================================================================
+网页资源增量压缩检测实验
+======================================================================
+站点路径: C:\Users\15591\PycharmProjects\Webcompressor\sample_data\benchmark_site_rich
+缓存文件: C:\Users\15591\PycharmProjects\Webcompressor\output\incremental_cache\benchmark_site_rich_state.json
+当前文件总数: 36
+----------------------------------------------------------------------
+新增文件数量: 0
+修改文件数量: 1
+未变化文件数量: 35
+删除文件数量: 0
+
+新增文件 new_files (0)
+------------------------------------------------------------
+  无
+
+修改文件 modified_files (1)
+------------------------------------------------------------
+  index.html
+
+未变化文件 unchanged_files (35)
+------------------------------------------------------------
+  about.html
+  blog.html
+  contact.html
+  css/animation.css
+  css/base.css
+  css/components.css
+  css/forms.css
+  css/layout.css
+  css/reset.css
+  css/theme.css
+  docs.html
+  faq.html
+  gallery.html
+  images/avatar1.jpg
+  images/avatar2.jpg
+  images/avatar3.jpg
+  images/banner.jpg
+  images/bg.png
+  images/card_bg.png
+  images/gallery1.jpg
+  images/gallery2.jpg
+  images/gallery3.jpg
+  images/gallery4.jpg
+  images/hero_pattern.png
+  images/logo.png
+  js/app.js
+  js/charts.js
+  js/data.js
+  js/dom.js
+  js/gallery.js
+  js/search.js
+  js/utils.js
+  pricing.html
+  products.html
+  services.html
+
+删除文件 deleted_files (0)
+------------------------------------------------------------
+  无
+
+检测完成，已更新增量缓存。
+======================================================================
+
+进程已结束，退出代码为 0
