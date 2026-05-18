@@ -1,0 +1,278 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+.header .headerContent {
+  z-index: 22;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+
+.header-top-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 1.5rem;
+  background: rgba(9, 70, 226, 1);
+  z-index: 11;
+}
+
+.header-top {
+  width: 17rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  text-decoration: none !important;
+  /* color: inherit !important; */
+  outline: none !important;
+  cursor: pointer !important;
+}
+
+.header .header-bg {
+  display: flex;
+  height: 0.9rem;
+}
+
+/* .header .header-bg span {
+  font-size: .3rem;
+} */
+
+.header .header-bg p {
+  font-size: .24rem;
+  font-family: 'Adobe Heiti Std', sans-serif;
+  /* Assuming a fallback to sans-serif */
+  margin-bottom: 0;
+}
+
+.header .header-bg .logo {
+  /* width: 5.46rem; */
+  height: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding-left: .28rem;
+}
+
+.header .logo-info {
+  width: 6.1rem;
+  margin-left: .14rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header .logo-info .logo-info-title {
+  font-weight: bold;
+  font-size: .38rem;
+  color: #FFFFFF;
+}
+
+.header .logo-info .logo-info-sub-title {
+  font-weight: 400;
+  font-size: .24rem;
+  color: #FFFFFF;
+  letter-spacing: .037rem;
+  /* text-align: justify; */
+}
+
+.header .header-bg .logo img {
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover;
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.header .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+}
+
+.header .content .content-top {
+  display: flex;
+  align-items: center;
+  height: 1.55rem;
+  opacity: 0.7;
+}
+
+.header .content .content-top ul {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 0;
+}
+
+.header .content .content-top ul li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: .21rem;
+}
+
+.header .content .content-top ul li img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header .content .content-top ul li .img1 {
+  width: .26rem;
+  height: .25rem;
+}
+
+.header .content .content-top ul li .img2 {
+  width: .25rem;
+  height: .25rem;
+}
+
+.header .content .content-top ul li .img3 {
+  width: .27rem;
+  height: .21rem;
+}
+
+.header .content .content-top ul li .img4 {
+  width: .23rem;
+  height: .23rem;
+}
+
+.header .content .content-top ul li .img5 {
+  width: .26rem;
+  height: .26rem;
+}
+
+.header .content .content-top ul li .img {
+  margin-right: .09rem;
+}
+
+.header .content .content-top ul li .name {
+  color: #fff;
+  font-size: .20rem;
+}
+
+.header .content .content-top ul li .search-img {
+  height: .28rem;
+  width: .28rem;
+}
+
+.header .content-bottom {
+  width: 100%;
+  height: .7rem;
+  margin-top: auto;
+  background-color: rgba(9, 70, 226, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .content-bottom div {
+  height: 100%;
+}
+
+.header .content-bottom span {
+  display: inline-block;
+  cursor: pointer;
+  font-size: .24rem;
+  margin-right: .2rem;
+  /* Assuming a fallback to sans-serif */
+  line-height: .44rem;
+}
+
+
+
+.header-active {
+  /* background-color: rgba(15, 48, 82, .8); */
+  /* background-color: rgba(0, 67, 168, .8); */
+
+}
+
+
+
+/* .main {
+  padding-top: 1.55rem;
+} */
+
+/* 媒体查询样式  768*/
+@media (max-width: 768px) {
+  .header-top-bg {
+    width: 100%;
+    height: 3rem;
+  }
+
+  .header {
+    /* padding: 0 16px; */
+    /* height: 56px; */
+  }
+
+  .header .content-top {
+    display: none;
+  }
+
+  .header .header-top .content {
+    display: none;
+  }
+
+  .header .header-bg {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+  }
+
+
+  .header .header-bg .logo img {
+    object-fit: cover;
+    width: 1.695rem;
+    height: 1.695rem;
+  }
+
+  .header .header-bg .logo {
+    height: 1.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 0rem;
+  }
+
+
+  .header .logo-info .logo-info-title {
+    font-weight: bold;
+    font-size: .70rem;
+    color: #FFFFFF;
+  }
+
+  .header .logo-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 13rem;
+    padding: .18rem 0 .18rem 0;
+  }
+
+  .header .logo-info .logo-info-sub-title {
+    font-weight: 400;
+    font-size: .36rem;
+    letter-spacing: .1rem;
+  }
+
+
+  .header .content-bottom {
+    width: 100%;
+    height: 0rem;
+    display: none;
+  }
+
+
+}

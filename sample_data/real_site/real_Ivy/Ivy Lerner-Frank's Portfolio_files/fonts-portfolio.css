@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "LibreBaskerville";
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url("/authory_static_files/fonts/LibreBaskerville/LibreBaskerville[wght].woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Lora";
+    font-style: italic;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url("/authory_static_files/fonts/lora/Lora-Italic[wght].woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url("/authory_static_files/fonts/Nunito/Nunito[wght].woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url("/authory_static_files/fonts/Oswald/Oswald[wght].woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url("/authory_static_files/fonts/PlayfairDisplay/PlayfairDisplay[wght].woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/authory_static_files/fonts/Poppins/Poppins-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Quattrocento";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/authory_static_files/fonts/Quattrocento/Quattrocento-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url("/authory_static_files/fonts/Roboto/Roboto[wdth,wght].woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url("/authory_static_files/fonts/RobotoMono/RobotoMono[wght].woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "RobotoSlab";
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url("/authory_static_files/fonts/RobotoSlab/RobotoSlab[wght].woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "SourceSans3";
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url("/authory_static_files/fonts/SourceSans3/SourceSans3[wght].woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "SourceSerif4";
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url("/authory_static_files/fonts/SourceSerif4/SourceSerif4[opsz,wght].woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Spectral";
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url("/authory_static_files/fonts/Spectral/Spectral-Regular.woff2") format("woff2");
+}
