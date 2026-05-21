@@ -5,6 +5,8 @@ from typing import Dict, Optional
 
 
 class HuffmanNode:
+    """Huffman 树节点：叶子节点保存具体字节，非叶子节点只保存左右子树和累计频率。"""
+
     __slots__ = ("freq", "byte", "left", "right")
 
     def __init__(
@@ -28,6 +30,17 @@ class HuffmanNode:
 
 
 class HuffmanCodec:
+    """
+    字节级 Huffman 编解码器。
+
+    压缩结果自带频率表，因此解压时不需要额外保存树结构，可以根据频率表重新构造同一棵 Huffman 树。
+
+    文件格式：
+    HUF1(4字节) + 原始长度(4字节) + 不同字节数量(2字节)
+    + 若干个 [字节值(1字节) + 出现频率(4字节)]
+    + 按 bit 打包后的 Huffman 数据区
+    """
+
     MAGIC = b"HUF1"
 
     def compress(self, data: bytes) -> bytes:
@@ -42,6 +55,7 @@ class HuffmanCodec:
         header = bytearray()
         header.extend(struct.pack(">4sIH", self.MAGIC, len(data), len(freq_map)))
 
+        # 保存频率表而不是直接保存编码表，解压端可以用同样规则重建编码树。
         for byte_value, freq in freq_map.items():
             header.extend(struct.pack(">BI", byte_value, freq))
 
@@ -59,6 +73,7 @@ class HuffmanCodec:
         offset = 10
         freq_map: Dict[int, int] = {}
 
+        # 先从头部读回频率表，再重建 Huffman 树。
         for _ in range(unique_count):
             if offset + 5 > len(blob):
                 raise ValueError("无效的 Huffman 压缩数据：频率表损坏")
@@ -79,6 +94,7 @@ class HuffmanCodec:
         result = bytearray()
         node = root
 
+        # _encode_payload 按高位到低位写入 bit，这里也按相同顺序读出。
         for byte_value in payload:
             for bit_index in range(7, -1, -1):
                 bit = (byte_value >> bit_index) & 1
@@ -96,6 +112,7 @@ class HuffmanCodec:
         return bytes(result)
 
     def _build_tree(self, freq_map: Dict[int, int]) -> HuffmanNode:
+        """每次合并频率最低的两个节点，直到堆中只剩根节点。"""
         heap = [HuffmanNode(freq=freq, byte=byte_value) for byte_value, freq in freq_map.items()]
         heapq.heapify(heap)
 
@@ -111,6 +128,7 @@ class HuffmanCodec:
         return heap[0]
 
     def _build_code_map(self, root: HuffmanNode) -> Dict[int, str]:
+        """遍历 Huffman 树，左边记 0，右边记 1，得到每个字节的编码。"""
         code_map: Dict[int, str] = {}
 
         def dfs(node: HuffmanNode, path: str) -> None:
@@ -125,6 +143,7 @@ class HuffmanCodec:
         return code_map
 
     def _encode_payload(self, data: bytes, code_map: Dict[int, str]) -> bytes:
+        """把 0/1 字符串编码打包成真正的字节流，最后不足 8 位时补 0。"""
         output = bytearray()
         current_byte = 0
         bit_count = 0

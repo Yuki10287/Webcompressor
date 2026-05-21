@@ -515,6 +515,12 @@ class MainWindow(QMainWindow):
         return None
 
     def compress_project(self):
+        """
+        执行一次完整的网页资源压缩。
+
+        文本文件会统一打成一个 bundle；图片按文件单独压缩；
+        其他暂不支持的资源原样保存。最后写出 manifest，供恢复流程按原目录结构还原。
+        """
         if not self.project:
             QMessageBox.warning(self, "提示", "请先选择目录")
             return
@@ -541,6 +547,7 @@ class MainWindow(QMainWindow):
         self.text_bundle_compressed_size = 0
         self.text_bundle_path = ""
 
+        # 1) 文本资源：整站 bundle 压缩，并立即解压校验，保证恢复结果和原文件一致。
         if text_resources:
             files = []
             site_name = os.path.basename(os.path.abspath(self.project.root_dir))
@@ -574,6 +581,7 @@ class MainWindow(QMainWindow):
                 self.text_bundle_compressed_size = len(bundle_blob)
                 self.text_bundle_path = bundle_path
 
+                # bundle 是整站共享结果，单个文本文件不再分别保存压缩文件。
                 for resource in text_resources:
                     resource.attempted_size = len(bundle_blob)
                     resource.compressed_size = 0
@@ -600,6 +608,7 @@ class MainWindow(QMainWindow):
                     resource.compression_success = False
                     resource.compression_strategy = f"bundle_error: {e}"
 
+        # 2) 图片资源：逐文件压缩；如果压缩结果更大，就保留原图，避免负收益。
         for resource in self.project.resources:
             if resource.resource_type != "image":
                 continue
@@ -649,6 +658,7 @@ class MainWindow(QMainWindow):
                 resource.compression_success = False
                 resource.compression_strategy = f"error: {e}"
 
+        # 3) 暂不支持的资源：为了恢复网页完整性，直接原样保存到压缩包目录。
         for resource in self.project.resources:
             if resource.resource_type == "unsupported":
                 try:
@@ -675,6 +685,7 @@ class MainWindow(QMainWindow):
                     resource.compression_success = False
                     resource.compression_strategy = f"error: {e}"
 
+        # manifest 是恢复流程的索引：记录原项目、入口页面、bundle 路径和每个资源的保存位置。
         self.package_manager.save_manifest(output_root, {
             "project_root": self.project.root_dir,
             "entry_html_relative_path": self.find_project_entry_html(self.project.root_dir),
@@ -788,6 +799,12 @@ class MainWindow(QMainWindow):
             QMessageBox.warning(self, "提示", f"尝试打开目录失败，请手动打开：\n{chart_root}")
 
     def restore_project(self):
+        """
+        根据 manifest.json 恢复网页目录。
+
+        文本资源从 bundle 中拆回；图片和 unsupported 资源按 manifest 中记录的路径复制回去。
+        恢复完成后会尝试定位首页，方便用户直接打开验证。
+        """
         manifest_path = os.path.join("output", "compressed", "manifest.json")
 
         if not os.path.exists(manifest_path):
@@ -804,6 +821,7 @@ class MainWindow(QMainWindow):
             restore_root = os.path.join("output", "restored_from_package", site_name)
             ensure_dir(restore_root)
 
+            # 文本文件统一保存在 bundle 中，先整体解压再按相对路径写回。
             if manifest.get("text_bundle_enabled"):
                 bundle_path = manifest.get("text_bundle_path", "")
                 if bundle_path and os.path.exists(bundle_path):
@@ -814,6 +832,7 @@ class MainWindow(QMainWindow):
                         target_path = os.path.join(restore_root, relative_path)
                         write_binary(target_path, raw)
 
+            # 图片和原样保存的资源已经是独立文件，直接复制回原相对路径。
             for item in manifest.get("files", []):
                 if item.get("type") not in {"image", "unsupported"}:
                     continue
@@ -827,6 +846,7 @@ class MainWindow(QMainWindow):
                     shutil.copy2(compressed_path, target_path)
 
             self.current_restore_root = restore_root
+            # 优先使用 manifest 记录的入口页；没有时再自动查找 index 或第一个 HTML。
             home_path = self.find_restored_home_file(restore_root, manifest)
             if home_path:
                 self.current_restored_home_path = home_path

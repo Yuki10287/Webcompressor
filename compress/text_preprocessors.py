@@ -8,6 +8,13 @@ ESCAPE_CODE = 0
 
 
 class DictionaryPreprocessor:
+    """
+    面向网页文本的简单字典预处理器。
+
+    它不是最终压缩算法，而是在 LZ77/Huffman 之前先把 HTML/CSS/JS 中常见长片段替换成短 token。
+    token 使用两个字节表示：MARKER + code。为了避免和原始数据中的 0xFF 冲突，会先转义 MARKER 本身。
+    """
+
     def __init__(self, patterns: List[bytes]):
         # 去重，并按长度从长到短排序，优先替换长片段
         unique_patterns = sorted(set(patterns), key=len, reverse=True)
@@ -37,6 +44,7 @@ class DictionaryPreprocessor:
         return data
 
     def restore(self, data: bytes) -> bytes:
+        """把 MARKER + code 形式的 token 还原成原始文本片段。"""
         result = bytearray()
         i = 0
         n = len(data)
@@ -133,6 +141,12 @@ JS_PATTERNS = [
 
 
 class TextPreprocessorManager:
+    """
+    根据文件扩展名选择对应的字典预处理器。
+
+    type_id 会写入 bundle entry，解压时靠它选择正确的逆预处理逻辑。
+    """
+
     TYPE_PLAIN = 0
     TYPE_HTML = 1
     TYPE_CSS = 2

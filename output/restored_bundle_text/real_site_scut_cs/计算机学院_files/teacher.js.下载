@@ -1,0 +1,147 @@
+const teacher_info_title = document.querySelector('.teacher_detail_info_bg .info_title');
+const teacher_info_desc = document.querySelector('.teacher_detail_info_bg .info_desc');
+const teacher_info_img = document.querySelector('.teacher_detail_info .teacher_head_icon');
+const teacher_info_btn = document.querySelector('.teacher_detail_info_bg .info_more');
+
+
+// 等待DOM加载完成
+document.addEventListener('DOMContentLoaded', function () {
+	// 获取swiper容器
+	const swiperContainer = document.querySelector('#carousel .swiper-wrapper');
+
+
+	if (swiperContainer) {
+		// 获取所有slide元素
+		const slides = swiperContainer.querySelectorAll('.swiper-slide');
+
+		// 如果slide数量不足5个（假设一屏显示5个）
+		if (slides.length > 2 && slides.length < 4) {
+			// 复制slide（这里复制全部slide一倍，确保循环流畅）
+			for (let i = 0; i < slides.length; i++) {
+				const clone = slides[i].cloneNode(true);
+				swiperContainer.appendChild(clone);
+			}
+		}
+
+		// let myPage=4;
+		let mySpaceBetween = '10%';
+		if (window.globalMobile) {
+			mySpaceBetween = '6%'
+			// myPage=2;
+		}
+		// console.log("myPage:"+window.globalMobile)
+
+
+		carouselSwiper = new Swiper('#carousel .swiper', {
+			watchSlidesProgress: true,
+			slidesPerView: 'auto',
+			// slidesOffsetBefore: slidesOffsetleft,
+			spaceBetween: mySpaceBetween,
+			centeredSlides: false,
+			loop: true,
+			loopedSlides: 4,
+			grabCursor: true,
+			//	autoplay: true,
+			// 启用自动轮播
+			autoplay: {
+				delay: 3000, // 轮播间隔（ms）
+				disableOnInteraction: false, // 用户操作后仍自动播放
+			},
+			navigation: {
+				nextEl: '#carousel .swiper-button-next',
+				prevEl: '#carousel .swiper-button-prev',
+			},
+			// pagination: {
+			// el: '#carousel .swiper-pagination',
+			//clickable :true,
+			// },
+
+			on: {
+				init: function () {
+					updateActiveSlideTitle(this); // 初始化时获取当前居中的title
+				},
+				transitionEnd: function () {
+					updateActiveSlideTitle(this); // 每次滑动时获取当前居中的title
+				},
+			},
+		})
+
+
+	}
+});
+
+function updateActiveSlideTitle(swiper) {
+	// 获取所有可见的 slides
+	const visibleSlides = swiper.slides.filter((slide) => {
+		const slideRect = slide.getBoundingClientRect();
+		const containerRect = swiper.el.getBoundingClientRect();
+		return (
+			slideRect.right > containerRect.left &&
+			slideRect.left < containerRect.right
+		);
+	});
+
+	// // 计算哪个 slide 最接近屏幕中心
+	// let centerSlide = null;
+	// let minDistance = Infinity;
+	// const containerCenter = swiper.el.getBoundingClientRect().left + swiper.width / 2;
+
+	// visibleSlides.forEach((slide) => {
+	// 	const slideCenter = slide.getBoundingClientRect().left + slide.offsetWidth / 2;
+	// 	const distance = Math.abs(slideCenter - containerCenter);
+
+	// 	// const slideLink = slide.querySelector('a');
+	// 	// if (slideLink && slideLink.title) {
+	// 	// 	console.log('遍历', slideLink.title+"||distance:"+distance+
+	// 	// 		"||slideCenter:"+slideCenter+"||containerCenter:"+containerCenter);
+	// 	// 	// 可以在这里触发自定义事件或更新 UI
+	// 	// }
+
+	// 	if (distance < minDistance) {
+	// 		minDistance = distance;
+	// 		centerSlide = slide;
+	// 	}
+	// });
+
+	let centerSlide = visibleSlides[0];
+
+	// 如果找到居中的 slide，获取其 <a> 标签的 title
+	if (centerSlide) {
+		const swiper_title = centerSlide.querySelector('.swiper-title');
+		const swiper_sub_title = centerSlide.querySelector('.swiper-sub-title');
+		const swiper_desc = centerSlide.querySelector('.swiper-desc');
+		const swiper_img_url = centerSlide.getAttribute('data-src');
+
+		const swiper_title_a = centerSlide.querySelector('.swiper-title a');
+        console.log('swiper_title_a',swiper_title_a.href)
+
+		if (swiper_title) {
+			let info_title = swiper_title.textContent;
+			if (swiper_sub_title) {
+				info_title = info_title + " " + swiper_sub_title.textContent;
+			}
+			teacher_info_title.textContent = info_title;
+		}
+
+		if (swiper_desc) {
+			teacher_info_desc.textContent = swiper_desc.textContent;
+		}
+
+		if (swiper_img_url) {
+			teacher_info_img.src = swiper_img_url;
+		}
+
+		if (swiper_title_a) {
+			teacher_info_btn.addEventListener('click', function () {
+				window.location.href = swiper_title_a.href; // 替换为你要跳转的链接
+			});
+		}
+
+	}
+}
+
+
+
+
+
+

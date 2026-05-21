@@ -8,13 +8,16 @@ from compress.text_preprocessors import TextPreprocessorManager
 
 class TextBundleCompressor:
     """
-    将一个站点中的多个文本文件：
-    1) 分别按类型做预处理
-    2) 打包成一个 bundle
-    3) 对整个 bundle 做 LZ77
-    4) 再做 Huffman
+    整站文本资源压缩器。
 
-    解压时反向恢复，并按相对路径输出每个原始文本文件内容。
+    多个 HTML/CSS/JS/JSON 等文本文件先被打成一个 bundle，再整体做 LZ77 和 Huffman。
+    这样可以利用不同页面、样式和脚本之间的重复片段，比逐文件压缩更容易获得收益。
+
+    bundle 原始格式：
+    TBD1(4字节) + 文件数量(2字节)
+    + 若干个 entry：
+      ENT1(4字节) + 文本类型(1字节) + 路径长度(2字节) + 预处理后数据长度(4字节)
+      + UTF-8 相对路径 + 预处理后文件内容
     """
 
     MAGIC = b"TBD1"
@@ -33,7 +36,7 @@ class TextBundleCompressor:
     def compress_files(self, files: List[Tuple[str, bytes]]) -> bytes:
         """
         files: [(relative_path, raw_bytes), ...]
-        返回整个文本 bundle 的压缩结果
+        返回整个文本 bundle 的最终压缩结果。
         """
         bundle = bytearray()
         bundle.extend(struct.pack(">4sH", self.MAGIC, len(files)))
@@ -46,12 +49,12 @@ class TextBundleCompressor:
                 normalized_path, raw_data
             )
 
-            # entry header:
-            # ENTRY_MAGIC(4) + type_id(1) + path_len(2) + data_len(4)
+            # entry 头部保存路径和数据长度，解压时才能按原目录结构拆回多个文件。
             bundle.extend(struct.pack(">4sBHI", self.ENTRY_MAGIC, type_id, len(path_bytes), len(processed)))
             bundle.extend(path_bytes)
             bundle.extend(processed)
 
+        # 先用 LZ77 捕捉长距离重复片段，再用 Huffman 压缩 LZ77 token 的字节分布。
         lz77_blob = self.lz77_codec.compress(bytes(bundle))
         final_blob = self.huffman_codec.compress(lz77_blob)
         return final_blob
@@ -65,6 +68,7 @@ class TextBundleCompressor:
             ...
         }
         """
+        # 解压顺序必须和压缩顺序相反：Huffman -> LZ77 -> bundle 拆包 -> 逆预处理。
         lz77_blob = self.huffman_codec.decompress(blob)
         bundle = self.lz77_codec.decompress(lz77_blob)
 

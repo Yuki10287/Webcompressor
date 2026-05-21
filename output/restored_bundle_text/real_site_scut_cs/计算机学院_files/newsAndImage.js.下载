@@ -1,0 +1,234 @@
+//=======改变日期样式=======
+document.querySelectorAll('.news_content .new_list .date').forEach((element, index) => {
+  if (index == 0) {
+    return;
+  }
+
+  const dateStr = element.textContent.trim();
+  if (dateStr.includes('-')) {
+    const [year, month, day] = dateStr.split('-');
+    element.innerHTML = `
+      <span class="day">${day}</span>
+      <span class="year-month">${year}-${month}</span>
+  `;
+  }
+});
+
+
+const bigImg = document.querySelector('.new_list .big_pic_panel .list-img-bg img');
+const bigImgDate = document.querySelector('.new_list .big_pic_panel .info .date');
+const bigImgCt = document.querySelector('.new_list .big_pic_panel .info .ct');
+
+
+const articleList = document.querySelector('.new_list .wp_article_list');
+const listItems = articleList.querySelectorAll('li');
+
+let currentIndex = 0;
+let intervalId = null;
+
+// 初始化轮播
+function initCarousel() {
+  if (!window.globalMobile) {
+    // 先清除所有选中状态
+    listItems.forEach(item => item.classList.remove('selected'));
+    // 选中第一个项目
+    listItems[0].classList.add('selected');
+    currentIndex = 0;
+
+    showBigPic(listItems[0])
+  }else{
+    listItems.forEach(item => item.classList.remove('selected'));
+    if(intervalId){
+      //销毁
+      clearInterval(intervalId)
+      intervalId=null
+    }
+    
+  }
+
+}
+
+// 初始化轮播
+function showBigPic(li) {
+  bigImg.src = li.dataset.src
+
+  const day = li.querySelector('.day').textContent;
+  const yearMonth = li.querySelector('.year-month').textContent;
+
+  const textC = li.querySelector('.ct a').textContent;
+
+  console.log(bigImgDate)
+  console.log(bigImgCt)
+
+  if (yearMonth && day) {
+    bigImgDate.textContent = yearMonth + '-' + day
+  }
+
+  bigImgCt.textContent = textC
+
+  const linkElement = li.querySelector('.list-img-bg a');
+  const link = linkElement.href;
+
+  bigImg.addEventListener('click', function () {
+    window.location.href = link;
+  });
+
+}
+
+function nextItem() {
+  // 移除当前选中状态
+  listItems[currentIndex].classList.remove('selected');
+
+  // 更新索引
+  currentIndex = (currentIndex + 1) % listItems.length;
+
+  //主页限制最多显示3个
+  if(currentIndex>2){
+    currentIndex=0;
+  }
+
+  // 添加新的选中状态
+  listItems[currentIndex].classList.add('selected');
+
+  showBigPic(listItems[currentIndex])
+}
+
+function startCarousel() {
+  if (intervalId) return;
+
+  if (!window.globalMobile) {
+    intervalId = setInterval(nextItem, 5000);
+  }
+}
+
+// 初始化
+initCarousel();
+startCarousel();
+
+
+function debounce(func, wait) {
+    let timeout;
+    return function () {
+        const context = this, args = arguments;
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+            func.apply(context, args);
+        }, wait);
+    };
+}
+
+window.addEventListener('resize', debounce(function () {
+    initCarousel();
+    startCarousel();
+    // 你的逻辑代码
+}, 250)); // 250毫秒内不再触发才执行
+
+
+//=======将列表选中项的图片和标题赋值到左侧面板=======
+// document.addEventListener('DOMContentLoaded', function() {
+// const eventImgId = document.getElementById('newsAndMediaImg')
+// const lis = document.querySelectorAll('.newsAndMediaLi')
+// const text = document.querySelector('.caption-wrapper-1 .caption-1')
+
+// // 获取第一个li的src，默认给图片赋值
+// eventImgId.src = lis[0].dataset.src
+// // 获取第一个li的标题，赋值
+// const firstA=lis[0].querySelector('.info .ct a')
+// if(text&&firstA){
+//   text.innerHTML=firstA.innerHTML
+// }
+
+// // 给每一个lis注册鼠标移入事件
+// for (let i = 0; i < lis.length; i++) {
+//   lis[i].addEventListener('mouseover', function () {
+//     //赋值图片
+//     eventImgId.src = this.dataset.src
+//     //赋值标题
+//     const textA=lis[i].querySelector('.info .ct a')
+//     if(text&&textA){
+//       text.innerHTML=textA.innerHTML
+//     }
+//   })
+// }
+// });
+
+
+// //=======注册新闻和媒体按钮点击事件=======
+// document.getElementById('newsWrapper').addEventListener('click', function () {
+//   toggleRotation(this, 'caption-wrapper');
+// });
+
+// document.getElementById('mediaWrapper').addEventListener('click', function () {
+//   toggleRotation(this, 'title-wrapper');
+// });
+
+// function toggleRotation(selectedElement, otherClass) {
+//   const newsWrapper = document.getElementById('newsWrapper');
+//   const mediaWrapper = document.getElementById('mediaWrapper');
+
+
+//   const newsPage = document.getElementById('my-news-page');
+//   const medieaPage = document.getElementById('my-mediea-page');
+
+//   const newsList = document.getElementById('my-news-list');
+//   const medieaList = document.getElementById('my-media-list');
+
+//   const medieaA = document.querySelector('.newsAndMedia .wrapper-more-btn');
+
+
+//   // Remove rotation and selected class from the other element
+//   if (newsWrapper && newsWrapper !== selectedElement) {
+//     //点击媒体按钮
+//     newsWrapper.classList.remove('selected-wrapper');
+//     newsWrapper.classList.add('unselected-wrapper');
+//     mediaWrapper.classList.remove('unselected-wrapper');
+//     mediaWrapper.classList.add('selected-wrapper');
+
+//     newsPage.style.display = 'none'
+//     medieaPage.style.display = 'block'
+
+//     newsList.style.display = 'none'
+//     medieaList.style.display = 'block'
+
+//     if (medieaA) {
+//       //medieaA.href = "/cs/mtbd/list.psp";  // 替换为你想要设置的URL
+//       medieaA.href = links.mtbd_more;
+//     }
+
+//     if (mySwiper21) {
+//       mySwiper21.autoplay.stop();
+//     }
+
+//     if (mySwiper22) {
+//       mySwiper22.autoplay.start();
+//     }
+
+//   } else if (mediaWrapper && mediaWrapper !== selectedElement) {
+//     //点击新闻按钮
+//     newsWrapper.classList.remove('unselected-wrapper');
+//     newsWrapper.classList.add('selected-wrapper');
+//     mediaWrapper.classList.remove('selected-wrapper');
+//     mediaWrapper.classList.add('unselected-wrapper');
+
+//     medieaList.style.display = 'none'
+//     newsList.style.display = 'block'
+
+//     medieaPage.style.display = 'none'
+//     newsPage.style.display = 'block'
+
+//     if (medieaA) {
+//       //medieaA.href = "/cs/xyxw/list.psp";  // 替换为你想要设置的URL
+//       medieaA.href = links.xwsw_more;
+//     }
+
+//     if (mySwiper22) {
+//       mySwiper22.autoplay.stop();
+//     }
+
+//     if (mySwiper21) {
+//       mySwiper21.autoplay.start();
+//     }
+
+//   }
+// }
+

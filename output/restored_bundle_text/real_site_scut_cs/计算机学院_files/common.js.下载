@@ -1,0 +1,146 @@
+
+
+const Common = {
+    init: function () {
+        this.bind();
+    },
+    bind: function () {
+        // 内页表格响应式处理
+        document.querySelectorAll('.wp_articlecontent table').forEach(table => {
+            table.classList.add("table");
+            const wrapper = document.createElement('div');
+            wrapper.className = "table-responsive";
+            table.parentNode.insertBefore(wrapper, table);
+            wrapper.appendChild(table);
+        });
+
+        // 替换文本和图标
+        document.querySelectorAll(".possplit").forEach(el => el.innerHTML = " &gt; ");
+        document.querySelector(".center-solid").innerHTML = "";
+        document.querySelectorAll(".prev span").forEach(el => el.innerHTML = "上一页");
+        document.querySelectorAll(".next span").forEach(el => el.innerHTML = "下一页");
+        document.querySelectorAll(".side_li .selected i").forEach(el => el.className = "fa fa-caret-down");
+
+        // 菜单按钮点击事件
+        document.querySelector(".menu_btn")?.addEventListener("click", function (event) {
+            console.log("click_menu");
+            event.stopPropagation();
+            // second-nav 
+            const rightArea = document.querySelector(".rightArea");
+            if (rightArea.style.right !== '0px') {
+                rightArea.style.right = "0px";
+                document.querySelector(".mask").style.display = "block";
+                document.body.style.overflow = 'hidden';
+            } else {
+                rightArea.style.right = "-250px";
+                document.querySelector(".mask").style.display = "none";
+                document.body.style.overflow = 'auto';
+            }
+            event.preventDefault();
+        });
+
+        // 关闭按钮点击事件
+        document.getElementById("close")?.addEventListener("click", function () {
+            document.querySelector(".rightArea").style.right = "-250px";
+            document.querySelector(".mask").style.display = "none";
+            document.body.style.overflow = 'auto';
+        });
+
+        // 下拉按钮点击事件
+        document.querySelectorAll('.dropdownBtn').forEach(btn => {
+            btn.addEventListener('click', function (event) {
+                event.stopPropagation();
+                const parentLi = this.parentElement;
+
+                if (parentLi.classList.contains('is_choose')) {
+                    parentLi.classList.remove('is_choose');
+                    const icon = this.querySelector('.glyphicon');
+                    icon.classList.remove('glyphicon-menu-down');
+                    icon.classList.add('glyphicon-menu-right');
+                    this.previousElementSibling.style.display = 'none';
+                } else {
+                    parentLi.classList.add('is_choose');
+                    const icon = this.querySelector('.glyphicon');
+                    icon.classList.remove('glyphicon-menu-right');
+                    icon.classList.add('glyphicon-menu-down');
+                    this.previousElementSibling.style.display = 'block';
+                }
+                event.preventDefault();
+            });
+        });
+
+        // 导航栏悬停效果
+        const navItems = document.querySelectorAll(".nav_bar ul > .navLi");
+        let timer = null;
+
+        navItems.forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                timer = setTimeout(() => {
+                    this.querySelector('ul').style.display = 'block';
+                }, 200);
+            });
+
+            item.addEventListener('mouseleave', function () {
+                clearTimeout(timer);
+                this.querySelector('ul').style.display = 'none';
+            });
+        });
+    }
+};
+
+// 初始化
+document.addEventListener('DOMContentLoaded', function () {
+    Common.init();
+});
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const fullUrl = window.location.href.split('?')[0]; // 去掉查询参数
+//     let baseurl = "";
+//     var dd = fullUrl.split('/');
+//     dd.forEach((item, index) => {
+//         if (item === 'cs') {
+//             baseurl = dd[index + 1];
+//         }
+//     });
+//     const logoA = document.getElementById('l-a-logo')
+//     logoA.href = logoA.href + baseurl + '/';
+// });
+
+
+//todochenjl  正式上线时考虑删掉
+//由于外链跳转只能跳到默认模板页，临时加方法兼容
+// document.addEventListener('DOMContentLoaded', function () {
+//     document.querySelectorAll('.nav_li').forEach((navLi) => {
+//         if (navLi.querySelector('ul')) {
+//             const aSel = navLi.querySelector('a');
+//             if (aSel) {
+//                 const href = aSel.href;
+//                 // 检查链接是否包含'xsgzwNEWw'且以'list.psp'结尾
+//                 // console.log('href:', href)
+//                 if ((href.includes('22247') || href.includes('22249') || href.includes('22243')) && href.endsWith('list.psp')) {
+//                     // 替换list.psp为main.psp
+//                     // console.log('href:', 'replace')
+//                     const newHref = href.replace('list.psp', 'main.psp');
+//                     // console.log('newHref:', newHref)
+//                     aSel.setAttribute('href', newHref);
+//                 }
+//                 if (href.includes('22299/list.psp')) {
+//                     // 替换list.psp为main.psp
+//                     const newHref = href.replace('22299/list.psp', '_t4720/22247/main.psp');
+//                     aSel.setAttribute('href', newHref);
+//                 }
+//                 if (href.includes('/22301/list.psp')) {
+//                     // 替换list.psp为main.psp
+//                     const newHref = href.replace('22301/list.psp', '_t4720/22301/list.psp');
+//                     aSel.setAttribute('href', newHref);
+//                 }
+//             }
+
+//         }
+//     });
+// });
+
+
+
+
+

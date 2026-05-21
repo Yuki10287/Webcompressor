@@ -1,0 +1,192 @@
+// 由于webplus平台
+
+// 检查URL中是否包含编辑模式参数
+const isEditMode1 = window.location.search.includes('_p=') ||
+    window.location.pathname.includes('/edit');
+
+// 检查是否存在平台特有的编辑控件
+const isEditMode2 = document.querySelector('.ant-design') !== null ||
+    document.querySelector('.platform-component') !== null;
+
+// 检查是否在平台iframe中
+let isEditMode3 = window.self !== window.top ||
+    document.getElementById('myId')?.classList.contains('artboard');
+
+window.globalSwiper = false; // 自动成为window对象的属性
+window.globalMobile = false;
+var swiper = null;
+
+changeSwiper();
+
+
+
+window.addEventListener('resize', debounce(function () {
+    console.log('窗口大小变化已稳定');
+    changeSwiper();
+    // 你的逻辑代码
+}, 250)); // 250毫秒内不再触发才执行
+
+function changeSwiper() {
+    console.log("分屏判断：" + isEditMode1 + "||" + isEditMode2 + "||" + isEditMode3)
+    if (isEditMode1 || isEditMode2 || isEditMode3) {
+        // 编辑模式 - 显示平台可识别的普通布局
+        initEditModeLayout();
+        window.globalSwiper = false;
+    } else {
+        const width = getViewportWidth();
+        if (getViewportWidth() >= 768) {
+            // 分屏滑动
+            const height = getViewportHeight();
+            if (height >= width) {
+                initEditModeLayout();
+                window.globalSwiper = false;
+            } else {
+                initSwiperEffect();
+                window.globalSwiper = true;
+            }
+            window.globalMobile = false;
+        } else {
+            initEditModeLayout();
+            window.globalSwiper = false;
+            window.globalMobile = true;
+        }
+    }
+}
+
+function debounce(func, wait) {
+    let timeout;
+    return function () {
+        const context = this, args = arguments;
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+            func.apply(context, args);
+        }, wait);
+    };
+}
+
+function initEditModeLayout() {
+
+    console.log('滚动模式')
+
+    // 获取元素
+    const swiperWrapper = document.getElementById('mySwiperId');
+
+    // 检查元素是否存在
+    if (swiperWrapper) {
+        swiperWrapper.classList.remove('swiper-wrapper');
+    }
+
+    document.body.classList.remove('platform-swiper');
+
+    if (swiper != null) {
+        swiper.destroy(true, true);
+        swiper = null;
+    }
+}
+
+function initSwiperEffect() {
+    console.log('分屏模式')
+    console.log(window.innerWidth)
+
+    if (swiper != null) {
+        return;
+    }
+
+    //分屏滚动模式需要添加swiper类
+    const swiperWrapper = document.getElementById('mySwiperId');
+    if (swiperWrapper && !(swiperWrapper.classList.contains('swiper-wrapper'))) {
+        swiperWrapper.classList.add('swiper-wrapper');
+    }
+
+    if (!document.body.classList.contains('platform-swiper')) {
+        document.body.classList.add('platform-swiper');
+    }
+    //由于webplus平台 网站编辑模式无法在swiper全屏分屏效果下，识别组件位置。所以用js动态控制。
+    // 添加滑动模式
+
+
+    swiper = new Swiper(".home-swiper", {
+        direction: 'vertical',
+        followFinger: false,
+        speed: 400,
+        mousewheel: true,
+        touchRatio: 0.7,  // 降低触摸灵敏度 (默认1)
+        threshold: 20,
+
+        // 优先使用hash，没有则使用localStorage
+        initialSlide: getInitialSlideIndex(),
+
+        // pagination: {
+        //   el: '.swiper-pagination',
+        //   clickable: true,
+        // },
+        on: {
+            init: function (swiper) {
+                slide = this.slides.eq(0);
+                slide.addClass('ani-slide');
+            },
+            transitionStart: function () {
+                for (i = 0; i < this.slides.length; i++) {
+                    slide = this.slides.eq(i);
+                    slide.removeClass('ani-slide');
+                }
+            },
+            transitionEnd: function () {
+                slide = this.slides.eq(this.activeIndex);
+                slide.addClass('ani-slide');
+
+            },
+            // 当slide切换时触发
+            slideChange: function () {
+                const navbar = document.querySelector('.sticky-nav');
+                if (this.activeIndex >= 1) { // 从第二屏开始
+                    navbar.classList.add('sticky-nav-0'); // 显示导航栏
+                } else {
+                    navbar.classList.remove('sticky-nav-0'); // 隐藏导航栏
+                }
+
+                const slideNum = this.activeIndex + 1;
+                window.location.hash = `page-${slideNum}`;
+                localStorage.setItem('last-swiper-page', slideNum);
+            },
+        }
+    });
+}
+
+function handleEditModeClick(e) {
+    // 阻止Swiper事件冒泡到平台
+    if (e.target.closest('.swiper-slide')) {
+        e.stopPropagation();
+    }
+}
+
+
+
+function getInitialSlideIndex() {
+    // 1. 检查URL hash
+    const hashMatch = window.location.hash.match(/page-(\d+)/);
+    if (hashMatch) return parseInt(hashMatch[1]) - 1;
+
+    // 2. 检查本地存储
+    const storedPage = localStorage.getItem('last-swiper-page');
+    return storedPage ? parseInt(storedPage) - 1 : 0;
+}
+
+
+function getViewportWidth() {
+    // 优先使用visualViewport API
+    if (window.visualViewport) {
+        return window.visualViewport.width;
+    }
+    // 回退方案
+    return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+}
+
+function getViewportHeight() {
+    // 优先使用visualViewport API
+    if (window.visualViewport) {
+        return window.visualViewport.height;
+    }
+    // 回退方案
+    return Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+}

@@ -9,6 +9,7 @@ SKIP_FILES = {".gitkeep", ".DS_Store", "Thumbs.db"}
 
 class ResourceManager:
     def scan_project(self, root_dir: str) -> WebProject:
+        """递归扫描网页目录，并为每个文件记录相对路径、类型和原始大小。"""
         project = WebProject(root_dir=root_dir)
 
         for current_root, _, files in os.walk(root_dir):
@@ -17,6 +18,7 @@ class ResourceManager:
                     continue
 
                 file_path = os.path.join(current_root, file_name)
+                # manifest 和恢复流程都依赖相对路径来还原原始目录结构。
                 relative_path = os.path.relpath(file_path, root_dir)
                 resource_type = detect_resource_type(file_path)
                 original_size = os.path.getsize(file_path)

@@ -1,0 +1,11 @@
+// 等待DOM加载完成
+document.addEventListener('DOMContentLoaded', function () {
+  const pElement = document.querySelectorAll('.footer-content .info-desc');
+  pElement.forEach(element => {
+    let text = element.textContent;
+    // 替换连续 3+ 个空格为 <br>
+    text = text.replace(/ {3,}/g, '<br>');
+    element.innerHTML = text;
+  });
+
+});

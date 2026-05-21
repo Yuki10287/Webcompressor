@@ -1,0 +1,62 @@
+const searchBtn = document.querySelector('.header .search-img');
+
+searchBtn.addEventListener('click', () => {
+  // 创建一个遮罩层
+  const mask = document.createElement('div');
+  // 创建一个搜索框
+  const input = document.createElement('input');
+  input.placeholder = 'Please enter search content';
+  // 搜索框样式
+  input.style.cssText = `
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36vw;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 20px;
+    outline: none;
+    z-index: 1000;
+  `;
+
+  input.classList.add('animate__animated', 'animate__fadeIn');
+
+  // 遮罩样式
+  mask.style.cssText = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 999;
+  `;
+  document.body.appendChild(mask);
+  document.body.appendChild(input);
+
+  input.focus();
+
+  // 禁止当前页面滚动
+  // document.body.style.overflow = 'hidden';
+
+  // 点击遮罩层，移除遮罩层
+  mask.onclick = function () {
+    document.body.removeChild(mask);
+    document.body.removeChild(input);
+    // document.body.style.overflow = 'auto';
+  }
+
+  // input回车事件
+  input.onkeydown = function (e) {
+    if (e.key === 'Enter') {
+      document.body.removeChild(mask);
+      document.body.removeChild(input);
+
+      const origin = window.location.origin
+      // 打开一个新标签页
+      window.open(`${origin}/_web/_search/api/search/new.rst?locale=zh_CN&request_locale=zh_CN&_p=YXM9NDIwJnQ9MjM4MiZkPTgyNDYmcD0xJm09TiY_&btn-search=&keyword=${this.value}`);
+    }
+  }
+})

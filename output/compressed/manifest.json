@@ -1,309 +1,1060 @@
 {
-  "project_root": "C:/Users/15591/PycharmProjects/Webcompressor/sample_data/benchmark_site_rich",
-  "entry_html_relative_path": "index.html",
+  "project_root": "C:/Users/15591/Desktop/数据结构大作业/real_site/real_site_scut_cs",
+  "entry_html_relative_path": "计算机学院.html",
   "text_bundle_enabled": true,
-  "text_bundle_original_size": 142412,
-  "text_bundle_compressed_size": 47665,
-  "text_bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+  "text_bundle_original_size": 973100,
+  "text_bundle_compressed_size": 300856,
+  "text_bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
   "files": [
     {
-      "relative_path": "about.html",
+      "relative_path": "计算机学院.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "blog.html",
+      "relative_path": "计算机学院_files/1.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "contact.html",
+      "relative_path": "计算机学院_files/758.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "docs.html",
+      "relative_path": "计算机学院_files/academic.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "faq.html",
+      "relative_path": "计算机学院_files/animate.min.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "gallery.html",
+      "relative_path": "计算机学院_files/banner.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "index.html",
+      "relative_path": "计算机学院_files/bootstrap.min.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "pricing.html",
+      "relative_path": "计算机学院_files/bootstrap.min.js.下载",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
-      "note": ""
+      "note": "download_suffix_detected"
     },
     {
-      "relative_path": "products.html",
+      "relative_path": "计算机学院_files/common.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "services.html",
+      "relative_path": "计算机学院_files/common.js.下载",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
-      "note": ""
+      "note": "download_suffix_detected"
     },
     {
-      "relative_path": "css/animation.css",
+      "relative_path": "计算机学院_files/course.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "css/base.css",
+      "relative_path": "计算机学院_files/focus.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "css/components.css",
+      "relative_path": "计算机学院_files/font-awesome.min.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "css/forms.css",
+      "relative_path": "计算机学院_files/footer.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "css/layout.css",
+      "relative_path": "计算机学院_files/footpanel.js.下载",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
-      "note": ""
+      "note": "download_suffix_detected"
     },
     {
-      "relative_path": "css/reset.css",
+      "relative_path": "计算机学院_files/grayscale.js.下载",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
-      "note": ""
+      "note": "download_suffix_detected"
     },
     {
-      "relative_path": "css/theme.css",
+      "relative_path": "计算机学院_files/header.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "js/app.js",
+      "relative_path": "计算机学院_files/home.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "js/charts.js",
+      "relative_path": "计算机学院_files/home.js.下载",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
-      "note": ""
+      "note": "download_suffix_detected"
     },
     {
-      "relative_path": "js/data.js",
+      "relative_path": "计算机学院_files/homeMain.js.下载",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
-      "note": ""
+      "note": "download_suffix_detected"
     },
     {
-      "relative_path": "js/dom.js",
+      "relative_path": "计算机学院_files/index.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "js/gallery.js",
+      "relative_path": "计算机学院_files/jquery-2.x.min.js.下载",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
-      "note": ""
+      "note": "download_suffix_detected"
     },
     {
-      "relative_path": "js/search.js",
+      "relative_path": "计算机学院_files/jquery-migrate.min.js.下载",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
-      "note": ""
+      "note": "download_suffix_detected"
     },
     {
-      "relative_path": "js/utils.js",
+      "relative_path": "计算机学院_files/jquery.sudy.wp.visitcount.js.下载",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
+      "note": "download_suffix_detected"
+    },
+    {
+      "relative_path": "计算机学院_files/jquery.sudyNav.js.下载",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
+      "note": "download_suffix_detected"
+    },
+    {
+      "relative_path": "计算机学院_files/loadStyle.js.下载",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
+      "note": "download_suffix_detected"
+    },
+    {
+      "relative_path": "计算机学院_files/mediaList.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "images/avatar1.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\avatar1.jpg.jpg",
+      "relative_path": "计算机学院_files/news.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
-      "compress_time_ms": 37.665,
       "note": ""
     },
     {
-      "relative_path": "images/avatar2.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\avatar2.jpg.jpg",
+      "relative_path": "计算机学院_files/newsAndImage.js.下载",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
-      "compress_time_ms": 4.552,
+      "note": "download_suffix_detected"
+    },
+    {
+      "relative_path": "计算机学院_files/newsList.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "images/avatar3.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\avatar3.jpg.jpg",
+      "relative_path": "计算机学院_files/notice.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
-      "compress_time_ms": 4.662,
       "note": ""
     },
     {
-      "relative_path": "images/banner.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\banner.jpg.jpg",
+      "relative_path": "计算机学院_files/notice.js.下载",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
       "restored_success": true,
-      "compress_time_ms": 13.198,
+      "note": "download_suffix_detected"
+    },
+    {
+      "relative_path": "计算机学院_files/pxtorem.js.下载",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
+      "note": "download_suffix_detected"
+    },
+    {
+      "relative_path": "计算机学院_files/recruitmentList.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "images/bg.png",
+      "relative_path": "计算机学院_files/scientific.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/searchComponent.js.下载",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
+      "note": "download_suffix_detected"
+    },
+    {
+      "relative_path": "计算机学院_files/simplenews.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/sudy-jquery-autoload.js.下载",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
+      "note": "download_suffix_detected"
+    },
+    {
+      "relative_path": "计算机学院_files/sudyNav.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/swiper-bundle.min.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/swiper-bundle.min.js.下载",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
+      "note": "download_suffix_detected"
+    },
+    {
+      "relative_path": "计算机学院_files/system.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/teacher.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/teacher.js.下载",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
+      "note": "download_suffix_detected"
+    },
+    {
+      "relative_path": "计算机学院_files/video.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_site_scut_cs_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/019eccdf-8acf-4e39-b5ec-d4bca18ec00d.png",
       "type": "image",
       "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\images\\bg.png.png",
+      "compressed_path": "output\\compressed\\计算机学院_files\\019eccdf-8acf-4e39-b5ec-d4bca18ec00d.png.png",
       "restored_success": true,
-      "compress_time_ms": 148.773,
+      "compress_time_ms": 443.783,
       "note": ""
     },
     {
-      "relative_path": "images/card_bg.png",
+      "relative_path": "计算机学院_files/063fc13f-743c-4c54-a032-2fec2d0aabf1.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\063fc13f-743c-4c54-a032-2fec2d0aabf1.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 4.461,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/06647894-5ffc-489d-83f7-dff4a8f523cb.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\06647894-5ffc-489d-83f7-dff4a8f523cb.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 445.312,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/08085072-eaf0-4463-b677-762e58f0204a.png",
       "type": "image",
       "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\images\\card_bg.png.png",
+      "compressed_path": "output\\compressed\\计算机学院_files\\08085072-eaf0-4463-b677-762e58f0204a.png.png",
       "restored_success": true,
-      "compress_time_ms": 122.465,
+      "compress_time_ms": 5450.424,
       "note": ""
     },
     {
-      "relative_path": "images/gallery1.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\gallery1.jpg.jpg",
-      "restored_success": true,
-      "compress_time_ms": 16.592,
-      "note": ""
-    },
-    {
-      "relative_path": "images/gallery2.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\gallery2.jpg.jpg",
-      "restored_success": true,
-      "compress_time_ms": 15.201,
-      "note": ""
-    },
-    {
-      "relative_path": "images/gallery3.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\gallery3.jpg.jpg",
-      "restored_success": true,
-      "compress_time_ms": 15.188,
-      "note": ""
-    },
-    {
-      "relative_path": "images/gallery4.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\images\\gallery4.jpg.jpg",
-      "restored_success": true,
-      "compress_time_ms": 14.954,
-      "note": ""
-    },
-    {
-      "relative_path": "images/hero_pattern.png",
+      "relative_path": "计算机学院_files/15a0d753-a031-43a3-a6a5-284ab8a99b9c.png",
       "type": "image",
       "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\images\\hero_pattern.png.png",
+      "compressed_path": "output\\compressed\\计算机学院_files\\15a0d753-a031-43a3-a6a5-284ab8a99b9c.png.png",
       "restored_success": true,
-      "compress_time_ms": 104.957,
+      "compress_time_ms": 100.656,
       "note": ""
     },
     {
-      "relative_path": "images/logo.png",
+      "relative_path": "计算机学院_files/1919f92c-3cf6-4306-9f4b-dfcd9526e6d4.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\1919f92c-3cf6-4306-9f4b-dfcd9526e6d4.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 4.356,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/1d9802bf-e8dc-4a08-b8d4-31a5152e1b86.png",
       "type": "image",
       "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\images\\logo.png.png",
+      "compressed_path": "output\\compressed\\计算机学院_files\\1d9802bf-e8dc-4a08-b8d4-31a5152e1b86.png.png",
       "restored_success": true,
-      "compress_time_ms": 25.333,
+      "compress_time_ms": 1733.342,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/204a9ba5-972a-47eb-ac01-87a789a160cc.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\204a9ba5-972a-47eb-ac01-87a789a160cc.png.png",
+      "restored_success": true,
+      "compress_time_ms": 160.757,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/21617fc6-9aad-41ea-bc07-0460c062d3e4.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\21617fc6-9aad-41ea-bc07-0460c062d3e4.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 2.723,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/29602797-98d3-4e25-b33b-990272ad8b37.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\29602797-98d3-4e25-b33b-990272ad8b37.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 84.552,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/2b26ba78-4636-42fe-b7a5-baca02ef4f51.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\2b26ba78-4636-42fe-b7a5-baca02ef4f51.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 74.961,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/2c6432fa-7fc6-4fa6-9a77-25bf4124764d.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\2c6432fa-7fc6-4fa6-9a77-25bf4124764d.png.png",
+      "restored_success": true,
+      "compress_time_ms": 168.215,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/37197911-5bc9-4b00-a4d0-0154ef276e3a.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\37197911-5bc9-4b00-a4d0-0154ef276e3a.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 3.829,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/3a6bf27e-7f85-4938-9a9d-9c4411e3feac.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\3a6bf27e-7f85-4938-9a9d-9c4411e3feac.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 21.453,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/45ced530-b3ba-4602-94c4-f30844a1e602.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\45ced530-b3ba-4602-94c4-f30844a1e602.png.png",
+      "restored_success": true,
+      "compress_time_ms": 14156.713,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/4cc377bc-0c0b-481d-9689-3a44399ab1b1.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\4cc377bc-0c0b-481d-9689-3a44399ab1b1.png.png",
+      "restored_success": true,
+      "compress_time_ms": 183.15,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/4d1eb6ed-4796-4319-98c1-4a138df7e78d.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\4d1eb6ed-4796-4319-98c1-4a138df7e78d.png.png",
+      "restored_success": true,
+      "compress_time_ms": 59308.933,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/515b3c92-b65e-417b-b4b0-abd51fd67b71.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\515b3c92-b65e-417b-b4b0-abd51fd67b71.png.png",
+      "restored_success": true,
+      "compress_time_ms": 1092.581,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/5a7e7089-c5dd-466e-a956-68e50f508045.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\5a7e7089-c5dd-466e-a956-68e50f508045.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 6.026,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/66681f33-5dff-4fe3-a136-95e682e27d26.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\计算机学院_files\\66681f33-5dff-4fe3-a136-95e682e27d26.png.png",
+      "restored_success": true,
+      "compress_time_ms": 200.288,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/68611bad-5d7a-4c6f-8098-ab5370ebd9f7.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\68611bad-5d7a-4c6f-8098-ab5370ebd9f7.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 19.938,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/686c1613-689f-4a44-9a16-65d17c7dd30b.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\686c1613-689f-4a44-9a16-65d17c7dd30b.png.png",
+      "restored_success": true,
+      "compress_time_ms": 172.382,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/68ea18c1-1970-4a62-b8b9-278dc5875f73.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\68ea18c1-1970-4a62-b8b9-278dc5875f73.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 23.443,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/75ef9381-a57c-4181-aff1-7e99e8a8eb2f.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\75ef9381-a57c-4181-aff1-7e99e8a8eb2f.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 14.094,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/7c04db9a-d174-433f-bdab-60f84e5728a1.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\7c04db9a-d174-433f-bdab-60f84e5728a1.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 4.447,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/7ee04ff7-06d4-42b1-8ea7-fc7ad2912c08.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\7ee04ff7-06d4-42b1-8ea7-fc7ad2912c08.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 4.272,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/8120db80-103d-46a1-91b7-2b1b12b0d7f0.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\8120db80-103d-46a1-91b7-2b1b12b0d7f0.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 62.765,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/8cb33aa8-68b7-4764-a6ea-a0c7a3652cfe.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\8cb33aa8-68b7-4764-a6ea-a0c7a3652cfe.png.png",
+      "restored_success": true,
+      "compress_time_ms": 159.315,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/93dc2909-bb60-44be-b23d-da40dcae1227.jpg",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\计算机学院_files\\93dc2909-bb60-44be-b23d-da40dcae1227.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 9.198,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/9594183d-b3f0-42f6-a2b1-c9b2c3294ba1.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\9594183d-b3f0-42f6-a2b1-c9b2c3294ba1.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 13.351,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/9af26b50-184e-4b18-a0ac-da4a757d764b.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\计算机学院_files\\9af26b50-184e-4b18-a0ac-da4a757d764b.png.png",
+      "restored_success": true,
+      "compress_time_ms": 159.684,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/a40dedbc-65d9-4cba-b4d8-b7c016bb2e39.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\a40dedbc-65d9-4cba-b4d8-b7c016bb2e39.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 15.947,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/ac4144e0-c501-4dfd-8813-2c28e8e36b92.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\ac4144e0-c501-4dfd-8813-2c28e8e36b92.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 4.558,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/addc05ec-f4e8-4b7e-bc27-eb8cba879d4c.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\计算机学院_files\\addc05ec-f4e8-4b7e-bc27-eb8cba879d4c.png.png",
+      "restored_success": true,
+      "compress_time_ms": 42.611,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/b295617e-b847-4409-9e33-50c25d2740e3.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\b295617e-b847-4409-9e33-50c25d2740e3.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 4.786,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/b3387411-9012-42dd-a28c-2e132068b7ab.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\b3387411-9012-42dd-a28c-2e132068b7ab.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 21.205,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/b367e696-3cf2-4edf-a1bd-649a73aad9d2.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\b367e696-3cf2-4edf-a1bd-649a73aad9d2.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 4.618,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/b67614fd-2968-42cb-bc79-ad9ee231747d.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\b67614fd-2968-42cb-bc79-ad9ee231747d.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 5.884,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/bd7649da-2fbb-40ee-a281-93c7fe047e98.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\bd7649da-2fbb-40ee-a281-93c7fe047e98.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 4.428,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/c1e21492-47ed-4256-813e-7bf02028ae26.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\c1e21492-47ed-4256-813e-7bf02028ae26.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 5.66,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/c2437061-b2a0-4357-bd35-80288eefb75b.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\c2437061-b2a0-4357-bd35-80288eefb75b.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 5.011,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/c6c33c2e-1f91-466e-9e0e-a81a48cabf5c.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\c6c33c2e-1f91-466e-9e0e-a81a48cabf5c.png.png",
+      "restored_success": true,
+      "compress_time_ms": 14786.271,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/c6c5b646-9fee-4000-ad0e-f8d9766fabee.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\c6c5b646-9fee-4000-ad0e-f8d9766fabee.png.png",
+      "restored_success": true,
+      "compress_time_ms": 3828.565,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/c8b18773-e701-430e-88d3-83a50ff0ffd7.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\c8b18773-e701-430e-88d3-83a50ff0ffd7.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 16.24,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/course_book.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\course_book.png.png",
+      "restored_success": true,
+      "compress_time_ms": 171.933,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/course_content_img.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\course_content_img.png.png",
+      "restored_success": true,
+      "compress_time_ms": 1670.602,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/d0d9ed8e-afd6-4eef-82c7-26122abb6a53.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\d0d9ed8e-afd6-4eef-82c7-26122abb6a53.png.png",
+      "restored_success": true,
+      "compress_time_ms": 1210.688,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/d692eb31-3227-4f40-90dd-6e7d6f2f8acd.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\d692eb31-3227-4f40-90dd-6e7d6f2f8acd.png.png",
+      "restored_success": true,
+      "compress_time_ms": 9694.018,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/d6e55b17-e05f-4b93-81c3-41e3e3a7e3cc.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\d6e55b17-e05f-4b93-81c3-41e3e3a7e3cc.png.png",
+      "restored_success": true,
+      "compress_time_ms": 48245.372,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/d7bc1a44-f920-41a7-bac6-bcf4ecd5ce3c.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\d7bc1a44-f920-41a7-bac6-bcf4ecd5ce3c.png.png",
+      "restored_success": true,
+      "compress_time_ms": 250.441,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/d82fc4ae-896a-4c3f-af77-b3fa0b665aec.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\d82fc4ae-896a-4c3f-af77-b3fa0b665aec.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 4.883,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/dc290530-2521-46f7-8ee7-7df6ddd5aab9.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\dc290530-2521-46f7-8ee7-7df6ddd5aab9.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 250.088,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/dc71ab5b-d298-4f5f-ad83-ddb2bd362d4c.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\dc71ab5b-d298-4f5f-ad83-ddb2bd362d4c.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 2.956,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/df9f0dbb-37e8-4f46-8087-35a210ccf6ad.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\df9f0dbb-37e8-4f46-8087-35a210ccf6ad.png.png",
+      "restored_success": true,
+      "compress_time_ms": 131.472,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/e22d5977-2af5-47b2-b1ef-a6d66693f41e.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\e22d5977-2af5-47b2-b1ef-a6d66693f41e.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 14.096,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/e2b080e4-541e-48e6-b304-3a1a3ae9d749.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\e2b080e4-541e-48e6-b304-3a1a3ae9d749.png.png",
+      "restored_success": true,
+      "compress_time_ms": 188.083,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/e3ae68e4-cd60-4e81-b314-3fbaece4a400.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\e3ae68e4-cd60-4e81-b314-3fbaece4a400.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 4.867,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/e420d151-bdfa-4057-b996-b5b94a519789.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\e420d151-bdfa-4057-b996-b5b94a519789.png.png",
+      "restored_success": true,
+      "compress_time_ms": 946.125,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/e80481a8-1802-4fa5-ab8b-40b3b09a58f8.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\e80481a8-1802-4fa5-ab8b-40b3b09a58f8.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 3.238,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/e87fed62-24c6-4c33-9d41-8d807f224c52.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\e87fed62-24c6-4c33-9d41-8d807f224c52.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 4.707,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/e8e1fe06-c4ba-4ccc-a547-0fd6b4db8320.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\e8e1fe06-c4ba-4ccc-a547-0fd6b4db8320.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 20.717,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/eb3b729a-defe-4415-8aaf-deda18089344.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\eb3b729a-defe-4415-8aaf-deda18089344.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 20.504,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/ed9444ef-2f9f-48b5-979e-d4fc03a04f3d.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\ed9444ef-2f9f-48b5-979e-d4fc03a04f3d.png.png",
+      "restored_success": true,
+      "compress_time_ms": 154.919,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/f2867c22-f8f8-43d2-8bd3-a65ff21ee549.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\f2867c22-f8f8-43d2-8bd3-a65ff21ee549.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 14.692,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/f68b3dde-56b0-4284-8536-5c81eb76de88.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\计算机学院_files\\f68b3dde-56b0-4284-8536-5c81eb76de88.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 15.691,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/f68dfe5b-0332-404f-837d-06ca0cdc8a78.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\f68dfe5b-0332-404f-837d-06ca0cdc8a78.png.png",
+      "restored_success": true,
+      "compress_time_ms": 172.479,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/ic_hall.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\ic_hall.png.png",
+      "restored_success": true,
+      "compress_time_ms": 1.61,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/ic_mail.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\ic_mail.png.png",
+      "restored_success": true,
+      "compress_time_ms": 1.45,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/ic_portal.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\ic_portal.png.png",
+      "restored_success": true,
+      "compress_time_ms": 1.589,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/ic_search.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\ic_search.png.png",
+      "restored_success": true,
+      "compress_time_ms": 1.615,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/ic_zh.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\ic_zh.png.png",
+      "restored_success": true,
+      "compress_time_ms": 1.371,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/main_logo.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\main_logo.png.png",
+      "restored_success": true,
+      "compress_time_ms": 2171.88,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/school_logo.png",
+      "type": "image",
+      "strategy": "store_original_image",
+      "compressed_path": "output\\compressed\\计算机学院_files\\school_logo.png.png",
+      "restored_success": true,
+      "compress_time_ms": 1.815,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/scutjsjqn.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\scutjsjqn.png.png",
+      "restored_success": true,
+      "compress_time_ms": 78.585,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/xygh.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\计算机学院_files\\xygh.png.png",
+      "restored_success": true,
+      "compress_time_ms": 81.1,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/icon_more_1.gif",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\计算机学院_files\\icon_more_1.gif",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "计算机学院_files/_visitcount",
+      "type": "unsupported",
+      "strategy": "store_original_asset",
+      "stored_path": "output\\compressed\\计算机学院_files\\_visitcount",
+      "restored_success": true,
       "note": ""
     }
   ]

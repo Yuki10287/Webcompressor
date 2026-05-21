@@ -1,0 +1,50 @@
+/** 元素进入动画 */
+// 获取所有需要进入动画的元素
+const animationBox = document.querySelectorAll('.animation-box');
+// 观察元素是否出现在视口
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            // 先移除hidden类
+            entry.target.classList.remove('hidden');
+            entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+            observer.unobserve(entry.target); // 停止观察已进入视口的元素
+        } else {
+            // entry.target.classList.remove('animation-active');
+        }
+    });
+});
+
+// 开始观察
+animationBox.forEach((item) => {
+    observer.observe(item);
+});
+
+
+
+// 书本放大动画
+document.addEventListener('DOMContentLoaded', function () {
+    const book = document.querySelector('.page5-book-bg');
+    if (!book) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.dataset.inViewport = 'true';
+                checkAnimationConditions(entry.target);
+            }
+        });
+    });
+
+    observer.observe(book);
+
+    // 3. 检查是否满足动画执行条件
+    function checkAnimationConditions(element) {
+        if (element.dataset.inViewport === 'true' &&
+            !element.classList.contains('bookScale')) {
+
+            element.classList.add('bookScale');
+            observer.unobserve(element); // 动画触发后停止观察
+        }
+    }
+});

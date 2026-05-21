@@ -284,6 +284,7 @@ def save_transmission_compare(transmission_rows: List[Dict], chart_dir: str) -> 
 
 
 def generate_site_charts(summary: Dict, detail_rows: List[Dict], transmission_rows: List[Dict], chart_dir: str) -> None:
+    """基于当前站点的一组 CSV 数据生成四张可视化图表。"""
     setup_font()
     ensure_dir(chart_dir)
     save_total_compression_compare(summary, chart_dir)
@@ -293,6 +294,12 @@ def generate_site_charts(summary: Dict, detail_rows: List[Dict], transmission_ro
 
 
 def evaluate_current_site(site_root: str) -> Dict[str, str]:
+    """
+    对用户当前选择的网页目录生成单站点评估报告。
+
+    注意：这里会重新执行一轮压缩评估，并额外生成 ZIP / tar.gz 对比结果。
+    它用于报告展示，不会复用 GUI 压缩按钮已经产生的 manifest。
+    """
     site_root = os.path.abspath(site_root)
     if not os.path.isdir(site_root):
         raise FileNotFoundError(f"Site directory not found: {site_root}")
@@ -301,6 +308,7 @@ def evaluate_current_site(site_root: str) -> Dict[str, str]:
     chart_dir = os.path.join(report_dir, "charts")
     ensure_dir(report_dir)
 
+    # 自研系统结果用于展示压缩率和文件明细，通用工具结果用于横向对比。
     summary, detail_rows = evaluate_our_system(site_root)
     tool_result = evaluate_general_tools(site_root)
     append_general_tool_results(summary, tool_result)
@@ -315,6 +323,7 @@ def evaluate_current_site(site_root: str) -> Dict[str, str]:
     write_csv(summary_path, summary_rows)
     write_csv(detail_path, detail_rows)
     write_csv(transmission_path, transmission_rows)
+    # 图表和 CSV 放在同一个站点报告目录下，便于 GUI 直接打开查看。
     generate_site_charts(summary, detail_rows, transmission_rows, chart_dir)
     record_recent_site_path(site_root)
 

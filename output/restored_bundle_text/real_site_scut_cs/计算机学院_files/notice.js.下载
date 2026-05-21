@@ -1,0 +1,75 @@
+document.addEventListener('DOMContentLoaded', function () {
+
+  // 找到所有 class 为 more-info3 下的 a 标签
+  const links = document.querySelectorAll('.academic_list .more-info-detail .more-info a');
+  // 遍历每个 a 标签
+  links.forEach(link => {
+
+    // 获取当前文本内容，并用 <br> 替换 ||
+    const newContent = link.innerHTML.replace(/\|\|/g, '<br>');
+
+    // 更新 HTML 内容
+    link.innerHTML = newContent;
+  });
+
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  //公告栏添加点击事件
+  const tags = document.querySelectorAll('.tag-item-0-common');
+  const notice_contents = document.querySelectorAll('.notice_content_panel .notice_right');
+
+ // const moreBtns = document.querySelectorAll('.notice_content  .wrapper-more');
+
+  for (let i = 0; i < tags.length; i++) {
+    tags[i].addEventListener('click', () => {
+      // 移除所有标签的下划线
+      tags.forEach(t => t.classList.remove('tag-item-0-common-selected'));
+      notice_contents.forEach(t => t.style.display = 'none');
+      // moreBtns.forEach(t => t.style.display = 'none');
+      // 添加当前点击标签的下划线
+      tags[i].classList.add('tag-item-0-common-selected');
+      notice_contents[i].style.display = 'block';
+      // moreBtns[i].style.display = 'flex';
+    });
+  }
+});
+
+
+//=======改变日期样式=======
+
+// document.querySelectorAll('.notice_right_list .date').forEach(element => {
+//   const dateStr = element.textContent.trim();
+//   const [year, month, day] = dateStr.split('-');
+//   // 月份映射表
+//   const months = ['一', '二', '三', '四', '五', '六',
+//     '七', '八', '九', '十', '十一', '十二'];
+//   const monthInt=parseInt(month, 10);
+//   let monthCn=''
+//   const position=monthInt-1;
+//   if(monthInt>0&&(position)<months.length){
+//     monthCn=months[position]+'月';
+//   }
+
+//   element.innerHTML = `
+//       <span class="day">${day}</span>
+//       <div class="line"></div>
+//       <span class="month">${monthCn}</span>
+//   `;
+
+// });
+
+
+document.querySelectorAll('.notice_content_panel .notice_left_li .date').forEach(element => {
+  const dateStr = element.textContent.trim();
+  if (dateStr.includes('-')) {
+    const [year, month, day] = dateStr.split('-');
+    element.innerHTML = `
+      <span class="day">${day}</span>
+      <span class="year-month">${year}-${month}</span>
+  `;
+  }
+});
+
+
+
