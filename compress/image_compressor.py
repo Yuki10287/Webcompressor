@@ -1,13 +1,14 @@
-import os
 from io import BytesIO
 from PIL import Image
+
+from core.type_detector import normalize_extension_for_detection
 
 
 class ImageCompressor:
     strategy_name = "adaptive_image"
 
     def compress(self, input_path: str, quality: int = 70) -> tuple[bytes, str]:
-        ext = os.path.splitext(input_path)[1].lower()
+        ext = normalize_extension_for_detection(input_path)
         image = Image.open(input_path)
         buffer = BytesIO()
 

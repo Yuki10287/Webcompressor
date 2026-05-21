@@ -1,347 +1,310 @@
 {
-  "project_root": "C:/Users/15591/Desktop/real_site/real_csnews",
-  "entry_html_relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会.html",
+  "project_root": "C:/Users/15591/PycharmProjects/Webcompressor/sample_data/benchmark_site_rich",
+  "entry_html_relative_path": "index.html",
   "text_bundle_enabled": true,
-  "text_bundle_original_size": 304017,
-  "text_bundle_compressed_size": 75605,
-  "text_bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
+  "text_bundle_original_size": 142412,
+  "text_bundle_compressed_size": 47665,
+  "text_bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
   "files": [
     {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会.html",
+      "relative_path": "about.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/1.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/758.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/bootstrap.min.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/common.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/displayinfo_common.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/displayinfo_news.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/font-awesome.min.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/footer.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/header.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/layer.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/layer.ext.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/listcolumn.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/simplenews.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/sudyNav.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/system.css",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_csnews_text_bundle.bin",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/262b44bb-7499-4282-8a48-26ed32276f51.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\262b44bb-7499-4282-8a48-26ed32276f51.png.png",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true,
-      "compress_time_ms": 256.996
+      "note": ""
     },
     {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/3525c2a6-fb01-4921-b252-ff1a22b6caad.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\3525c2a6-fb01-4921-b252-ff1a22b6caad.png.png",
+      "relative_path": "blog.html",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true,
-      "compress_time_ms": 200.341
+      "note": ""
     },
     {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/3dc2c16a-baa9-4538-bb0e-633ef60b456b.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\3dc2c16a-baa9-4538-bb0e-633ef60b456b.png.png",
+      "relative_path": "contact.html",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true,
-      "compress_time_ms": 680.508
+      "note": ""
     },
     {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/aff403c6-e798-4a19-87c9-341b0aa6c519.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\aff403c6-e798-4a19-87c9-341b0aa6c519.png.png",
+      "relative_path": "docs.html",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true,
-      "compress_time_ms": 178.226
+      "note": ""
     },
     {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/c32f7bc2-ee82-48bf-b3b0-b42511b6dd9d.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\c32f7bc2-ee82-48bf-b3b0-b42511b6dd9d.png.png",
+      "relative_path": "faq.html",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true,
-      "compress_time_ms": 153.33
+      "note": ""
     },
     {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/dcc2ff06-5525-4040-bee6-f2cb4ea4e052.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\dcc2ff06-5525-4040-bee6-f2cb4ea4e052.png.png",
+      "relative_path": "gallery.html",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
       "restored_success": true,
-      "compress_time_ms": 177.825
+      "note": ""
     },
     {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/ic_hall.png",
+      "relative_path": "index.html",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "pricing.html",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "products.html",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "services.html",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "css/animation.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "css/base.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "css/components.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "css/forms.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "css/layout.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "css/reset.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "css/theme.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "js/app.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "js/charts.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "js/data.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "js/dom.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "js/gallery.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "js/search.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "js/utils.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_rich_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "images/avatar1.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\avatar1.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 37.665,
+      "note": ""
+    },
+    {
+      "relative_path": "images/avatar2.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\avatar2.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 4.552,
+      "note": ""
+    },
+    {
+      "relative_path": "images/avatar3.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\avatar3.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 4.662,
+      "note": ""
+    },
+    {
+      "relative_path": "images/banner.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\banner.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 13.198,
+      "note": ""
+    },
+    {
+      "relative_path": "images/bg.png",
       "type": "image",
       "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\ic_hall.png.png",
+      "compressed_path": "output\\compressed\\images\\bg.png.png",
       "restored_success": true,
-      "compress_time_ms": 1.523
+      "compress_time_ms": 148.773,
+      "note": ""
     },
     {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/ic_mail.png",
+      "relative_path": "images/card_bg.png",
       "type": "image",
       "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\ic_mail.png.png",
+      "compressed_path": "output\\compressed\\images\\card_bg.png.png",
       "restored_success": true,
-      "compress_time_ms": 1.192
+      "compress_time_ms": 122.465,
+      "note": ""
     },
     {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/ic_portal.png",
+      "relative_path": "images/gallery1.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\gallery1.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 16.592,
+      "note": ""
+    },
+    {
+      "relative_path": "images/gallery2.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\gallery2.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 15.201,
+      "note": ""
+    },
+    {
+      "relative_path": "images/gallery3.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\gallery3.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 15.188,
+      "note": ""
+    },
+    {
+      "relative_path": "images/gallery4.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\gallery4.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 14.954,
+      "note": ""
+    },
+    {
+      "relative_path": "images/hero_pattern.png",
       "type": "image",
       "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\ic_portal.png.png",
+      "compressed_path": "output\\compressed\\images\\hero_pattern.png.png",
       "restored_success": true,
-      "compress_time_ms": 1.726
+      "compress_time_ms": 104.957,
+      "note": ""
     },
     {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/ic_search.png",
+      "relative_path": "images/logo.png",
       "type": "image",
       "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\ic_search.png.png",
+      "compressed_path": "output\\compressed\\images\\logo.png.png",
       "restored_success": true,
-      "compress_time_ms": 2.046
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/ic_zh.png",
-      "type": "image",
-      "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\ic_zh.png.png",
-      "restored_success": true,
-      "compress_time_ms": 1.404
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/main_logo.png",
-      "type": "image",
-      "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\main_logo.png.png",
-      "restored_success": true,
-      "compress_time_ms": 2119.053
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/school_logo.png",
-      "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\school_logo.png.png",
-      "restored_success": true,
-      "compress_time_ms": 1.428
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/scutjsjqn.png",
-      "type": "image",
-      "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\scutjsjqn.png.png",
-      "restored_success": true,
-      "compress_time_ms": 73.771
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/xygh.png",
-      "type": "image",
-      "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\xygh.png.png",
-      "restored_success": true,
-      "compress_time_ms": 79.026
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/bootstrap.min.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\bootstrap.min.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/common.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\common.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/footpanel.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\footpanel.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/grayscale.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\grayscale.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/jquery-2.x.min.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\jquery-2.x.min.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/jquery-migrate.min.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\jquery-migrate.min.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/jquery.sudy.wp.visitcount.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\jquery.sudy.wp.visitcount.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/jquery.sudyNav.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\jquery.sudyNav.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/layer.ext.dev.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\layer.ext.dev.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/layer.min.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\layer.min.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/loadStyle.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\loadStyle.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/pxtorem.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\pxtorem.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/searchComponent.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\searchComponent.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/sudy-jquery-autoload.js.下载",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\sudy-jquery-autoload.js.下载",
-      "restored_success": true
-    },
-    {
-      "relative_path": "凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files/_visitcount",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\凝心聚力担使命 实干笃行促发展 ——计算机科学与工程学院召开党委书记任职宣布会_files\\_visitcount",
-      "restored_success": true
+      "compress_time_ms": 25.333,
+      "note": ""
     }
   ]
 }

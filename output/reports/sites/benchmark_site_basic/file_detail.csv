@@ -1,0 +1,15 @@
+﻿sample_name,relative_path,resource_type,original_size,compressed_size,compression_rate,strategy,note
+benchmark_site_basic,about.html,text,5593,1327,76.27,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,contact.html,text,7873,1868,76.27,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,index.html,text,9407,2232,76.27,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,products.html,text,5008,1188,76.28,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,css/base.css,text,2201,522,76.28,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,css/components.css,text,3115,739,76.28,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,css/layout.css,text,2858,678,76.28,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,js/app.js,text,7567,1796,76.27,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,js/data.js,text,14890,3534,76.27,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,js/utils.js,text,1770,420,76.27,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+benchmark_site_basic,images/avatar.jpg,image,6447,3157,51.03,jpeg_quality,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_basic,images/banner.jpg,image,40930,14023,65.74,jpeg_quality,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_basic,images/bg.png,image,12142,10822,10.87,png_optimize,图片为可控质量压缩，恢复后保证可渲染
+benchmark_site_basic,images/logo.png,image,2716,2122,21.87,png_optimize,图片为可控质量压缩，恢复后保证可渲染

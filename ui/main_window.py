@@ -16,6 +16,7 @@ from PySide6.QtWidgets import (
 
 from core.resource_manager import ResourceManager
 from core.package_manager import PackageManager
+from core.type_detector import has_download_suffix, normalize_extension_for_detection
 from compress.image_compressor import ImageCompressor
 from compress.text_bundle_compressor import TextBundleCompressor
 from experiments.evaluate_current_site import (
@@ -585,7 +586,8 @@ class MainWindow(QMainWindow):
                         "type": resource.resource_type,
                         "strategy": resource.compression_strategy,
                         "bundle_path": bundle_path,
-                        "restored_success": all_ok
+                        "restored_success": all_ok,
+                        "note": "download_suffix_detected" if has_download_suffix(resource.file_path) else ""
                     })
 
             except Exception as e:
@@ -614,7 +616,7 @@ class MainWindow(QMainWindow):
                 if len(compressed_data) >= len(original_data):
                     compressed_data = original_data
                     strategy = "store_original_image"
-                    suffix = os.path.splitext(resource.file_path)[1]
+                    suffix = normalize_extension_for_detection(resource.file_path)
                 else:
                     strategy = image_strategy
                     if image_strategy == "jpeg_quality":
@@ -622,7 +624,7 @@ class MainWindow(QMainWindow):
                     elif image_strategy == "png_optimize":
                         suffix = ".png"
                     else:
-                        suffix = os.path.splitext(resource.file_path)[1]
+                        suffix = normalize_extension_for_detection(resource.file_path)
 
                 compressed_path = self.package_manager.save_compressed_file(
                     output_root, resource.relative_path, compressed_data, suffix
@@ -639,7 +641,8 @@ class MainWindow(QMainWindow):
                     "strategy": resource.compression_strategy,
                     "compressed_path": compressed_path,
                     "restored_success": True,
-                    "compress_time_ms": round(compress_time_ms, 3)
+                    "compress_time_ms": round(compress_time_ms, 3),
+                    "note": "download_suffix_detected" if has_download_suffix(resource.file_path) else ""
                 })
 
             except Exception as e:
@@ -665,7 +668,8 @@ class MainWindow(QMainWindow):
                         "type": resource.resource_type,
                         "strategy": resource.compression_strategy,
                         "stored_path": stored_path,
-                        "restored_success": True
+                        "restored_success": True,
+                        "note": "download_suffix_detected" if has_download_suffix(resource.file_path) else ""
                     })
                 except Exception as e:
                     resource.compression_success = False

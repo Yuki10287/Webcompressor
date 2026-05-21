@@ -1,5 +1,6 @@
-import os
 from typing import Dict, List, Tuple
+
+from core.type_detector import normalize_extension_for_detection
 
 
 MARKER = 0xFF
@@ -143,7 +144,7 @@ class TextPreprocessorManager:
         self.js_pre = DictionaryPreprocessor(JS_PATTERNS)
 
     def preprocess_by_path(self, file_path: str, data: bytes) -> Tuple[int, bytes]:
-        ext = os.path.splitext(file_path)[1].lower()
+        ext = normalize_extension_for_detection(file_path)
 
         if ext in [".html", ".htm"]:
             return self.TYPE_HTML, self.html_pre.preprocess(data)
