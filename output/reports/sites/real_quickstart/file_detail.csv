@@ -1,0 +1,14 @@
+﻿sample_name,relative_path,resource_type,original_size,compressed_size,compression_rate,strategy,note
+real_quickstart,Quickstart — Flask Documentation (3.1.x).html,text,151024,63065,58.24,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_quickstart,Quickstart — Flask Documentation (3.1.x)_files/doctools.js.下载,text,4322,1804,58.26,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_quickstart,Quickstart — Flask Documentation (3.1.x)_files/documentation_options.js.下载,text,331,138,58.31,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_quickstart,Quickstart — Flask Documentation (3.1.x)_files/ethicalads.min.js.下载,text,39884,16655,58.24,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_quickstart,Quickstart — Flask Documentation (3.1.x)_files/flask-logo.svg,text,3455,1442,58.26,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_quickstart,Quickstart — Flask Documentation (3.1.x)_files/flask.css,text,237,98,58.65,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_quickstart,Quickstart — Flask Documentation (3.1.x)_files/pygments.css,text,5291,2209,58.25,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_quickstart,Quickstart — Flask Documentation (3.1.x)_files/readthedocs-addons.js.下载,text,479547,200253,58.24,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_quickstart,Quickstart — Flask Documentation (3.1.x)_files/sphinx_highlight.js.下载,text,5123,2139,58.25,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_quickstart,Quickstart — Flask Documentation (3.1.x)_files/debugger.png,image,136960,136960,0.00,store_original_image,图片为可控质量压缩，恢复后保证可渲染
+real_quickstart,Quickstart — Flask Documentation (3.1.x)_files/filestack1.png,image,3150,2917,7.40,png_optimize,图片为可控质量压缩，恢复后保证可渲染
+real_quickstart,Quickstart — Flask Documentation (3.1.x)_files/saved_resource,unsupported,2403,2403,0.00,skip,不支持资源直接跳过
+real_quickstart,Quickstart — Flask Documentation (3.1.x)_files/saved_resource(1),unsupported,30,30,0.00,skip,不支持资源直接跳过

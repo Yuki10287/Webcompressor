@@ -1,0 +1,8 @@
+﻿sample_name,relative_path,resource_type,original_size,compressed_size,compression_rate,strategy,note
+real_bootstrap,Album example for Bootstrap.html,text,21563,7713,64.23,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_bootstrap,Album example for Bootstrap_files/album.css,text,655,234,64.27,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_bootstrap,Album example for Bootstrap_files/bootstrap.min.css,text,144877,51823,64.23,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_bootstrap,Album example for Bootstrap_files/bootstrap.min.js.下载,text,48944,17507,64.23,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_bootstrap,Album example for Bootstrap_files/holder.min.js.下载,text,32283,11547,64.23,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_bootstrap,Album example for Bootstrap_files/jquery-3.2.1.slim.min.js.下载,text,69597,24895,64.23,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件
+real_bootstrap,Album example for Bootstrap_files/popper.min.js.下载,text,19188,6863,64.23,bundle_pre_lz77_huffman_text,文本 bundle 结果按原始大小比例估算到单文件

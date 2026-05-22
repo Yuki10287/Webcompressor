@@ -1,0 +1,4 @@
+﻿sample_name,network,bandwidth_mbps,original_transfer_s,system_transfer_s,zip_transfer_s,tar_gzip_transfer_s,system_saved_s,system_improvement_rate
+real_quickstart,4G_10Mbps,10,0.665406,0.344094,0.257886,0.258460,0.321311,48.29
+real_quickstart,WiFi_50Mbps,50,0.133081,0.068819,0.051577,0.051692,0.064262,48.29
+real_quickstart,5G_200Mbps,200,0.033270,0.017205,0.012894,0.012923,0.016066,48.29

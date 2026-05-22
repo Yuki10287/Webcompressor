@@ -1,0 +1,4 @@
+﻿sample_name,network,bandwidth_mbps,original_transfer_s,system_transfer_s,zip_transfer_s,tar_gzip_transfer_s,system_saved_s,system_improvement_rate
+real_wikipedia,4G_10Mbps,10,0.944232,0.481052,0.248186,0.249593,0.463180,49.05
+real_wikipedia,WiFi_50Mbps,50,0.188846,0.096210,0.049637,0.049919,0.092636,49.05
+real_wikipedia,5G_200Mbps,200,0.047212,0.024053,0.012409,0.012480,0.023159,49.05

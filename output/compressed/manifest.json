@@ -1,143 +1,114 @@
 {
-  "project_root": "C:/Users/15591/Desktop/数据结构大作业/real_site/real_wikipedia",
-  "entry_html_relative_path": "Data compression - Wikipedia.html",
+  "project_root": "C:/Users/15591/PycharmProjects/Webcompressor/sample_data/real_site/real_quickstart",
+  "entry_html_relative_path": "Quickstart — Flask Documentation (3.1.x).html",
   "text_bundle_enabled": true,
-  "text_bundle_original_size": 811861,
-  "text_bundle_compressed_size": 254484,
-  "text_bundle_path": "output\\bundles\\real_wikipedia_text_bundle.bin",
+  "text_bundle_original_size": 689214,
+  "text_bundle_compressed_size": 287808,
+  "text_bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
   "files": [
     {
-      "relative_path": "Data compression - Wikipedia.html",
+      "relative_path": "Quickstart — Flask Documentation (3.1.x).html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_wikipedia_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "Data compression - Wikipedia_files/enwiki-25.svg",
+      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/doctools.js.下载",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_wikipedia_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
       "restored_success": true,
-      "note": ""
+      "note": "download_suffix_detected"
     },
     {
-      "relative_path": "Data compression - Wikipedia_files/mediawiki_compact.svg",
+      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/documentation_options.js.下载",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_wikipedia_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
       "restored_success": true,
-      "note": ""
+      "note": "download_suffix_detected"
     },
     {
-      "relative_path": "Data compression - Wikipedia_files/wikimedia.svg",
+      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/ethicalads.min.js.下载",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_wikipedia_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
       "restored_success": true,
-      "note": ""
+      "note": "download_suffix_detected"
     },
     {
-      "relative_path": "Data compression - Wikipedia_files/wikipedia-tagline-en-25.svg",
+      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/flask-logo.svg",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_wikipedia_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "Data compression - Wikipedia_files/wikipedia-wordmark-en-25.svg",
+      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/flask.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_wikipedia_text_bundle.bin",
+      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "Data compression - Wikipedia_files/AudiodatenkompressionManowarThePowerOfThySword.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\Data compression - Wikipedia_files\\AudiodatenkompressionManowarThePowerOfThySword.jpg.jpg",
+      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/pygments.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
       "restored_success": true,
-      "compress_time_ms": 9.013,
       "note": ""
     },
     {
-      "relative_path": "Data compression - Wikipedia_files/Comparison_of_JPEG_and_PNG.png",
+      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/readthedocs-addons.js.下载",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
+      "restored_success": true,
+      "note": "download_suffix_detected"
+    },
+    {
+      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/sphinx_highlight.js.下载",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
+      "restored_success": true,
+      "note": "download_suffix_detected"
+    },
+    {
+      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/debugger.png",
       "type": "image",
       "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Data compression - Wikipedia_files\\Comparison_of_JPEG_and_PNG.png.png",
+      "compressed_path": "output\\compressed\\Quickstart — Flask Documentation (3.1.x)_files\\debugger.png.png",
       "restored_success": true,
-      "compress_time_ms": 1.418,
+      "compress_time_ms": 480.097,
       "note": ""
     },
     {
-      "relative_path": "Data compression - Wikipedia_files/Hybrid_video_encoder_processing_stages.svg.png",
+      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/filestack1.png",
       "type": "image",
       "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\Data compression - Wikipedia_files\\Hybrid_video_encoder_processing_stages.svg.png.png",
+      "compressed_path": "output\\compressed\\Quickstart — Flask Documentation (3.1.x)_files\\filestack1.png.png",
       "restored_success": true,
-      "compress_time_ms": 6.949,
+      "compress_time_ms": 4.359,
       "note": ""
     },
     {
-      "relative_path": "Data compression - Wikipedia_files/Nubio_Diff_Screenshot3.png",
-      "type": "image",
-      "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\Data compression - Wikipedia_files\\Nubio_Diff_Screenshot3.png.png",
-      "restored_success": true,
-      "compress_time_ms": 79.338,
-      "note": ""
-    },
-    {
-      "relative_path": "Data compression - Wikipedia_files/OOjs_UI_icon_edit-ltr-progressive.svg.png",
-      "type": "image",
-      "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\Data compression - Wikipedia_files\\OOjs_UI_icon_edit-ltr-progressive.svg.png.png",
-      "restored_success": true,
-      "compress_time_ms": 0.78,
-      "note": ""
-    },
-    {
-      "relative_path": "Data compression - Wikipedia_files/Placa-audioPC-925.jpg",
-      "type": "image",
-      "strategy": "jpeg_quality",
-      "compressed_path": "output\\compressed\\Data compression - Wikipedia_files\\Placa-audioPC-925.jpg.jpg",
-      "restored_success": true,
-      "compress_time_ms": 1.108,
-      "note": ""
-    },
-    {
-      "relative_path": "Data compression - Wikipedia_files/Symbol_category_class.svg.png",
-      "type": "image",
-      "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\Data compression - Wikipedia_files\\Symbol_category_class.svg.png.png",
-      "restored_success": true,
-      "compress_time_ms": 0.638,
-      "note": ""
-    },
-    {
-      "relative_path": "Data compression - Wikipedia_files/load(1).php",
+      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/saved_resource",
       "type": "unsupported",
       "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\Data compression - Wikipedia_files\\load(1).php",
+      "stored_path": "output\\compressed\\Quickstart — Flask Documentation (3.1.x)_files\\saved_resource",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "Data compression - Wikipedia_files/load(2).php",
+      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/saved_resource(1)",
       "type": "unsupported",
       "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\Data compression - Wikipedia_files\\load(2).php",
-      "restored_success": true,
-      "note": ""
-    },
-    {
-      "relative_path": "Data compression - Wikipedia_files/load.php",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\Data compression - Wikipedia_files\\load.php",
+      "stored_path": "output\\compressed\\Quickstart — Flask Documentation (3.1.x)_files\\saved_resource(1)",
       "restored_success": true,
       "note": ""
     }
