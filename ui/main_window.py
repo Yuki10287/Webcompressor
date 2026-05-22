@@ -151,10 +151,6 @@ class MainWindow(QMainWindow):
         self.open_page_button.clicked.connect(self.open_restored_page)
         self.open_page_button.setEnabled(False)
 
-        self.open_restore_folder_button = QPushButton("打开恢复目录")
-        self.open_restore_folder_button.clicked.connect(self.open_restore_folder)
-        self.open_restore_folder_button.setEnabled(False)
-
         self.open_report_folder_button = QPushButton("打开报告目录")
         self.open_report_folder_button.clicked.connect(self.open_report_folder)
 
@@ -172,7 +168,6 @@ class MainWindow(QMainWindow):
             self.compress_button,
             self.restore_button,
             self.open_page_button,
-            self.open_restore_folder_button,
             self.open_report_folder_button,
             self.open_chart_folder_button,
             self.generate_current_report_button,
@@ -341,7 +336,12 @@ class MainWindow(QMainWindow):
         """)
 
     def select_directory(self):
-        folder = QFileDialog.getExistingDirectory(self, "选择网页资源目录")
+        project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        default_dir = os.path.join(project_root, "sample_data")
+        if not os.path.isdir(default_dir):
+            default_dir = project_root
+
+        folder = QFileDialog.getExistingDirectory(self, "选择网页资源目录", default_dir)
         if not folder:
             return
 
@@ -360,7 +360,6 @@ class MainWindow(QMainWindow):
         self.compress_button.setEnabled(True)
         self.restore_button.setEnabled(False)
         self.open_page_button.setEnabled(False)
-        self.open_restore_folder_button.setEnabled(False)
         self.refresh_table()
         self.update_summary_label()
 
@@ -528,7 +527,6 @@ class MainWindow(QMainWindow):
         self.current_restore_root = None
         self.current_restored_home_path = None
         self.open_page_button.setEnabled(False)
-        self.open_restore_folder_button.setEnabled(False)
 
         output_root = os.path.join("output", "compressed")
         bundle_output_root = os.path.join("output", "bundles")
@@ -700,7 +698,6 @@ class MainWindow(QMainWindow):
         self.update_summary_label()
         self.restore_button.setEnabled(True)
         self.open_page_button.setEnabled(False)
-        self.open_restore_folder_button.setEnabled(False)
         QMessageBox.information(self, "完成", "压缩完成")
 
     def get_restore_root(self):
@@ -851,7 +848,6 @@ class MainWindow(QMainWindow):
             if home_path:
                 self.current_restored_home_path = home_path
                 self.open_page_button.setEnabled(True)
-                self.open_restore_folder_button.setEnabled(True)
                 reply = QMessageBox.question(
                     self,
                     "恢复完成",
@@ -863,7 +859,6 @@ class MainWindow(QMainWindow):
             else:
                 self.current_restored_home_path = None
                 self.open_page_button.setEnabled(False)
-                self.open_restore_folder_button.setEnabled(True)
                 QMessageBox.information(
                     self,
                     "恢复完成",
