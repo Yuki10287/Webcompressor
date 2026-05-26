@@ -1,0 +1,4 @@
+﻿sample_name,network,bandwidth_mbps,original_transfer_s,system_transfer_s,zip_transfer_s,tar_gzip_transfer_s,system_saved_s,system_improvement_rate
+benchmark_site_rich,4G_10Mbps,10,0.408603,0.163531,0.184990,0.171056,0.245072,59.98
+benchmark_site_rich,WiFi_50Mbps,50,0.081721,0.032706,0.036998,0.034211,0.049014,59.98
+benchmark_site_rich,5G_200Mbps,200,0.020430,0.008177,0.009250,0.008553,0.012254,59.98

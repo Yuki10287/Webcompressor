@@ -1,115 +1,125 @@
 {
-  "project_root": "C:/Users/15591/PycharmProjects/Webcompressor/sample_data/real_site/real_quickstart",
-  "entry_html_relative_path": "Quickstart — Flask Documentation (3.1.x).html",
+  "project_root": "C:/Users/15591/PycharmProjects/Webcompressor/sample_data/benchmark_site_basic",
+  "entry_html_relative_path": "index.html",
   "text_bundle_enabled": true,
-  "text_bundle_original_size": 689214,
-  "text_bundle_compressed_size": 287808,
-  "text_bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
+  "text_bundle_original_size": 60282,
+  "text_bundle_compressed_size": 14369,
+  "text_bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
   "files": [
     {
-      "relative_path": "Quickstart — Flask Documentation (3.1.x).html",
+      "relative_path": "about.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/doctools.js.下载",
+      "relative_path": "contact.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
-      "restored_success": true,
-      "note": "download_suffix_detected"
-    },
-    {
-      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/documentation_options.js.下载",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
-      "restored_success": true,
-      "note": "download_suffix_detected"
-    },
-    {
-      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/ethicalads.min.js.下载",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
-      "restored_success": true,
-      "note": "download_suffix_detected"
-    },
-    {
-      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/flask-logo.svg",
-      "type": "text",
-      "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/flask.css",
+      "relative_path": "index.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/pygments.css",
+      "relative_path": "products.html",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true,
       "note": ""
     },
     {
-      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/readthedocs-addons.js.下载",
+      "relative_path": "css/base.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true,
-      "note": "download_suffix_detected"
+      "note": ""
     },
     {
-      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/sphinx_highlight.js.下载",
+      "relative_path": "css/components.css",
       "type": "text",
       "strategy": "bundle_pre_lz77_huffman_text",
-      "bundle_path": "output\\bundles\\real_quickstart_text_bundle.bin",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
       "restored_success": true,
-      "note": "download_suffix_detected"
+      "note": ""
     },
     {
-      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/debugger.png",
+      "relative_path": "css/layout.css",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "js/app.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "js/data.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "js/utils.js",
+      "type": "text",
+      "strategy": "bundle_pre_lz77_huffman_text",
+      "bundle_path": "output\\bundles\\benchmark_site_basic_text_bundle.bin",
+      "restored_success": true,
+      "note": ""
+    },
+    {
+      "relative_path": "images/avatar.jpg",
       "type": "image",
-      "strategy": "store_original_image",
-      "compressed_path": "output\\compressed\\Quickstart — Flask Documentation (3.1.x)_files\\debugger.png.png",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\avatar.jpg.jpg",
       "restored_success": true,
-      "compress_time_ms": 480.097,
+      "compress_time_ms": 46.589,
       "note": ""
     },
     {
-      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/filestack1.png",
+      "relative_path": "images/banner.jpg",
+      "type": "image",
+      "strategy": "jpeg_quality",
+      "compressed_path": "output\\compressed\\images\\banner.jpg.jpg",
+      "restored_success": true,
+      "compress_time_ms": 7.65,
+      "note": ""
+    },
+    {
+      "relative_path": "images/bg.png",
       "type": "image",
       "strategy": "png_optimize",
-      "compressed_path": "output\\compressed\\Quickstart — Flask Documentation (3.1.x)_files\\filestack1.png.png",
+      "compressed_path": "output\\compressed\\images\\bg.png.png",
       "restored_success": true,
-      "compress_time_ms": 4.359,
+      "compress_time_ms": 87.703,
       "note": ""
     },
     {
-      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/saved_resource",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\Quickstart — Flask Documentation (3.1.x)_files\\saved_resource",
+      "relative_path": "images/logo.png",
+      "type": "image",
+      "strategy": "png_optimize",
+      "compressed_path": "output\\compressed\\images\\logo.png.png",
       "restored_success": true,
-      "note": ""
-    },
-    {
-      "relative_path": "Quickstart — Flask Documentation (3.1.x)_files/saved_resource(1)",
-      "type": "unsupported",
-      "strategy": "store_original_asset",
-      "stored_path": "output\\compressed\\Quickstart — Flask Documentation (3.1.x)_files\\saved_resource(1)",
-      "restored_success": true,
+      "compress_time_ms": 20.538,
       "note": ""
     }
   ]

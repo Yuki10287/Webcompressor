@@ -280,6 +280,38 @@ def save_file_compression_heatmap(detail_rows):
         print(f"已生成: {path}")
 
 
+def save_file_compress_time_chart(detail_rows):
+    by_sample = defaultdict(list)
+    for row in detail_rows:
+        if row["resource_type"] == "unsupported":
+            continue
+        if to_float(row.get("compress_time_ms")) <= 0:
+            continue
+        by_sample[row["sample_name"]].append(row)
+
+    for sample, rows in by_sample.items():
+        rows = sorted(
+            rows,
+            key=lambda r: to_float(r.get("compress_time_ms")),
+            reverse=True
+        )
+
+        names = [r["relative_path"] for r in rows]
+        times = [to_float(r.get("compress_time_ms")) for r in rows]
+        height = max(6, len(rows) * 0.35)
+
+        fig, ax = make_figure(figsize=(12, height))
+        ax.barh(names, times, color=color_sequence(len(times)), edgecolor=WHITE, linewidth=0.7)
+        ax.set_xlabel("压缩耗时 / ms")
+        ax.set_title(f"{sample} 单文件压缩耗时排序图", pad=14)
+        ax.invert_yaxis()
+        apply_axis_style(ax, grid_axis="x")
+
+        path = os.path.join(CHART_DIR, f"{sample}_file_compress_time.png")
+        save_chart(fig, path)
+        print(f"已生成: {path}")
+
+
 def save_transmission_compare(transmission_rows):
     by_sample = defaultdict(list)
     for row in transmission_rows:
@@ -346,6 +378,7 @@ def main():
 
     if detail_rows:
         save_file_compression_heatmap(detail_rows)
+        save_file_compress_time_chart(detail_rows)
 
     if transmission_rows:
         save_transmission_compare(transmission_rows)

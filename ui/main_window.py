@@ -757,11 +757,17 @@ class MainWindow(QMainWindow):
         QDesktopServices.openUrl(QUrl.fromLocalFile(os.path.abspath(report_root)))
 
     def open_chart_folder(self):
+        if self.project:
+            chart_root = get_site_chart_dir(self.project.root_dir)
+            if os.path.exists(chart_root):
+                QDesktopServices.openUrl(QUrl.fromLocalFile(os.path.abspath(chart_root)))
+                return
+
         project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         chart_root = os.path.join(project_root, "output", "reports", "charts")
 
         if not os.path.exists(chart_root):
-            QMessageBox.warning(self, "提示", "请先运行实验评估脚本和图表生成脚本")
+            QMessageBox.warning(self, "提示", "请先生成当前网页报告")
             return
 
         QDesktopServices.openUrl(QUrl.fromLocalFile(os.path.abspath(chart_root)))

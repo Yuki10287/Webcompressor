@@ -221,8 +221,12 @@ def evaluate_our_system(site_root: str) -> Tuple[Dict, List[Dict]]:
         for resource in text_resources:
             if text_original_size > 0:
                 estimated_size = int(resource.original_size / text_original_size * text_bundle_size)
+                estimated_compress_ms = resource.original_size / text_original_size * text_compress_ms
+                estimated_decompress_ms = resource.original_size / text_original_size * text_decompress_ms
             else:
                 estimated_size = 0
+                estimated_compress_ms = 0.0
+                estimated_decompress_ms = 0.0
 
             file_detail_rows.append({
                 "sample_name": os.path.basename(site_root),
@@ -231,8 +235,10 @@ def evaluate_our_system(site_root: str) -> Tuple[Dict, List[Dict]]:
                 "original_size": resource.original_size,
                 "compressed_size": estimated_size,
                 "compression_rate": f"{calc_rate(resource.original_size, estimated_size):.2f}",
+                "compress_time_ms": f"{estimated_compress_ms:.3f}",
+                "decompress_time_ms": f"{estimated_decompress_ms:.3f}",
                 "strategy": "bundle_pre_lz77_huffman_text",
-                "note": "文本 bundle 结果按原始大小比例估算到单文件"
+                "note": "文本 bundle 的大小和耗时按原始大小比例估算到单文件"
             })
 
     # ----------------------------
@@ -267,6 +273,8 @@ def evaluate_our_system(site_root: str) -> Tuple[Dict, List[Dict]]:
             "original_size": len(original_data),
             "compressed_size": len(final_data),
             "compression_rate": f"{calc_rate(len(original_data), len(final_data)):.2f}",
+            "compress_time_ms": f"{elapsed_ms:.3f}",
+            "decompress_time_ms": "0.000",
             "strategy": strategy,
             "note": "图片为可控质量压缩，恢复后保证可渲染"
         })
@@ -285,8 +293,10 @@ def evaluate_our_system(site_root: str) -> Tuple[Dict, List[Dict]]:
             "original_size": resource.original_size,
             "compressed_size": resource.original_size,
             "compression_rate": "0.00",
-            "strategy": "skip",
-            "note": "不支持资源直接跳过"
+            "compress_time_ms": "0.000",
+            "decompress_time_ms": "0.000",
+            "strategy": "store_original_asset",
+            "note": "不支持资源原样保存，用于保证恢复网页完整性"
         })
 
     compressed_total = text_bundle_size + image_compressed_size + unsupported_original_size

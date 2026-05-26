@@ -255,6 +255,33 @@ def save_file_compression_heatmap(detail_rows: List[Dict], chart_dir: str) -> No
     save_chart(fig, os.path.join(chart_dir, "file_compression_heatmap.png"))
 
 
+def save_file_compress_time_chart(detail_rows: List[Dict], chart_dir: str) -> None:
+    rows = [
+        r for r in detail_rows
+        if r.get("resource_type") != "unsupported" and to_float(r.get("compress_time_ms")) > 0
+    ]
+    rows = sorted(rows, key=lambda r: to_float(r.get("compress_time_ms")), reverse=True)
+
+    if not rows:
+        rows = [{
+            "relative_path": "No timed files",
+            "compress_time_ms": "0",
+        }]
+
+    names = [r["relative_path"] for r in rows]
+    times = [to_float(r.get("compress_time_ms")) for r in rows]
+    height = max(5.5, min(18, len(rows) * 0.35))
+
+    fig, ax = make_figure((11, height))
+    colors = [SOFT_PALETTE[i % len(SOFT_PALETTE)] for i in range(len(times))]
+    ax.barh(names, times, color=colors, edgecolor=WHITE, linewidth=0.7)
+    ax.set_xlabel("Compression time / ms")
+    ax.set_title("File compression time", pad=14)
+    ax.invert_yaxis()
+    apply_axis_style(ax, grid_axis="x")
+    save_chart(fig, os.path.join(chart_dir, "file_compress_time.png"))
+
+
 def save_transmission_compare(transmission_rows: List[Dict], chart_dir: str) -> None:
     networks = [r["network"] for r in transmission_rows]
     original_times = [to_float(r["original_transfer_s"]) for r in transmission_rows]
@@ -284,12 +311,13 @@ def save_transmission_compare(transmission_rows: List[Dict], chart_dir: str) -> 
 
 
 def generate_site_charts(summary: Dict, detail_rows: List[Dict], transmission_rows: List[Dict], chart_dir: str) -> None:
-    """基于当前站点的一组 CSV 数据生成四张可视化图表。"""
+    """基于当前站点的一组 CSV 数据生成可视化图表。"""
     setup_font()
     ensure_dir(chart_dir)
     save_total_compression_compare(summary, chart_dir)
     save_resource_type_pie(summary, chart_dir)
     save_file_compression_heatmap(detail_rows, chart_dir)
+    save_file_compress_time_chart(detail_rows, chart_dir)
     save_transmission_compare(transmission_rows, chart_dir)
 
 
